@@ -1,5 +1,6 @@
 .ma-box {
 	width: 100%;
+	background: #fff;
 }
 
 .ma-head {
@@ -8,5 +9,46 @@
     background-size: 100% 100%;  
     max-height: 1024px;
     min-height: 768px;
-    height: calc(100vh - 100px);   
+    height: calc(100vh - 100px); 
+    position: relative;  
 }
+
+.ma-head a{
+	margin-left: -30px;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+}
+
+.ma-one {
+	text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+.ma-one h4{
+	line-height: 70px;
+    color: #ff3f00;
+    font-size: 30px;
+}
+
+.ma-one p{
+	line-height: 26px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    /* For tablets: */
+    .ma-box-concent {width: 1024px;}
+}
+
+
+
