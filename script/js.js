@@ -136,12 +136,12 @@ $(window).scroll(function(){
 	}
 
 	if(scrollTop > 11376){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-window-head').addClass('title-run')
+		$('.ma-window-head').addClass('title-move')
 
-		if (scrollTop > 12403) $('.ma-window-head').removeClass('title-run')
+		if (scrollTop > 12403) $('.ma-window-head').removeClass('title-move')
 	} else {
 		
-		$('.ma-window-head').removeClass('title-run')
+		$('.ma-window-head').removeClass('title-move')
 	}
 
 	if(scrollTop > 11962){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
