@@ -3,6 +3,10 @@
 	background: #fff;
 }
 
+.ma-box-system h4,.ma-box h4{
+	padding-bottom: 20px;
+}
+
 .ma-head {
 	background-image: url("../images/head-01.jpg");
     background-repeat: no-repeat;   
@@ -20,14 +24,14 @@
     bottom: 5%;
 }
 
-.ma-one {
+/*全新数字世界出发点*/
+.ma-new-world {
 	text-align: center;
     box-sizing: border-box;
-    margin: 0 auto;
     padding: 60px 10px;
 }
 
-.ma-one h4{
+.ma-new-world h4{
 	font-family: FZLTCHJW--GB1-0;
 	font-size: 64px;
 	color: #E86855;
@@ -35,7 +39,7 @@
 	line-height: 83px;
 }
 
-.ma-one p{
+.ma-new-world p{
 	font-family: FZLTHJW--GB1-0;
 	font-size: 24px;
 	color: #1D1D1F;
@@ -44,20 +48,20 @@
 	line-height: 38px;
 }
 
-.ma-one-view {
+.ma-new-world-view {
 	width: 100%;
 	height: 900px;
 	display: flex;
 	align-items: center;
 }
 
-.ma-one-view .ma-left,.ma-right{
+.ma-new-world-view .ma-left,.ma-right{
 	flex: 1;
 	position: relative;
 	height: 100%;
 }
 
-.ma-one-view .ma-left-content {
+.ma-new-world-view .ma-left-content {
 	left: 50%;
     position: absolute;
     height: 300px;
@@ -68,7 +72,7 @@
     margin-left: -150px;
 }
 
-.ma-one-view .ma-left span{
+.ma-new-world-view .ma-left span{
 	font-family: FZLTHJW--GB1-0;
 	font-size: 20px;
 	color: #1D1D1F;
@@ -76,11 +80,11 @@
 	line-height: 32px;
 }
 
-.ma-one-view .ma-left-content img {
+.ma-new-world-view .ma-left-content img {
 	width: 100%;
 }
 
-.ma-one-click {
+.ma-new-world-click {
 	position: absolute;
 	width: 150px;
 	height: 150px;
@@ -88,7 +92,7 @@
 	cursor: pointer;
 }
 
-.ma-one-view h5 {
+.ma-new-world-view h5 {
 	font-family: FZLTCHJW--GB1-0;
 	font-size: 40px;
 	color: #E86855;
@@ -96,33 +100,34 @@
 	line-height: 64px;
 }
 
-.ma-one-view .ma-right img {
+.ma-new-world-view .ma-right img {
 	left: 0;
     position: absolute;
     height: 700px;
     top: 150px;
 }
 
-.ma-two {
+/*华容网格*/
+.ma-huarong-grid {
 	width: 100%;
 	height: 900px;
 	display: flex;
 }
 
-.ma-two .ma-two-left,.ma-two-right{
+.ma-huarong-grid .ma-huarong-grid-left,.ma-huarong-grid-right{
 	flex: 1;
 	position: relative;
 	height: 100%;
 }
 
-.ma-two-left img{
+.ma-huarong-grid-left img{
 	position: absolute;
     width: 360px;
     top: 70px;
-    right: 210px;
+    right: 150px;
 }
 
-.ma-two h5 {
+.ma-huarong-grid h5 {
 	font-family: FZLTCHJW--GB1-0;
 	font-size: 40px;
 	color: #E86855;
@@ -130,7 +135,7 @@
 	line-height: 64px;
 }
 
-.ma-two-content {
+.ma-huarong-grid-content {
 	left: 0;
     position: absolute;
     height: 300px;
@@ -139,7 +144,7 @@
     top: 30%;
 }
 
-.ma-two-right span{
+.ma-huarong-grid-right span{
 	font-family: FZLTHJW--GB1-0;
 	font-size: 20px;
 	color: #1D1D1F;
@@ -147,12 +152,117 @@
 	line-height: 32px;
 }
 
+/*原子组件/图标*/
+.ma-template .ma-left-content{
+	top: 150px;
+    margin-top: 0px;
+    height: 600px; 
+}
+
+.ma-template .ma-new-world-view .ma-right img{
+	height: 760px;
+    top: 120px;
+}
+
+/*鹅卵石交互体系*/
+.ma-box-system {
+	padding-top: 180px;
+	width: 100%;
+	background-image: linear-gradient(180deg, #F5F5F7 0%, #F5F5F7 99%);
+}
+
+.ma-system h4{
+	font-family: FZLTCHJW--GB1-0;
+	font-size: 64px;
+	color: #EE9228;
+	letter-spacing: 0;
+	line-height: 83px;
+}
+
+.ma-system p{
+	font-family: FZLTHJW--GB1-0;
+	font-size: 24px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 38px;
+}
+
+.ma-system .ma-system-view {
+	padding: 60px 0 20px 0;
+	width: 100%;
+	display: flex;
+}
+
+.ma-system-view-left,.ma-system-view-right {
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.ma-system-view-left {
+	padding-right: 10px;
+}
+
+.ma-system-view-right {
+	padding-left: 10px;
+}
+
+.ma-system-content {
+	width: 100%;
+	height: 1000px;
+	background: #1C1C1C;
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.50) 0%, rgba(255,255,255,0.50) 100%);
+	border-radius: 32px;
+	border-radius: 32px;
+	overflow: hidden;
+	padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.ma-system-content-right{
+	opacity: 0.75;
+	background-image: linear-gradient(180deg, #0D0D0D 0%, #343434 100%);
+}
+
+.ma-system-content h5 {
+	font-family: FZLTCHJW--GB1-0;
+	font-size: 40px;
+	color: #EE9228;
+	letter-spacing: 0;
+	line-height: 64px;
+	margin-bottom: 20px;
+}
+
+.ma-system-content span {
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.ma-system-img-left {
+	position: absolute;
+	width: 300px;
+	left: 106px;
+    bottom: 80px;
+}
+
+.ma-system-img-right {
+	position: absolute;
+	width: 100%;
+	height: 750px;
+	left: 0px;
+    bottom: 0px;
+}
 
 
-
-@media only screen and (max-width: 1300px) {
+@media only screen and (min-width: 1300px) {
     /* For tablets: */
-    .ma-box-concent {width: 1024px;}
+    .ma-box-concent {
+    	width: 1024px;
+    	margin: 0 auto;
+    }
 }
 
 
