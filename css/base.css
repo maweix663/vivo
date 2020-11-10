@@ -357,6 +357,164 @@
 	bottom: 0px;
 }
 
+/*时间线设计体系*/
+.ma-box-time {
+	background: #fff;
+	width: 100%;
+	padding-top: 160px;
+	padding-bottom: 100px;
+}
+
+.ma-time-head {
+	padding-bottom: 30px;
+}
+
+.ma-time-head h3{
+	font-family: FZLTZCHJW--GB1-0;
+	font-size: 64px;
+	color: #2A89FF;
+	letter-spacing: 0;
+	line-height: 83px;
+	margin-bottom: 20px;
+}
+
+.ma-time-head p{
+	ffont-family: FZLTHJW--GB1-0;
+	font-size: 24px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 38px;
+}
+
+/*行为图标*/
+.ma-icon {
+	height: 786px;
+	background-image: linear-gradient(180deg, #FFFFFF 0%, #F5F5F7 100%)!important;
+	border-radius: 32px;
+	border-radius: 32px;
+}
+
+.ma-icon h5 {
+	font-family: FZLTZCHJW--GB1-0;
+	font-size: 40px;
+	color: #2A89FF;
+	letter-spacing: 0;
+	line-height: 64px;
+}
+
+.ma-icon p {
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.ma-icon .ma-icon-img-run {
+	position: absolute;
+	width: 370px;
+	height: 566px;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -185px;
+}
+
+.ma-icon .ma-icon-img {
+	position: absolute;
+	width: 738px;
+	height: 362px;
+	bottom: 140px;
+	left: 50%;
+	margin-left: -369px;
+}
+
+.ma-icon-view {
+	position: absolute;
+	height: 546px;
+	width: 820px;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -410px;
+}
+
+.ma-icon-img-left,.ma-icon-img-right {
+	position: absolute;
+	width: 320px;
+	height: 546px;
+	bottom: 0px;
+}
+
+.ma-icon-img-left{
+	left: 0px;
+}
+
+.ma-icon-img-right{
+	right: 0px;
+}
+
+/*原子通知*/
+.ma-notice {
+	height: 600px;
+	background-image: linear-gradient(180deg, #F5F5F7 0%, #FFFFFF 100%)!important;
+	display: flex;
+	align-items: center;
+}
+
+.ma-notice h5 {
+	font-family: FZLTZCHJW--GB1-0;
+	font-size: 40px;
+	color: #2A89FF;
+	letter-spacing: 0;
+	line-height: 64px;
+}
+
+.ma-notice p {
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.ma-notice img {
+	position: absolute;
+	width: 420px;
+	height: 520px;
+	bottom: 40px;
+	right: 70px;
+}
+
+/*原子通知*/
+.ma-day {
+	height: 850px;
+	display: flex;
+	align-items: center;
+}
+
+.ma-day h5 {
+	font-family: FZLTZCHJW--GB1-0;
+	font-size: 40px;
+	color: #2A89FF;
+	letter-spacing: 0;
+	line-height: 64px;
+}
+
+.ma-day p {
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.ma-day img {
+	position: absolute;
+	width: 340px;
+	height: 750px;
+	top: 40px;
+	right: 70px;
+}
+
 @media only screen and (min-width: 1200px) {
     /* For tablets: */
     .ma-box-concent {
