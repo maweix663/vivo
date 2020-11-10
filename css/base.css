@@ -770,7 +770,32 @@
 	right: 0px;
 }
 
-@media only screen and (min-width: 1200px) {
+.ma-box-scroll {
+	width: 100%;
+}
+
+.ma-new-world-title {
+	opacity: 0;
+}
+
+.ma-new-text-title {
+	opacity: 0;
+}
+
+.ma-huarong-title {
+	opacity: 0;
+}
+
+.ma-system-title {
+	opacity: 0;
+}
+
+.ma-template-title {
+	opacity: 0;
+}
+
+/*屏幕大于1024px*/
+@media only screen and (min-width: 1024px) {
     /* For tablets: */
     .ma-box-concent {
     	width: 1024px;
@@ -789,7 +814,24 @@
 		position: relative;
 		margin-bottom: 30px;
     }
+
+
+    .title-run{
+    	position: relative;
+    	animation:mymove 1s ease-in-out forwards;
+		-webkit-animation:mymove 1s ease-in-out forwards; /* Safari 和 Chrome */
+    }
 }
 
+@keyframes mymove
+{
+from {top:100px;opacity: 0;}
+to {top:0;opacity: 1;}
+}
 
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+from {top:100px;opacity: 0;}
+to {top:0;opacity: 1;}
+}
 
