@@ -3,18 +3,39 @@
     padding: 0;
 }
 
-.you-open-box,
-.you-work-box,
-.you-album-box,
-.you-Memory-box,
-.you-Visual-box,
+
 .you-box {
     width: 100%;
-    background: #F5F5F7;
+    background: #fff;
     font-family: FZLTZCHJW--GB1-0;
     padding-top: 181px;
     padding-bottom: 261px;
 }
+
+.you-open-box {
+    width: 100%;
+    background: #F5F5F7;
+    font-family: FZLTZCHJW--GB1-0;
+    padding-top: 160px;
+    padding-bottom: 139px;
+}
+
+
+.you-Memory-box, .you-album-box, .you-work-box {
+    width: 100%;
+    background: #F5F5F7;
+    font-family: FZLTZCHJW--GB1-0;
+    padding-top: 160px;
+}
+
+
+.you-Visual-box {
+    width: 100%;
+    background: #F5F5F7;
+    font-family: FZLTZCHJW--GB1-0;
+    padding-top: 189px;
+}
+
 
 .you-open-content,
 .you-work-content,
@@ -102,13 +123,13 @@
     justify-content: space-between;
 }
 
-.you-open-content-vehicle .you-open-left {
+.you-open-content-vehicle .you-open-leftwo {
     width: 481px;
     height: 211px;
     padding-top: 150px;
 }
 
-.you-open-content-vehicle .you-open-left h2 {
+.you-open-content-vehicle .you-open-leftwo h2 {
     font-size: 40px;
     color: #90DCC5;
     letter-spacing: 0;
@@ -117,7 +138,7 @@
     padding-bottom: 20px;
 }
 
-.you-open-content-vehicle .you-open-left p {
+.you-open-content-vehicle .you-open-leftwo p {
     font-size: 20px;
     color: #1D1D1F;
     letter-spacing: 0;
@@ -200,15 +221,15 @@
 }
 
 .you-work-content-life .you-work-left,
-.you-work-content-vehicle .you-work-left,
-.you-Visual-content-life .you-Visual-left, .you-Visual-content-vehicle .you-Visual-left{
+.you-work-content-vehicle .you-work-leftwo,
+.you-Visual-content-life .you-Visual-left, .you-Visual-content-vehicle .you-Visual-leftwo{
     width: 1090px;
     height: 148px;
     padding-top: 40px;
 }
 
 .you-work-content-life .you-work-left h2,
-.you-work-content-vehicle .you-work-left h2 {
+.you-work-content-vehicle .you-work-leftwo h2 {
     font-size: 40px;
     color: #7BADF0;
     letter-spacing: 0;
@@ -218,10 +239,10 @@
 }
 
 .you-work-content-life .you-work-left p,
-.you-work-content-vehicle .you-work-left p,
-.you-work-content-footer .you-footer-life p,
-.you-Memory-content-vehicle .you-Memory-left p,
-.you-Visual-content-life .you-Visual-left p, .you-Visual-content-vehicle .you-Visual-left p{
+.you-work-content-vehicle .you-work-leftwo p,
+.you-work-content-footer .you-footer-lifethree p,
+.you-Memory-content-vehicle .you-Memory-leftwo p,
+.you-Visual-content-life .you-Visual-left p, .you-Visual-content-vehicle .you-Visual-leftwo p{
     font-size: 20px;
     color: #1D1D1F;
     letter-spacing: 0;
@@ -255,15 +276,15 @@
     justify-content: space-between;
 }
 
-.you-work-content-footer .you-footer-life,
-.you-Memory-content-vehicle .you-Memory-left {
+.you-work-content-footer .you-footer-lifethree,
+.you-Memory-content-vehicle .you-Memory-leftwo {
     width: 543px;
     height: 179px;
     padding-top: 210.5px;
 }
 
-.you-work-content-footer .you-footer-life h2,
-.you-Memory-content-vehicle .you-Memory-left h2 {
+.you-work-content-footer .you-footer-lifethree h2,
+.you-Memory-content-vehicle .you-Memory-leftwo h2 {
     font-size: 40px;
     color: #7BADF0;
     letter-spacing: 0;
@@ -336,7 +357,7 @@
     padding: 40px;
 }
 
-.you-Memory-content-vehicle .you-Memory-left h2 {
+.you-Memory-content-vehicle .you-Memory-leftwo h2 {
     font-size: 40px;
     color: #6C00C4;
     letter-spacing: 0;
@@ -345,14 +366,14 @@
     padding-bottom: 20px;
 }
 
-.you-Memory-content-vehicle .you-Memory-right {
+.you-Memory-content-vehicle .you-Memory-rightwo {
     width: 370px;
     height: 520px;
     margin-top: 110.5px;
     margin-right: 64.7px;
 }
 
-.you-Memory-content-vehicle .you-Memory-right img {
+.you-Memory-content-vehicle .you-Memory-rightwo img {
     width: 100%;
     height: 100%;
 }
@@ -435,7 +456,7 @@
     height: 920px;
 }
 
-.you-Visual-content-life .you-Visual-left h2, .you-Visual-content-vehicle .you-Visual-left h2 {
+.you-Visual-content-life .you-Visual-left h2, .you-Visual-content-vehicle .you-Visual-leftwo h2 {
     font-size: 40px;
     color: #AA0067;
     letter-spacing: 0;

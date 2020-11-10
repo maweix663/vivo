@@ -121,6 +121,64 @@
     opacity: 0;
 }
 
+.you-Visual-head {
+    opacity: 0;
+}
+.you-Visual-left {
+    opacity: 0;
+}
+.you-Visual-leftwo {
+    opacity: 0;
+}
+.you-Memory-head {
+    opacity: 0;
+}
+.you-fuse {
+    opacity: 0;
+}
+.you-Memory-leftwo {
+    opacity: 0;  
+}
+.you-fluent {
+    opacity: 0; 
+}
+.you-album-head {
+    opacity: 0;
+}
+.you-work-head {
+    opacity: 0;
+}
+.you-work-left {
+    opacity: 0; 
+}
+.you-work-leftwo{
+    opacity: 0;  
+}
+.you-footer-lifethree{
+    opacity: 0; 
+}
+.you-open-head {
+    opacity: 0; 
+}
+.you-open-left {
+    opacity: 0; 
+}
+.you-open-leftwo {
+    opacity: 0;   
+}
+.you-footer-end {
+    opacity: 0; 
+}
+.you-marvellous {
+    opacity: 0; 
+}
+.you-one-li {
+    opacity: 0; 
+}
+.you-two-li {
+    opacity: 0;  
+} 
+
 /*屏幕大于1024px*/
 @media only screen and (min-width: 1024px) {
     /* For tablets: */

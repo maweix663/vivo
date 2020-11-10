@@ -197,6 +197,159 @@ $(window).scroll(function(){
 		$('.ma-mask').css({"display": "none"})
 	}
 
+	if(scrollTop > 16000){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-Visual-head').addClass('title-move')
+
+		if (scrollTop > 17400) $('.you-Visual-head').removeClass('title-move')
+	} else {
+		$('.you-Visual-head').removeClass('title-move')
+	}
+
+	if(scrollTop > 16500){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-Visual-left').addClass('title-run')
+
+		if (scrollTop > 17500) $('.you-Visual-left').removeClass('title-run')
+	} else {
+		$('.you-Visual-left').removeClass('title-run')
+	}
+
+	if(scrollTop > 17500){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-Visual-leftwo').addClass('title-run')
+
+		if (scrollTop > 18500) $('.you-Visual-leftwo').removeClass('title-run')
+	} else {
+		$('.you-Visual-leftwo').removeClass('title-run')
+	}
+
+	if(scrollTop > 18000){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-Memory-head').addClass('title-move')
+
+		if (scrollTop > 19400) $('.you-Memory-head').removeClass('title-move')
+	} else {
+		$('.you-Memory-head').removeClass('title-move')
+	}
+
+	if(scrollTop > 18500){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-fuse').addClass('title-run')
+
+		if (scrollTop > 19700) $('.you-fuse').removeClass('title-run')
+	} else {
+		$('.you-fuse').removeClass('title-run')
+	}
+
+
+	if(scrollTop > 19500){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-Memory-leftwo').addClass('title-run')
+
+		if (scrollTop > 20900) $('.you-Memory-leftwo').removeClass('title-run')
+	} else {
+		$('.you-Memory-leftwo').removeClass('title-run')
+	}
+
+	if(scrollTop > 20600){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-fluent').addClass('title-run')
+
+		if (scrollTop > 21600) $('.you-fluent').removeClass('title-run')
+	} else {
+		$('.you-fluent').removeClass('title-run')
+	}
+
+	if(scrollTop > 20900){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-album-head').addClass('title-move')
+
+		if (scrollTop > 22000) $('.you-album-head').removeClass('title-move')
+	} else {
+		$('.you-album-head').removeClass('title-move')
+	}
+
+	if(scrollTop > 22000){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-work-head').addClass('title-move')
+
+		if (scrollTop > 23300) $('.you-work-head').removeClass('title-move')
+	} else {
+		$('.you-work-head').removeClass('title-move')
+	}
+
+	if(scrollTop > 22500){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-work-left').addClass('title-run')
+
+		if (scrollTop > 23500) $('.you-work-left').removeClass('title-run')
+	} else {
+		$('.you-work-left').removeClass('title-run')
+	}
+
+	if(scrollTop > 23500){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-work-leftwo').addClass('title-run')
+
+		if (scrollTop > 24500) $('.you-work-leftwo').removeClass('title-run')
+	} else {
+		$('.you-work-leftwo').removeClass('title-run')
+	}
+
+	if(scrollTop > 24000){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-footer-lifethree').addClass('title-run')
+
+		if (scrollTop > 25300) $('.you-footer-lifethree').removeClass('title-run')
+	} else {
+		$('.you-footer-lifethree').removeClass('title-run')
+	}
+
+	if(scrollTop > 25000){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-open-head').addClass('title-move')
+
+		if (scrollTop > 26000) $('.you-open-head').removeClass('title-move')
+	} else {
+		$('.you-open-head').removeClass('title-move')
+	}
+
+	if(scrollTop > 25200){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-open-left').addClass('title-run')
+
+		if (scrollTop > 26300) $('.you-open-left').removeClass('title-run')
+	} else {
+		$('.you-open-left').removeClass('title-run')
+	}
+
+	if(scrollTop > 26000){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-open-leftwo').addClass('title-run')
+
+		if (scrollTop > 26900) $('.you-open-leftwo').removeClass('title-run')
+	} else {
+		$('.you-open-leftwo').removeClass('title-run')
+	}
+
+	if(scrollTop > 26400){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-footer-end').addClass('title-run')
+
+		if (scrollTop > 27300) $('.you-footer-end').removeClass('title-run')
+	} else {
+		$('.you-footer-end').removeClass('title-run')
+	}
+
+	if(scrollTop > 27500){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-marvellous').addClass('title-move')
+
+		if (scrollTop > 28400) $('.you-marvellous').removeClass('title-move')
+	} else {
+		$('.you-marvellous').removeClass('title-move')
+	}
+
+	if(scrollTop > 27900){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-one-li').addClass('title-run')
+
+		if (scrollTop > 28700) $('.you-one-li').removeClass('title-run')
+	} else {
+		$('.you-one-li').removeClass('title-run')
+	}
+	if(scrollTop > 27900){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-two-li').addClass('title-run')
+
+		if (scrollTop > 28700) $('.you-two-li').removeClass('title-run')
+	} else {
+		$('.you-two-li').removeClass('title-run')
+	}
+
+
 	
 });
 
