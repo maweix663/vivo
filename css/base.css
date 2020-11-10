@@ -166,7 +166,8 @@
 
 /*鹅卵石交互体系*/
 .ma-box-system {
-	padding: 180px 0 30px 0;
+	padding-top: 180px;
+	padding-bottom: 100px;
 	width: 100%;
 	background-image: linear-gradient(180deg, #F5F5F7 0%, #F5F5F7 99%);
 }
@@ -188,7 +189,7 @@
 }
 
 .ma-system .ma-system-view {
-	padding: 60px 0 20px 0;
+	padding: 60px 0 30px 0;
 	width: 100%;
 	display: flex;
 }
@@ -258,16 +259,9 @@
 
 /*运行后台*/
 .ma-running {
-	height: 600px;
-	background-image: linear-gradient(-44deg, #5DC4F6 0%, #5D9DF6 37%, #BE8AC7 54%, #FF6E6E 65%, #EE7A69 77%, #EEBB69 89%, #F9EBBE 100%);
-	background: #FFFFFF;
-	border-radius: 32px;
-	border-radius: 32px;
-	padding: 40px;
-	box-sizing: border-box;
 	display: flex;
 	align-items: center;
-	position: relative;
+	height: 600px;
 }
 
 .ma-running h5 {
@@ -295,12 +289,92 @@
 	right: 172px;
 }
 
+/*超级卡包*/
+.ma-super {
+	height: 840px;
+}
+
+.ma-super h5 {
+	font-family: FZLTCHJW--GB1-0;
+	font-size: 40px;
+	color: #EE9228;
+	letter-spacing: 0;
+	line-height: 64px;
+	margin-bottom: 20px;
+}
+
+.ma-super span {
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.ma-super img {
+	width: 240px;
+	height: 526px;
+	margin-left: 60px;
+}
+
+.ma-super-view {
+	margin-top: 60px;
+}
+
+/*镜头包*/
+.ma-lens {
+	height: 800px;
+	position: relative;
+}
+
+.ma-lens h5 {
+	font-family: FZLTCHJW--GB1-0;
+	font-size: 40px;
+	color: #EE9228;
+	letter-spacing: 0;
+	line-height: 64px;
+	margin-bottom: 20px;
+}
+
+.ma-lens span {
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.ma-lens-left {
+	width: 500px;
+	height: 600px;
+}
+
+.ma-lens-right {
+	position: absolute;
+	width: 370px;
+	height: 560px;
+	right: 70px;
+	bottom: 0px;
+}
 
 @media only screen and (min-width: 1200px) {
     /* For tablets: */
     .ma-box-concent {
     	width: 1024px;
     	margin: 0 auto;
+    }
+
+    .ma-box-block {
+    	width: 1024px;
+    	margin: 0 auto;
+		background-image: linear-gradient(-44deg, #5DC4F6 0%, #5D9DF6 37%, #BE8AC7 54%, #FF6E6E 65%, #EE7A69 77%, #EEBB69 89%, #F9EBBE 100%);
+		background: #FFFFFF;
+		border-radius: 32px;
+		border-radius: 32px;
+		padding: 40px;
+		box-sizing: border-box;
+		position: relative;
+		margin-bottom: 30px;
     }
 }
 
