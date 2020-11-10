@@ -189,9 +189,19 @@ $(window).scroll(function(){
 		$('.ma-deformation-title').removeClass('title-run')
 	}
 
-	
-	
+
+	// 
+	if (scrollTop > 500) {
+		$('.ma-mask').css({"display": "block"})
+	} else {
+		$('.ma-mask').css({"display": "none"})
+	}
+
+	$('.ma-mask').click(function(){
+		console.log(111)
+	})
 });
+
 
 
 

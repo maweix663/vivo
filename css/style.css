@@ -1,3 +1,38 @@
+.ma-mask {
+    width: 72px;
+    height: 48px;
+    line-height: 48px;
+    position: fixed;
+    right: 40px;
+    bottom: 95px;
+    z-index: 99999;
+    display: none;
+    background-color: rgba(87,92,102,.4);
+    -webkit-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.ma-mask:before {
+    content: "";
+    font-family: footLogoIcon;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
 .ma-box-scroll {
     width: 100%;
 }
