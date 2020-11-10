@@ -197,9 +197,7 @@ $(window).scroll(function(){
 		$('.ma-mask').css({"display": "none"})
 	}
 
-	$('.ma-mask').click(function(){
-		console.log(111)
-	})
+	
 });
 
 
