@@ -854,6 +854,10 @@
 	opacity: 0;
 }
 
+.ma-deformation-title {
+	opacity: 0;
+}
+
 /*屏幕大于1024px*/
 @media only screen and (min-width: 1024px) {
     /* For tablets: */

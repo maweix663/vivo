@@ -180,7 +180,14 @@ $(window).scroll(function(){
 		$('.ma-behavior-title').removeClass('title-run')
 	}
 
+	if(scrollTop > 15126){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.ma-deformation-title').addClass('title-run')
 
+		if (scrollTop > 16146) $('.ma-deformation-title').removeClass('title-run')
+	} else {
+		
+		$('.ma-deformation-title').removeClass('title-run')
+	}
 
 	
 	
