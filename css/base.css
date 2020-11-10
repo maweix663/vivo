@@ -484,7 +484,7 @@
 	right: 70px;
 }
 
-/*原子通知*/
+/*天气*/
 .ma-day {
 	height: 850px;
 	display: flex;
@@ -513,6 +513,261 @@
 	height: 750px;
 	top: 40px;
 	right: 70px;
+}
+
+/*原景视窗*/
+.ma-window-head {
+	padding-bottom: 30px;
+}
+
+.ma-window-head h3{
+	font-family: FZLTZCHJW--GB1-0;
+	font-size: 64px;
+	color: #549ABD;
+	letter-spacing: 0;
+	line-height: 83px;
+	margin-bottom: 20px;
+}
+
+.ma-window-head p{
+	ffont-family: FZLTHJW--GB1-0;
+	font-size: 24px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 38px;
+}
+
+.ma-window-content {
+	height: 840px;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #F5F5F7 100%)!important;
+    display: flex;
+    align-items: center;
+}
+
+.ma-window-content img {
+	width: 720px;
+    height: 768px;
+    bottom: 40px;
+    right: 70px;
+    margin-right: 20px;
+}
+
+/*天空视窗*/
+.ma-fly {
+	height: 786px;
+	background-image: linear-gradient(180deg, #F5F5F7 0%, #FFFFFF 100%)!important;
+	border-radius: 32px;
+	border-radius: 32px;
+	overflow: hidden;
+}
+
+.ma-fly h5 {
+	font-family: FZLTZCHJW--GB1-0;
+	font-size: 40px;
+	color: #549ABD;
+	letter-spacing: 0;
+	line-height: 64px;
+}
+
+.ma-fly p {
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.ma-fly-view {
+	position: absolute;
+	height: 546px;
+	width: 820px;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -410px;
+}
+
+.ma-fly-img-left,.ma-fly-img-right {
+	position: absolute;
+	width: 320px;
+	height: 546px;
+	bottom: 0px;
+}
+
+.ma-fly-img-left{
+	left: 0px;
+}
+
+.ma-fly-img-right{
+	right: 0px;
+}
+
+/*时光视窗*/
+.ma-weather {
+	height: 786px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	background-image: url("../images/demo-13.png")!important;
+    background-repeat: no-repeat!important;   
+    background-size: 100% 100%!important;
+}
+
+.ma-weather h5 {
+	font-family: FZLTZCHJW--GB1-0;
+	font-size: 40px;
+	color: #549ABD;
+	letter-spacing: 0;
+	line-height: 64px;
+}
+
+.ma-weather p {
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.ma-weather img {
+	position: absolute;
+	width: 370px;
+	height: 686px;
+	bottom: 0px;
+	right: 70px;
+}
+
+/*行为壁纸*/
+.ma-behavior {
+	height: 980px;
+	background: #F5F5F7!important;
+	overflow: hidden;
+}
+
+.ma-behavior h5 {
+	font-family: FZLTZCHJW--GB1-0;
+	font-size: 40px;
+	color: #549ABD;
+	letter-spacing: 0;
+	line-height: 64px;
+}
+
+.ma-behavior p {
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.ma-behavior-step {
+	position: absolute;
+	width: 900px;
+	height: 500px;
+}
+
+.ma-behavior-phone {
+	position: absolute;
+	width: 270px;
+	height: 592px;
+	top: 260px;
+	left: 50%;
+	margin-left: -185px;
+}
+
+.ma-behavior-tags {
+	position: absolute;
+	width: 560px;
+	height: 40px;
+	left: 50%;
+	margin-left: -280px;
+	bottom: 40px;
+}
+
+.ma-behavior-tags ul {
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ma-behavior-tags ul li {
+	display: inline-block;
+	width: 80px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	opacity: 0.3;
+	font-family: FZLTZHJW--GB1-0;
+	font-size: 22px;
+	color: #333;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 35px;
+	position: relative;
+}
+
+.ma-behavior-tags ul li.active{
+	opacity: 1;
+}
+
+.ma-behavior-tags ul li.active:before{
+	position: absolute;
+	content: '';
+	width: 44px;
+	height: 4px;
+	background: #333;
+	bottom: 0px;
+}
+
+
+
+/*变形器*/
+.ma-deformation {
+	height: 930px;
+	background-image: linear-gradient(180deg, #F5F5F7 0%, #FFFFFF 100%)!important;
+	border-radius: 32px;
+	border-radius: 32px;
+	overflow: hidden;
+}
+
+.ma-deformation h5 {
+	font-family: FZLTZCHJW--GB1-0;
+	font-size: 40px;
+	color: #549ABD;
+	letter-spacing: 0;
+	line-height: 64px;
+}
+
+.ma-deformation p {
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.ma-deformation-view {
+	position: absolute;
+	height: 592px;
+	width: 620px;
+	bottom: 78px;
+	left: 50%;
+	margin-left: -300px;
+}
+
+.ma-deformation-img-left,.ma-deformation-img-right {
+	position: absolute;
+	width: 270px;
+	height: 592px;
+	bottom: 0px;
+}
+
+.ma-deformation-img-left{
+	left: 0px;
+}
+
+.ma-deformation-img-right{
+	right: 0px;
 }
 
 @media only screen and (min-width: 1200px) {
