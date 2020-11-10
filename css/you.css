@@ -7,7 +7,8 @@
 .you-work-box,
 .you-album-box,
 .you-Memory-box,
-.you-Visual-box {
+.you-Visual-box,
+.you-box {
     width: 100%;
     background: #F5F5F7;
     font-family: FZLTZCHJW--GB1-0;
@@ -468,13 +469,6 @@
 
 
 /** 更多精彩 **/
-.you-box {
-    width: 100%;
-    background: #fff;
-    font-family: FZLTZCHJW--GB1-0;
-    padding-top: 181px;
-}
-
 .you-concent {
     width: 1200px;
     margin: 0 auto;
