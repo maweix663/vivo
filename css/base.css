@@ -273,7 +273,7 @@
 	margin-bottom: 20px;
 }
 
-.ma-running span {
+.ma-running p {
 	font-family: FZLTHJW--GB1-0;
 	font-size: 20px;
 	color: #1D1D1F;
@@ -303,7 +303,7 @@
 	margin-bottom: 20px;
 }
 
-.ma-super span {
+.ma-super p {
 	font-family: FZLTHJW--GB1-0;
 	font-size: 20px;
 	color: #1D1D1F;
@@ -336,7 +336,7 @@
 	margin-bottom: 20px;
 }
 
-.ma-lens span {
+.ma-lens p {
 	font-family: FZLTHJW--GB1-0;
 	font-size: 20px;
 	color: #1D1D1F;
