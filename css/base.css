@@ -794,6 +794,66 @@
 	opacity: 0;
 }
 
+.ma-system-view-title {
+	opacity: 0;
+}
+
+.ma-running-title {
+	opacity: 0;
+}
+
+.ma-super-title {
+	opacity: 0;
+}
+
+.ma-lens-title {
+	opacity: 0;
+}
+
+.ma-time-head {
+	opacity: 0;
+}
+
+.ma-icon-title {
+	opacity: 0;
+}
+
+.ma-icons-title {
+	opacity: 0;
+}
+
+.ma-clock-title {
+	opacity: 0;
+}
+
+.ma-notice-title {
+	opacity: 0;
+}
+
+.ma-day-title {
+	opacity: 0;
+}
+
+.ma-window-head {
+	opacity: 0;
+}
+
+.ma-window-title {
+	opacity: 0;
+}
+
+.ma-fly-title {
+	opacity: 0;
+}
+
+.ma-weather-title {
+	opacity: 0;
+}
+
+.ma-behavior-title {
+	opacity: 0;
+}
+
 /*屏幕大于1024px*/
 @media only screen and (min-width: 1024px) {
     /* For tablets: */
