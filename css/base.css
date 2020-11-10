@@ -166,7 +166,7 @@
 
 /*鹅卵石交互体系*/
 .ma-box-system {
-	padding-top: 180px;
+	padding: 180px 0 30px 0;
 	width: 100%;
 	background-image: linear-gradient(180deg, #F5F5F7 0%, #F5F5F7 99%);
 }
@@ -244,7 +244,7 @@
 .ma-system-img-left {
 	position: absolute;
 	width: 300px;
-	left: 106px;
+	left: 101px;
     bottom: 80px;
 }
 
@@ -256,8 +256,47 @@
     bottom: 0px;
 }
 
+/*运行后台*/
+.ma-running {
+	height: 600px;
+	background-image: linear-gradient(-44deg, #5DC4F6 0%, #5D9DF6 37%, #BE8AC7 54%, #FF6E6E 65%, #EE7A69 77%, #EEBB69 89%, #F9EBBE 100%);
+	background: #FFFFFF;
+	border-radius: 32px;
+	border-radius: 32px;
+	padding: 40px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
 
-@media only screen and (min-width: 1300px) {
+.ma-running h5 {
+	font-family: FZLTCHJW--GB1-0;
+	font-size: 40px;
+	color: #EE9228;
+	letter-spacing: 0;
+	line-height: 64px;
+	margin-bottom: 20px;
+}
+
+.ma-running span {
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.ma-running img {
+	position: absolute;
+	width: 240px;
+	height: 526px;
+	top: 37px;
+	right: 172px;
+}
+
+
+@media only screen and (min-width: 1200px) {
     /* For tablets: */
     .ma-box-concent {
     	width: 1024px;
