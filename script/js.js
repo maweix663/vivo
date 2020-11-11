@@ -446,7 +446,7 @@ function running () {
 	    centeredSlides: true,
 	    coverflowEffect: {
 	        rotate : -50,
-	        stretch :-50,
+	        stretch :-30,
 	        depth: 80,
 	        modifier : 1,
 	        shadows : false 
