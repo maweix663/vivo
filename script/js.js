@@ -157,13 +157,32 @@ $(window).scroll(function () {
 		$('.ma-icon-title').addClass('title-run')
 		$('.ma-icon-text').addClass('text-run')
 
+		$('.ma-icon-fly-icon1').addClass('animated bounceOutDown')
+
 		if (scrollTop > 9350) {
 			$('.ma-icon-text').removeClass('text-run')
 			$('.ma-icon-title').removeClass('title-run')
+
+			$('.ma-icon-fly-icon1').removeClass('animated bounceOutDown')
 		}
 	} else {
 		$('.ma-icon-text').removeClass('text-run')
 		$('.ma-icon-title').removeClass('title-run')
+
+		$('.ma-icon-fly-icon1').removeClass('animated bounceOutDown')
+	}
+	
+	if (scrollTop > 9230) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+
+		$('.ma-icon-fly-icon1').addClass('animated bounceOutDown')
+
+		if (scrollTop > 10000) {
+
+			$('.ma-icon-fly-icon1').removeClass('animated bounceOutDown')
+		}
+	} else {
+
+		$('.ma-icon-fly-icon1').removeClass('animated bounceOutDown')
 	}
 
 	if (scrollTop > 9150) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
