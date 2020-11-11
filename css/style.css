@@ -140,7 +140,9 @@
 .ma-fly-text,
 .ma-weather-text,
 .ma-behavior-text,
-.ma-deformation-text {
+.ma-deformation-text,
+.ma-new-icon-title,
+.ma-new-icon-text {
     opacity: 0;
 }
 

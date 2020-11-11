@@ -60,6 +60,19 @@ $(window).scroll(function () {
 		$('.ma-template-title').removeClass('title-run')
 	}
 
+	if (scrollTop > 3450) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.ma-new-icon-title').addClass('title-run')
+		$('.ma-new-icon-text').addClass('text-run')
+
+		if (scrollTop > 4600) {
+			$('.ma-new-icon-text').removeClass('text-run')
+			$('.ma-new-icon-title').removeClass('title-run')
+		}
+	} else {
+		$('.ma-new-icon-text').removeClass('text-run')
+		$('.ma-new-icon-title').removeClass('title-run')
+	}
+
 	if (scrollTop > 4450) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-system-title').addClass('title-move')
 		$('.ma-system-text').addClass('text-run')
