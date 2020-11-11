@@ -480,7 +480,7 @@
 .ma-icon-fly{
 	position: absolute;
 	width: 370px;
-	height: 566px;
+	height: 300px;
 	bottom: 0px;
 	left: 50%;
 	margin-left: -185px;
@@ -495,6 +495,48 @@
     position: absolute;
     left: 40px;
     bottom: 200px;
+}
+
+.ma-icon-fly .ma-icon-fly-icon2{
+    position: absolute;
+    left: 100px;
+    bottom: 200px;
+}
+
+.ma-icon-fly .ma-icon-fly-icon3{
+    position: absolute;
+    left: 160px;
+    bottom: 200px;
+}
+
+.ma-icon-fly .ma-icon-fly-icon4{
+    position: absolute;
+    left: 220px;
+    bottom: 200px;
+}
+
+.ma-icon-fly .ma-icon-fly-icon5{
+    position: absolute;
+    left: 40px;
+    bottom: 120px;
+}
+
+.ma-icon-fly .ma-icon-fly-icon6{
+    position: absolute;
+    left: 100px;
+    bottom: 120px;
+}
+
+.ma-icon-fly .ma-icon-fly-icon7{
+    position: absolute;
+    left: 160px;
+    bottom: 120px;
+}
+
+.ma-icon-fly .ma-icon-fly-icon8{
+    position: absolute;
+    left: 220px;
+    bottom: 120px;
 }
 
 .ma-icon .ma-icon-img {
