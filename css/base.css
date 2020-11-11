@@ -908,11 +908,6 @@
         animation: huarongimg 1.5s 1s ease-in-out forwards;
         -webkit-animation: huarongimg 1.5s 1s ease-in-out forwards;
     }
-
-    .icon-fly {
-    	animation: iconflay 1s ease-in-out forwards;
-        -webkit-animation: iconflay 1s ease-in-out forwards;
-    }
 }
 
 /*华容网格*/
@@ -966,46 +961,7 @@
     }
 }
 
-/*icon飞出*/
-@keyframes iconflay {
-    0 {
-    	top: 0;
-        left: 0;
-        opacity: 1;
-    }
 
-   /* 50% {
-        left: 100px;
-        top: 100px;
-        opacity: 0.5;
-    }
-*/
-    100% {
-        left: 200px;
-        top: 200px;
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes iconflay {
-    0 {
-    	top: 0;
-        left: 0;
-        opacity: 1;
-    }
-
-    /*50% {
-        left: 100px;
-        top: 100px;
-        opacity: 0.5;
-    }*/
-
-    100% {
-        left: 200px;
-        top: 200px;
-        opacity: 0;
-    }
-}
 
 
 .number-animate{margin-left: 50px; height: 400px;font-size: 100px;overflow: hidden; display: inline-block; position: relative; }
@@ -1025,6 +981,10 @@
 
     .ma-new-world p {
     	font-size: 20px;
+    }
+
+    .ma-new-world-view{
+    	height: 500px;
     }
 
     .ma-new-world-view .ma-left, .ma-right{
@@ -1056,8 +1016,8 @@
 
     .swiper-ma-world{
     	height: 200px;
-    	margin-top: 300px;
-    	margin-left: -20px;
+    	margin-top: 150px;
+    	margin-left: -40px;
     }
 
     .ma-new-world-view .ma-right img{
@@ -1086,6 +1046,18 @@
         animation: textmove 1s ease-in-out forwards;
         -webkit-animation: textmove 1s ease-in-out forwards;
         /* Safari 和 Chrome */
+    }
+
+    .huarong-bg {
+        position: relative;
+        animation: huarongbgphone 1s ease-in-out forwards;
+        -webkit-animation: huarongbgphone 1s ease-in-out forwards;
+        /* Safari 和 Chrome */
+    }
+
+    .huarong-img {
+        animation: huarongimgphone 1.5s 1s ease-in-out forwards;
+        -webkit-animation: huarongimgphone 1.5s 1s ease-in-out forwards;
     }
 }
 
@@ -1169,6 +1141,57 @@
 
     to {
         bottom: 0;
+        opacity: 1;
+    }
+}
+
+/*华容网格*/
+@keyframes huarongbgphone {
+    from {
+        left: 20px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes huarongbgphone
+    {
+    from {
+        left: 20px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes huarongimgphone {
+    from {
+    	top: 10px;
+        opacity: 0;
+    }
+
+    to {
+    	top: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes huarongimgphone
+    {
+    from {
+    	top: 10px;
+        opacity: 0;
+    }
+
+    to {
+    	top: 0;
         opacity: 1;
     }
 }
