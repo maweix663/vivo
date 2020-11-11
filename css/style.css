@@ -73,10 +73,6 @@
     opacity: 0;
 }
 
-.ma-time-head {
-    opacity: 0;
-}
-
 .ma-icon-title {
     opacity: 0;
 }
@@ -94,10 +90,6 @@
 }
 
 .ma-day-title {
-    opacity: 0;
-}
-
-.ma-window-head {
     opacity: 0;
 }
 
@@ -179,6 +171,31 @@
     opacity: 0;  
 } 
 
+.ma-new-world-text,
+.ma-new-text,
+.ma-huarong-text,
+.ma-template-text,
+.ma-system-text,
+.ma-system-view-text,
+.ma-running-text,
+.ma-super-text,
+.ma-lens-text,
+.ma-icon-text,
+.ma-time-head-title,
+.ma-time-head-text,
+.ma-icons-text,
+.ma-clock-text,
+.ma-notice-text,
+.ma-day-text,,
+.ma-window-head-title,
+.ma-window-head-text,
+.ma-fly-text,
+.ma-weather-text,
+.ma-behavior-text,
+.ma-deformation-text{
+    opacity: 0;
+}
+
 /*屏幕大于1024px*/
 @media only screen and (min-width: 1024px) {
     /* For tablets: */
@@ -213,6 +230,13 @@
         animation:mymove 1s ease-in-out forwards;
         -webkit-animation:mymove 1s ease-in-out forwards; /* Safari 和 Chrome */
     }
+
+    /*文字移动*/
+    .text-run{
+        position: relative;
+        animation:textmove 1s ease-in-out forwards;
+        -webkit-animation:textmove 1s ease-in-out forwards; /* Safari 和 Chrome */
+    }
 }
 
 /*大标题移动*/
@@ -239,4 +263,17 @@ to {top:0;opacity: 1;}
 {
 from {top:100px;opacity: 0;}
 to {top:0;opacity: 1;}
+}
+
+/*文字移动*/
+@keyframes textmove
+{
+from {bottom:100px;opacity: 0;}
+to {bottom:0;opacity: 1;}
+}
+
+@-webkit-keyframes textmove /*Safari and Chrome*/
+{
+from {bottom:100px;opacity: 0;}
+to {bottom:0;opacity: 1;}
 }

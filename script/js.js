@@ -2,145 +2,211 @@ $(window).scroll(function(){
 	var scrollTop = $(window).scrollTop()
 	if(scrollTop > 100){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-new-world-title').addClass('title-move')
+		$('.ma-new-world-text').addClass('text-run')
 
-		if (scrollTop > 1300) $('.ma-new-world-title').removeClass('title-move')
+
+		if (scrollTop > 1300) {
+			$('.ma-new-world-title').removeClass('title-move')
+			$('.ma-new-world-text').removeClass('text-run')
+		}
 	} else {
 		$('.ma-new-world-title').removeClass('title-move')
+		$('.ma-new-world-text').removeClass('text-run')
 	}
 
 	if(scrollTop > 650){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-new-text-title').addClass('title-run')
+		$('.ma-new-text').addClass('text-run')
 
-		if (scrollTop > 1500) $('.ma-new-text-title').removeClass('title-run')
+		if (scrollTop > 1500) {
+			$('.ma-new-text-title').removeClass('title-run')
+			$('.ma-new-text').removeClass('text-run')
+		} 
 	} else {
-		
 		$('.ma-new-text-title').removeClass('title-run')
+		$('.ma-new-text').removeClass('text-run')
 	}
 
 	if(scrollTop > 1650){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-huarong-title').addClass('title-run')
+		$('.ma-huarong-text').addClass('text-run')
 
-		if (scrollTop > 2600) $('.ma-huarong-title').removeClass('title-run')
+		if (scrollTop > 2600) {
+			$('.ma-huarong-text').removeClass('text-run')
+			$('.ma-huarong-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-huarong-text').removeClass('text-run')
 		$('.ma-huarong-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 2450){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-template-title').addClass('title-run')
+		$('.ma-template-text').addClass('text-run')
 
-		if (scrollTop > 3800) $('.ma-template-title').removeClass('title-run')
+		if (scrollTop > 3800) {
+			$('.ma-template-text').removeClass('text-run')
+			$('.ma-template-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-template-text').removeClass('text-run')
 		$('.ma-template-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 3550){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-system-title').addClass('title-move')
-
-		if (scrollTop > 4400) $('.ma-system-title').removeClass('title-move')
-	} else {
+		$('.ma-system-text').addClass('text-run')
 		
+
+		if (scrollTop > 4400) {
+			$('.ma-system-text').removeClass('text-run')
+			$('.ma-system-title').removeClass('title-move')
+		}
+	} else {
+		$('.ma-system-text').removeClass('text-run')
 		$('.ma-system-title').removeClass('title-move')
 	}
 
 	if(scrollTop > 3650){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-system-view-title').addClass('title-run')
+		$('.ma-system-view-text').addClass('text-run')
 
-		if (scrollTop > 4700) $('.ma-system-view-title').removeClass('title-run')
+
+		if (scrollTop > 4700) {
+			$('.ma-system-view-text').removeClass('text-run')
+			$('.ma-system-view-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-system-view-text').removeClass('text-run')
 		$('.ma-system-view-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 4850){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-running-title').addClass('title-run')
+		$('.ma-running-text').addClass('text-run')
 
-		if (scrollTop > 5900) $('.ma-running-title').removeClass('title-run')
+		if (scrollTop > 5900) {
+			$('.ma-running-text').removeClass('text-run')
+			$('.ma-running-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-running-text').removeClass('text-run')
 		$('.ma-running-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 5300){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-super-title').addClass('title-run')
+		$('.ma-super-text').addClass('text-run')
 
-		if (scrollTop > 6300) $('.ma-super-title').removeClass('title-run')
+		if (scrollTop > 6300) {
+			$('.ma-super-text').removeClass('text-run')
+			$('.ma-super-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-super-text').removeClass('text-run')
 		$('.ma-super-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 6150){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-lens-title').addClass('title-run')
+		$('.ma-lens-text').addClass('text-run')
 
-		if (scrollTop > 7120) $('.ma-lens-title').removeClass('title-run')
+		if (scrollTop > 7120) {
+			$('.ma-lens-text').removeClass('text-run')
+			$('.ma-lens-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-lens-text').removeClass('text-run')
 		$('.ma-lens-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 7150){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-time-head').addClass('title-move')
+		$('.ma-time-head-title').addClass('title-move')
+		$('.ma-time-head-text').addClass('text-run')
 
-		if (scrollTop > 8280) $('.ma-time-head').removeClass('title-move')
+		if (scrollTop > 8280) {
+			$('.ma-time-head-text').removeClass('text-run')
+			$('.ma-time-head-title').removeClass('title-move')
+		}
 	} else {
-		
-		$('.ma-time-head').removeClass('title-move')
+		$('.ma-time-head-text').removeClass('text-run')
+		$('.ma-time-head-title').removeClass('title-move')
 	}
 
 	if(scrollTop > 7480){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-icon-title').addClass('title-run')
+		$('.ma-icon-text').addClass('text-run')
 
-		if (scrollTop > 8450) $('.ma-icon-title').removeClass('title-run')
+		if (scrollTop > 8450) {
+			$('.ma-icon-text').removeClass('text-run')
+			$('.ma-icon-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-icon-text').removeClass('text-run')
 		$('.ma-icon-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 8250){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-icons-title').addClass('title-run')
+		$('.ma-icons-text').addClass('text-run')
 
-		if (scrollTop > 9280) $('.ma-icons-title').removeClass('title-run')
+		if (scrollTop > 9280) {
+			$('.ma-icons-text').removeClass('text-run')
+			$('.ma-icons-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-icons-text').removeClass('text-run')
 		$('.ma-icons-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 9100){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-clock-title').addClass('title-run')
+		$('.ma-clock-text').addClass('text-run')
 
-		if (scrollTop > 10070) $('.ma-clock-title').removeClass('title-run')
+		if (scrollTop > 10070) {
+			$('.ma-clock-text').removeClass('text-run')
+			$('.ma-clock-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-clock-text').removeClass('text-run')
 		$('.ma-clock-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 10050){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-notice-title').addClass('title-run')
-
-		if (scrollTop > 11100) $('.ma-notice-title').removeClass('title-run')
+		$('.ma-notice-text').addClass('text-run')
+		if (scrollTop > 11100) {
+			$('.ma-notice-text').removeClass('text-run')
+			$('.ma-notice-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-notice-text').removeClass('text-run')
 		$('.ma-notice-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 10826){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-day-title').addClass('title-run')
-
-		if (scrollTop > 11868) $('.ma-day-title').removeClass('title-run')
+		$('.ma-day-text').addClass('text-run')
+		if (scrollTop > 11868) {
+			$('.ma-day-text').removeClass('text-run')
+			$('.ma-day-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-day-text').removeClass('text-run')
 		$('.ma-day-title').removeClass('title-run')
 	}
 
-	if(scrollTop > 11376){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-window-head').addClass('title-move')
+	if(scrollTop > 11376){//这里100代表你要动画的元$('.ma-day-title').addClass('title-run')
+		$('.ma-window-head-title').addClass('title-run')
+		$('.ma-window-head-text').addClass('text-run')
 
-		if (scrollTop > 12403) $('.ma-window-head').removeClass('title-move')
+		if (scrollTop > 12403) {
+			$('.ma-window-head-title').removeClass('title-run')
+			$('.ma-window-head-text').removeClass('text-run')
+		}
 	} else {
-		
-		$('.ma-window-head').removeClass('title-move')
+		$('.ma-window-head-title').removeClass('title-run')
+		$('.ma-window-head-text').removeClass('text-run')
 	}
 
 	if(scrollTop > 11962){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
@@ -154,37 +220,51 @@ $(window).scroll(function(){
 	
 	if(scrollTop > 12479){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-fly-title').addClass('title-run')
+		$('.ma-fly-text').addClass('text-run')
 
-		if (scrollTop > 13528) $('.ma-fly-title').removeClass('title-run')
+		if (scrollTop > 13528) {
+			$('.ma-fly-text').removeClass('text-run')
+			$('.ma-fly-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-fly-text').removeClass('text-run')
 		$('.ma-fly-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 13537){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-weather-title').addClass('title-run')
+		$('.ma-weather-text').addClass('text-run')
 
-		if (scrollTop > 14628) $('.ma-weather-title').removeClass('title-run')
+		if (scrollTop > 14628) {
+			$('.ma-weather-text').removeClass('text-run')
+			$('.ma-weather-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-weather-text').removeClass('text-run')
 		$('.ma-weather-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 14107){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-behavior-title').addClass('title-run')
-
-		if (scrollTop > 15142) $('.ma-behavior-title').removeClass('title-run')
+		$('.ma-behavior-text').addClass('text-run')
+		if (scrollTop > 15142) {
+			$('.ma-behavior-text').removeClass('text-run')
+			$('.ma-behavior-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-behavior-text').removeClass('text-run')
 		$('.ma-behavior-title').removeClass('title-run')
 	}
 
 	if(scrollTop > 15126){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-deformation-title').addClass('title-run')
-
-		if (scrollTop > 16146) $('.ma-deformation-title').removeClass('title-run')
+		$('.ma-deformation-text').addClass('text-run')
+		if (scrollTop > 16146) {
+			$('.ma-deformation-text').removeClass('text-run')
+			$('.ma-deformation-title').removeClass('title-run')
+		}
 	} else {
-		
+		$('.ma-deformation-text').removeClass('text-run')
 		$('.ma-deformation-title').removeClass('title-run')
 	}
 
@@ -340,7 +420,6 @@ $(window).scroll(function(){
 		$('.you-two-li').removeClass('title-run')
 	}
 
-
 	// 回到顶部
 	if (scrollTop > 500) {
 		$('.ma-mask').css({"display": "block"})
@@ -348,19 +427,31 @@ $(window).scroll(function(){
 		$('.ma-mask').css({"display": "none"})
 	}
 
+});
+
+$(window).resize(function(){
+    var metaWidth = $(document).width()
+
+	if (metaWidth >= 1200) {
+		running()
+	}
+	
+});
+
+function running () {
 	// 平行世界--旋转
 	var worldRun = new Swiper('.swiper-ma-world', {
-        effect : 'coverflow',
-        slidesPerView: 3,
-        centeredSlides: true,
-        coverflowEffect: {
-            rotate : -50,
-            stretch :-50,
-            depth: 80,
-            modifier : 1,
-            shadows : false 
-        }
-    });
+	    effect : 'coverflow',
+	    slidesPerView: 3,
+	    centeredSlides: true,
+	    coverflowEffect: {
+	        rotate : -50,
+	        stretch :-50,
+	        depth: 80,
+	        modifier : 1,
+	        shadows : false 
+	    }
+	});
 
 	$('.ma-btn-left').click(function(){
 		worldRun.slidePrev();
@@ -368,9 +459,7 @@ $(window).scroll(function(){
 	$('.ma-btn-right').click(function(){
 		worldRun.slideNext();
 	})
-});
-
-
+}
 
 
 
