@@ -7,7 +7,7 @@
     bottom: 95px;
     z-index: 99999;
     display: none;
-    background-color: rgba(87,92,102,.4);
+    background-color: rgba(87, 92, 102, .4);
     -webkit-transition: background-color .3s ease;
     -o-transition: background-color .3s ease;
     -moz-transition: background-color .3s ease;
@@ -26,11 +26,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .ma-box-scroll {
@@ -113,63 +113,11 @@
     opacity: 0;
 }
 
-.you-Visual-head {
-    opacity: 0;
-}
-.you-Visual-left {
-    opacity: 0;
-}
-.you-Visual-leftwo {
-    opacity: 0;
-}
-.you-Memory-head {
-    opacity: 0;
-}
-.you-fuse {
-    opacity: 0;
-}
-.you-Memory-leftwo {
-    opacity: 0;  
-}
-.you-fluent {
-    opacity: 0; 
-}
-.you-album-head {
-    opacity: 0;
-}
-.you-work-head {
-    opacity: 0;
-}
-.you-work-left {
-    opacity: 0; 
-}
-.you-work-leftwo{
-    opacity: 0;  
-}
-.you-footer-lifethree{
-    opacity: 0; 
-}
-.you-open-head {
-    opacity: 0; 
-}
-.you-open-left {
-    opacity: 0; 
-}
-.you-open-leftwo {
-    opacity: 0;   
-}
-.you-footer-end {
-    opacity: 0; 
-}
+
 .you-marvellous {
-    opacity: 0; 
+    opacity: 0;
 }
-.you-one-li {
-    opacity: 0; 
-}
-.you-two-li {
-    opacity: 0;  
-} 
+
 
 .ma-new-world-text,
 .ma-new-text,
@@ -186,18 +134,59 @@
 .ma-icons-text,
 .ma-clock-text,
 .ma-notice-text,
-.ma-day-text,,
+.ma-day-text,
 .ma-window-head-title,
 .ma-window-head-text,
 .ma-fly-text,
 .ma-weather-text,
 .ma-behavior-text,
-.ma-deformation-text{
+.ma-deformation-text {
+    opacity: 0;
+}
+
+.you-Visual-head-title,
+.you-Visual-head-text,
+.you-Visual-left-title,
+.you-Visual-left-text,
+.you-Visual-leftwo-title,
+.you-Visual-leftwo-text,
+.you-Memory-head-title,
+.you-Memory-head-text,
+.you-fuse-title,
+.you-fuse-text,
+.you-Memory-leftwo-title,
+.you-Memory-leftwo-text,
+.you-fluent-title,
+.you-fluent-text,
+.you-album-head-title,
+.you-album-head-text,
+.you-work-head-title,
+.you-work-head-text,
+.you-work-left-title,
+.you-work-left-text,
+.you-work-leftwo-title,
+.you-work-leftwo-text,
+.you-footer-lifethree-title,
+.you-footer-lifethree-text,
+.you-open-head-title,
+.you-open-head-text,
+.you-open-left-title,
+.you-open-left-text,
+.you-open-leftwo-title,
+.you-open-leftwo-text,
+.you-footer-end-title,
+.you-footer-end-text,
+.you-one-title,
+.you-one-text,
+.you-funtouch-left-title,
+.you-funtouch-left-text
+{
     opacity: 0;
 }
 
 /*屏幕大于1024px*/
 @media only screen and (min-width: 1024px) {
+
     /* For tablets: */
     .ma-box-concent {
         width: 1024px;
@@ -218,62 +207,110 @@
     }
 
     /*大标题移动*/
-    .title-move{
+    .title-move {
         position: relative;
-        animation:mymove 1s ease-in-out forwards;
-        -webkit-animation:titltmove 1s ease-in-out forwards; /* Safari 和 Chrome */
+        animation: mymove 1s ease-in-out forwards;
+        -webkit-animation: titltmove 1s ease-in-out forwards;
+        /* Safari 和 Chrome */
     }
 
     /*小标题移动*/
-    .title-run{
+    .title-run {
         position: relative;
-        animation:mymove 1s ease-in-out forwards;
-        -webkit-animation:mymove 1s ease-in-out forwards; /* Safari 和 Chrome */
+        animation: mymove 1s ease-in-out forwards;
+        -webkit-animation: mymove 1s ease-in-out forwards;
+        /* Safari 和 Chrome */
     }
 
     /*文字移动*/
-    .text-run{
+    .text-run {
         position: relative;
-        animation:textmove 1s ease-in-out forwards;
-        -webkit-animation:textmove 1s ease-in-out forwards; /* Safari 和 Chrome */
+        animation: textmove 1s ease-in-out forwards;
+        -webkit-animation: textmove 1s ease-in-out forwards;
+        /* Safari 和 Chrome */
     }
 }
 
 /*大标题移动*/
-@keyframes titltmove
-{
-from {right:100px;opacity: 0;}
-to {right:0;opacity: 1;}
+@keyframes titltmove {
+    from {
+        right: 100px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 1;
+    }
 }
 
-@-webkit-keyframes titltmove /*Safari and Chrome*/
-{
-from {right:100px;opacity: 0;}
-to {right:0;opacity: 1;}
+@-webkit-keyframes titltmove
+
+/*Safari and Chrome*/
+    {
+    from {
+        right: 100px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 1;
+    }
 }
 
 /*小标题移动*/
-@keyframes mymove
-{
-from {top:100px;opacity: 0;}
-to {top:0;opacity: 1;}
+@keyframes mymove {
+    from {
+        top: 100px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
-@-webkit-keyframes mymove /*Safari and Chrome*/
-{
-from {top:100px;opacity: 0;}
-to {top:0;opacity: 1;}
+@-webkit-keyframes mymove
+
+/*Safari and Chrome*/
+    {
+    from {
+        top: 100px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 /*文字移动*/
-@keyframes textmove
-{
-from {bottom:100px;opacity: 0;}
-to {bottom:0;opacity: 1;}
+@keyframes textmove {
+    from {
+        bottom: 100px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
 }
 
-@-webkit-keyframes textmove /*Safari and Chrome*/
-{
-from {bottom:100px;opacity: 0;}
-to {bottom:0;opacity: 1;}
+@-webkit-keyframes textmove
+
+/*Safari and Chrome*/
+    {
+    from {
+        bottom: 100px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
 }
