@@ -1,3 +1,4 @@
+var metaWidth = $(document).width()
 var num = 0
 var timer = null
 var li = $('.ma-behavior-tags ul li')
@@ -637,8 +638,6 @@ $(window).scroll(function () {
 });
 
 $(window).resize(function () {
-	var metaWidth = $(document).width()
-
 	if (metaWidth >= 1024) {
 		running()
 	}
