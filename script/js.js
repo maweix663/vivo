@@ -1,3 +1,6 @@
+var num = 0
+var timer = null
+var li = $('.ma-behavior-tags ul li')
 $(window).scroll(function () {
 	var scrollTop = $(window).scrollTop()
 	if (scrollTop > 100) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
@@ -309,6 +312,24 @@ $(window).scroll(function () {
 	} else {
 		$('.ma-behavior-text').removeClass('text-run')
 		$('.ma-behavior-title').removeClass('title-run')
+	}
+
+	
+	if (scrollTop > 15340) {
+		numRun()
+
+		if (scrollTop > 16900){
+			num = 0
+			clearInterval(timer)
+			numRun()
+			li.removeClass('active')
+			li.eq(0).addClass('active')
+		}
+	} else {
+		num = 0
+		clearInterval(timer)
+		li.removeClass('active')
+		li.eq(0).addClass('active')
 	}
 
 	if (scrollTop > 16026) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
@@ -648,3 +669,39 @@ function running() {
 		worldRun.slideNext();
 	})
 }
+
+// 行为壁纸
+function numRun() {
+	clearInterval(timer)
+    var odo = new Odometer('.ma-behavior-step',{
+        num : num
+    });
+
+
+    //改变数值
+    timer = setInterval(()=>{
+    	num += 623
+    	odo.update(num)
+
+    	if (num >= 8000) {
+    		num = 0
+    		odo.update(8000)
+	    	clearInterval(timer)
+	    }
+    },1000)
+
+    
+}
+
+// 换取花颜色
+li.click(function(){
+	li.removeClass('active')
+	$(this).addClass('active')
+	num = 0
+	clearInterval(timer)
+	numRun()
+})
+
+
+
+
