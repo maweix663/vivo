@@ -321,10 +321,16 @@
 
 .you-album-ul li {
     background: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.you-album-ul li:nth-child(5){
+    margin: 0;
 }
 
 .you-album-ul .you-album-night {
-    width: 420px;
+    width: 460px;
     height: 850px;
     border-radius: 32px;
     border: 1px solid #7BADF0;

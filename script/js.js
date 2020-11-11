@@ -632,3 +632,19 @@ function running() {
 		worldRun.slideNext();
 	})
 }
+
+// 相册
+// $('.you-album-ul .you-album-night').animate({width:'460px'},'slow');
+$('.you-album-ul').on('click','li',function(){
+	$(this).addClass('curr')
+	.stop()
+	.animate({
+	width:'460px'
+	},'slow')
+	.siblings()
+	.stop()
+	.animate({
+	width:'175px'
+	},'slow')
+	.removeClass('curr');
+})
