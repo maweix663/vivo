@@ -361,6 +361,13 @@ $(window).scroll(function(){
             shadows : false 
         }
     });
+
+	$('.ma-btn-left').click(function(){
+		worldRun.slidePrev();
+	})
+	$('.ma-btn-right').click(function(){
+		worldRun.slideNext();
+	})
 });
 
 
