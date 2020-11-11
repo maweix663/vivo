@@ -125,11 +125,19 @@
 	height: 100%;
 }
 
-.ma-huarong-grid-left img{
-	position: absolute;
-    width: 360px;
+.ma-huarong-grid-bg{
+    width: 100%;
     top: 70px;
-    right: 150px;
+    opacity: 0;
+}
+
+.ma-huarong-grid-img{
+	position: absolute;
+    width: 300px;
+    top: 70px;
+    left: 50%;
+    margin-left: -150px;
+    opacity: 0;
 }
 
 .ma-huarong-grid h5 {
@@ -150,6 +158,52 @@
 }
 
 .ma-huarong-grid-right span{
+	font-family: FZLTHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+/*全新图标*/
+.ma-new-icon {
+	width: 100%;
+	height: 900px;
+	display: flex;
+}
+
+.ma-new-icon .ma-new-icon-left,.ma-new-icon-right{
+	flex: 1;
+	position: relative;
+	height: 100%;
+}
+
+.ma-new-icon-left img{
+	position: absolute;
+    width: 300px;
+    top: 70px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.ma-new-icon h5 {
+	font-family: FZLTCHJW--GB1-0;
+	font-size: 40px;
+	color: #E86855;
+	letter-spacing: 0;
+	line-height: 64px;
+}
+
+.ma-new-icon-content {
+	left: 0;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    text-align: left;
+    top: 30%;
+}
+
+.ma-new-icon-right span{
 	font-family: FZLTHJW--GB1-0;
 	font-size: 20px;
 	color: #1D1D1F;
@@ -774,6 +828,76 @@
 .ma-deformation-img-right{
 	right: 0px;
 }
+
+/*屏幕大于1024px*/
+@media only screen and (min-width: 1024px) {
+    /*华容网格*/
+    .huarong-bg {
+        position: relative;
+        animation: huarongbg 1s ease-in-out forwards;
+        -webkit-animation: huarongbg 1s ease-in-out forwards;
+        /* Safari 和 Chrome */
+    }
+
+    .huarong-img {
+        animation: huarongimg 1.5s 1s ease-in-out forwards;
+        -webkit-animation: huarongimg 1.5s 1s ease-in-out forwards;
+    }
+}
+
+/*华容网格*/
+@keyframes huarongbg {
+    from {
+        left: 100px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes huarongbg
+    {
+    from {
+        left: 100px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes huarongimg {
+    from {
+    	top: 50px;
+        opacity: 0;
+    }
+
+    to {
+    	top: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes huarongimg
+    {
+    from {
+    	top: 50px;
+        opacity: 0;
+    }
+
+    to {
+    	top: 0;
+        opacity: 1;
+    }
+}
+
+
+
 
 
 
