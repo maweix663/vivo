@@ -1,5 +1,4 @@
 $(window).scroll(function(){
-	console.log($(window).scrollTop());
 	var scrollTop = $(window).scrollTop()
 	if(scrollTop > 100){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-new-world-title').addClass('title-move')
@@ -189,14 +188,6 @@ $(window).scroll(function(){
 		$('.ma-deformation-title').removeClass('title-run')
 	}
 
-
-	// 
-	if (scrollTop > 500) {
-		$('.ma-mask').css({"display": "block"})
-	} else {
-		$('.ma-mask').css({"display": "none"})
-	}
-
 	if(scrollTop > 16000){//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-Visual-head').addClass('title-move')
 
@@ -350,7 +341,26 @@ $(window).scroll(function(){
 	}
 
 
-	
+	// 回到顶部
+	if (scrollTop > 500) {
+		$('.ma-mask').css({"display": "block"})
+	} else {
+		$('.ma-mask').css({"display": "none"})
+	}
+
+	// 平行世界--旋转
+	var worldRun = new Swiper('.swiper-ma-world', {
+        effect : 'coverflow',
+        slidesPerView: 3,
+        centeredSlides: true,
+        coverflowEffect: {
+            rotate : -50,
+            stretch :-50,
+            depth: 80,
+            modifier : 1,
+            shadows : false 
+        }
+    });
 });
 
 
