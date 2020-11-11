@@ -532,27 +532,31 @@ $(window).scroll(function () {
 		$('.you-funtouch-left').removeClass('title-run')
 	}
 
+	new Swiper('.swiper-container1',{
+		autoplay:3000,
+		speed:1000,
+		autoplayDisableOnInteraction : false,//用户操作swiper之后，是否禁止autoplay
+		loop:true,
+		centeredSlides : true,
+		slidesPerView:2,
+		pagination : '.swiper-pagination',
+		paginationClickable:true,//点击分页器是否会切换
+		prevButton:'.swiper-button-prev',
+		nextButton:'.swiper-button-next',
+		onInit:function(swiper){//回调函数，初始化后执行。
+			swiper.slides[2].className="swiper-slide swiper-slide-active";//第一次打开不要动画
+			},	
+	}) 
 
-
-
-	new Swiper('.swiper-container', {
-		loop: true, //开启循环
-		loopedSlides: 5, //在loop模式下使用slidesPerview:'auto',还需使用该参数设置所要用到的loop个数。
-		slidesPerView: 'auto', //设置slider容器能够同时显示的slides数量(carousel模式)。另外，支持'auto'值，会根据容器container的宽度调整slides数目。
-		effect: 'coverflow', //可以实现3D效果的轮播,
-		centeredSlides: true, //设定为true时，active slide会居中，而不是默认状态下的居左。
-		coverflow: {
-			rotate: 0, //slide做3d旋转时Y轴的旋转角度。默认50。
-			stretch: 200, //每个slide之间的拉伸值，越大slide靠得越紧。 默认0。
-			depth: 150, //slide的位置深度。值越大z轴距离越远，看起来越小。 默认100。
-			modifier: 1, //depth和rotate和stretch的倍率，相当于depth*modifier、rotate*modifier、stretch*modifier，值越大这三个参数的效果越明显。默认1。
-			slideShadows: false, //开启slide阴影。默认 true。
-		},
-		// scrollbar: {
-		// 	el: '.swiper-scrollbar',
-		//   },
-	});
-
+	new Swiper('.swiper-container2',{
+		scrollbar: {
+		el: '.swiper-scrollbar',
+		hide: true,
+		draggable: false,
+		snapOnRelease: true,
+		dragSize: 20,
+		}
+		})
 
 });
 
@@ -564,6 +568,8 @@ $(window).resize(function () {
 	}
 
 });
+
+
 
 function running() {
 	// 平行世界--旋转
