@@ -4,6 +4,7 @@ var timer = null
 var li = $('.ma-behavior-tags ul li')
 $(window).scroll(function () {
 	var scrollTop = $(window).scrollTop()
+	console.log(scrollTop)
 	if (scrollTop > 100) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-new-world-title').addClass('title-move')
 		$('.ma-new-world-text').addClass('text-run')
@@ -169,7 +170,7 @@ $(window).scroll(function () {
 		$('.ma-icon-text').removeClass('text-run')
 		$('.ma-icon-title').removeClass('title-run')
 	}
-	
+
 	if (scrollTop > 9230) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-icon-fly').addClass('animated bounceOutDown')
 
@@ -385,11 +386,11 @@ $(window).scroll(function () {
 		$('.you-Visual-leftwo-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 18900) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 19000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-Memory-head-title').addClass('title-run')
 		$('.you-Memory-head-text').addClass('text-run')
 
-		if (scrollTop > 20300) {
+		if (scrollTop > 20200) {
 			$('.you-Memory-head-title').removeClass('title-run')
 			$('.you-Memory-head-text').removeClass('text-run')
 		}
@@ -402,7 +403,7 @@ $(window).scroll(function () {
 		$('.you-fuse-title').addClass('title-run')
 		$('.you-fuse-text').addClass('text-run')
 
-		if (scrollTop > 20600) {
+		if (scrollTop > 20700) {
 			$('.you-fuse-title').removeClass('title-run')
 			$('.you-fuse-text').removeClass('text-run')
 		}
@@ -412,11 +413,11 @@ $(window).scroll(function () {
 	}
 
 
-	if (scrollTop > 20400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 20000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-Memory-leftwo-title').addClass('title-run')
 		$('.you-Memory-leftwo-text').addClass('text-run')
 
-		if (scrollTop > 21800) {
+		if (scrollTop > 21200) {
 			$('.you-Memory-leftwo-title').removeClass('title-run')
 			$('.you-Memory-leftwo-text').removeClass('text-run')
 		}
@@ -425,24 +426,24 @@ $(window).scroll(function () {
 		$('.you-Memory-leftwo-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 21500) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.you-fluent-title').addClass('title-run')
-		$('.you-fluent-text').addClass('text-run')
+	// if (scrollTop > 21500) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	// 	$('.you-fluent-title').addClass('title-run')
+	// 	$('.you-fluent-text').addClass('text-run')
 
-		if (scrollTop > 22500) {
-			$('.you-fluent-title').removeClass('title-run')
-			$('.you-fluent-text').removeClass('text-run')
-		}
-	} else {
-		$('.you-fluent-title').removeClass('title-run')
-		$('.you-fluent-text').removeClass('text-run')
-	}
+	// 	if (scrollTop > 22500) {
+	// 		$('.you-fluent-title').removeClass('title-run')
+	// 		$('.you-fluent-text').removeClass('text-run')
+	// 	}
+	// } else {
+	// 	$('.you-fluent-title').removeClass('title-run')
+	// 	$('.you-fluent-text').removeClass('text-run')
+	// }
 
-	if (scrollTop > 21800) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 20000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-album-head-title').addClass('title-run')
 		$('.you-album-head-text').addClass('text-run')
 
-		if (scrollTop > 22900) {
+		if (scrollTop > 22200) {
 			$('.you-album-head-title').removeClass('title-run')
 			$('.you-album-head-text').removeClass('text-run')
 		}
@@ -451,11 +452,11 @@ $(window).scroll(function () {
 		$('.you-album-head-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 22900) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 22200) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-work-head-title').addClass('title-run')
 		$('.you-work-head-text').addClass('text-run')
 
-		if (scrollTop > 24200) {
+		if (scrollTop > 23300) {
 			$('.you-work-head-title').removeClass('title-run')
 			$('.you-work-head-text').removeClass('text-run')
 		}
@@ -464,11 +465,11 @@ $(window).scroll(function () {
 		$('.you-work-head-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 23400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 22300) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-work-left-title').addClass('title-run')
 		$('.you-work-left-text').addClass('text-run')
 
-		if (scrollTop > 24400) {
+		if (scrollTop > 23600) {
 			$('.you-work-left-title').removeClass('title-run')
 			$('.you-work-left-text').removeClass('text-run')
 		}
@@ -477,11 +478,11 @@ $(window).scroll(function () {
 		$('.you-work-left-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 24400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 23400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-work-leftwo-title').addClass('title-run')
 		$('.you-work-leftwo-text').addClass('text-run')
 
-		if (scrollTop > 25400) {
+		if (scrollTop > 24500) {
 			$('.you-work-leftwo-title').removeClass('title-run')
 			$('.you-work-leftwo-text').removeClass('text-run')
 		}
@@ -490,11 +491,11 @@ $(window).scroll(function () {
 		$('.you-work-leftwo-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 24900) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 24200) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-footer-lifethree-title').addClass('title-run')
 		$('.you-footer-lifethree-text').addClass('text-run')
 
-		if (scrollTop > 26200) {
+		if (scrollTop > 25400) {
 			$('.you-footer-lifethree-title').removeClass('title-run')
 			$('.you-footer-lifethree-text').removeClass('text-run')
 		}
@@ -503,11 +504,11 @@ $(window).scroll(function () {
 		$('.you-footer-lifethree-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 25900) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 24800) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-open-head-title').addClass('title-run')
 		$('.you-open-head-text').addClass('text-run')
 
-		if (scrollTop > 26900) {
+		if (scrollTop > 26000) {
 			$('.you-open-head-title').addClass('title-run')
 			$('.you-open-head-text').addClass('text-run')
 		}
@@ -516,11 +517,11 @@ $(window).scroll(function () {
 		$('.you-open-head-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 26100) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 25100) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-open-left-title').addClass('title-run')
 		$('.you-open-left-text').addClass('text-run')
 
-		if (scrollTop > 27200) {
+		if (scrollTop > 26500) {
 			$('.you-open-left-title').addClass('title-run')
 			$('.you-open-left-text').addClass('text-run')
 		}
@@ -529,11 +530,11 @@ $(window).scroll(function () {
 		$('.you-open-left-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 26900) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 25600) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-open-leftwo-title').addClass('title-run')
 		$('.you-open-leftwo-text').addClass('text-run')
 
-		if (scrollTop > 27800) {
+		if (scrollTop > 27000) {
 			$('.you-open-leftwo-title').addClass('title-run')
 			$('.you-open-leftwo-text').addClass('text-run')
 		}
@@ -542,11 +543,11 @@ $(window).scroll(function () {
 		$('.you-open-leftwo-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 27300) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 26200) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-footer-end-title').addClass('title-run')
 		$('.you-footer-end-text').addClass('text-run')
 
-		if (scrollTop > 28200) {
+		if (scrollTop > 27500) {
 			$('.you-footer-end-title').addClass('title-run')
 			$('.you-footer-end-text').addClass('text-run')
 		}
@@ -555,21 +556,21 @@ $(window).scroll(function () {
 		$('.you-footer-end-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 28400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 27400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-marvellous').addClass('title-run')
 
-		if (scrollTop > 29300) {
+		if (scrollTop > 28600) {
 			$('.you-marvellous').addClass('title-run')
 		}
 	} else {
 		$('.you-marvellous').removeClass('title-run')
 	}
 
-	if (scrollTop > 28800) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 27500) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-one-title').addClass('title-run')
 		$('.you-one-text').addClass('text-run')
 
-		if (scrollTop > 29600) {
+		if (scrollTop > 28900) {
 			$('.you-one-title').addClass('title-run')
 			$('.you-one-text').addClass('text-run')
 		}
@@ -577,11 +578,11 @@ $(window).scroll(function () {
 		$('.you-one-title').removeClass('title-run')
 		$('.you-one-text').removeClass('text-run')
 	}
-	if (scrollTop > 28800) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 28000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-funtouch-left-title').addClass('title-run')
 		$('.you-funtouch-left-text').addClass('text-run')
 
-		if (scrollTop > 29600) {
+		if (scrollTop > 29500) {
 			$('.you-funtouch-left-title').addClass('title-run')
 			$('.you-funtouch-left-text').addClass('text-run')
 		}
@@ -590,7 +591,7 @@ $(window).scroll(function () {
 		$('.you-funtouch-left-text').removeClass('text-run')
 	}
 
-	
+
 	if (scrollTop > 29100) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-funtouch-left').addClass('title-run')
 
@@ -609,31 +610,30 @@ $(window).scroll(function () {
 		$('.you-funtouch-left').removeClass('title-run')
 	}
 
-	new Swiper('.swiper-container1',{
-		autoplay:3000,
-		speed:1000,
-		autoplayDisableOnInteraction : false,//用户操作swiper之后，是否禁止autoplay
-		loop:true,
-		centeredSlides : true,
-		slidesPerView:2,
-		pagination : '.swiper-pagination',
-		paginationClickable:true,//点击分页器是否会切换
-		prevButton:'.swiper-button-prev',
-		nextButton:'.swiper-button-next',
-		onInit:function(swiper){//回调函数，初始化后执行。
-			swiper.slides[2].className="swiper-slide swiper-slide-active";//第一次打开不要动画
-			},	
-	}) 
-
-	new Swiper('.swiper-container2',{
+	new Swiper('.swiper-container1', {
+		slidesPerView: 3,
+		spaceBetween: 10,
+		centeredSlides: true,
+		loop: true,
 		scrollbar: {
-		el: '.swiper-scrollbar',
-		hide: true,
-		draggable: false,
-		snapOnRelease: true,
-		dragSize: 20,
-		}
-		})
+			el: '.swiper-scrollbar',
+			hide: false,
+		  },
+	})
+
+	new Swiper('.swiper-container2', {
+		scrollbar: {
+			el: '.swiper-scrollbar',
+			hide: false,
+		  },
+	})
+
+	new Swiper('.swiper-container3', {
+		scrollbar: {
+			el: '.swiper-scrollbar',
+			hide: false,
+		  },
+	})
 
 });
 
@@ -649,16 +649,16 @@ $(window).resize(function () {
 function running() {
 	// 平行世界--旋转
 	var worldRun = new Swiper('.swiper-ma-world', {
-	    effect : 'coverflow',
-	    slidesPerView: 3,
-	    centeredSlides: true,
-	    coverflowEffect: {
-	        rotate : -50,
-	        stretch :-30,
-	        depth: 80,
-	        modifier : 1,
-	        slideShadows : false 
-	    }
+		effect: 'coverflow',
+		slidesPerView: 3,
+		centeredSlides: true,
+		coverflowEffect: {
+			rotate: -50,
+			stretch: -30,
+			depth: 80,
+			modifier: 1,
+			slideShadows: false
+		}
 	});
 
 	$('.ma-btn-left').click(function () {
