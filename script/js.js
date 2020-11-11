@@ -12,8 +12,8 @@ $(window).scroll(function () {
 	}
 
 	new Swiper('.swiper-container1', {
-		slidesPerView: 3,
-		spaceBetween: 10,
+		slidesPerView: 5,
+		spaceBetween: 50,
 		centeredSlides: true,
 		loop: true,
 		scrollbar: {
@@ -652,7 +652,6 @@ function rizesall (scrollTop) {
 	if (scrollTop > 100) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-new-world-title').addClass('title-move')
 		$('.ma-new-world-text').addClass('text-run')
-
 
 		if (scrollTop > 1175) {
 			$('.ma-new-world-title').removeClass('title-move')
