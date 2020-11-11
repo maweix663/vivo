@@ -1332,7 +1332,6 @@ li.click(function(){
 
 
 // 相册
-// $('.you-album-ul .you-album-night').animate({width:'460px'},'slow');
 $('.you-album-ul').on('click','li',function(){
 	$(this).addClass('curr')
 	.stop()
@@ -1345,4 +1344,5 @@ $('.you-album-ul').on('click','li',function(){
 	width:'175px'
 	},'slow')
 	.removeClass('curr');
+	$(this).find('p').stop().fadeIn('slow').parent().siblings().find('p').stop().fadeOut('slow')
 })
