@@ -1102,7 +1102,7 @@ function rizesall (scrollTop) {
 		li.eq(0).addClass('active')
 	}
 
-	if (scrollTop > 9464) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 9723) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-deformation-title').addClass('title-run')
 		$('.ma-deformation-text').addClass('text-run')
 		if (scrollTop > 10462) {
