@@ -234,6 +234,14 @@
     }
 }
 
+/*屏幕小于1200px*/
+@media only screen and (max-width: 1200px) { 
+    .ma-box-concent {
+        width: 303px;
+        margin: 0 auto;
+    }
+}
+
 /*大标题移动*/
 @keyframes titltmove {
     from {

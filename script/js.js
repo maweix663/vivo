@@ -527,6 +527,19 @@ function rizebig (scrollTop) {
 		$('.you-Memory-leftwo-text').removeClass('text-run')
 	}
 
+	if (scrollTop > 17600) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-Memory-leftwo-title-active').addClass('title-run')
+		$('.you-Memory-leftwo-title-active').addClass('text-run')
+
+		if (scrollTop > 18600) {
+			$('.you-Memory-leftwo-title-active').removeClass('title-run')
+			$('.you-Memory-leftwo-title-active').removeClass('text-run')
+		}
+	} else {
+		$('.you-Memory-leftwo-title-active').removeClass('title-run')
+		$('.you-Memory-leftwo-title-active').removeClass('text-run')
+	}
+
 	// if (scrollTop > 21500) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 	// 	$('.you-fluent-title').addClass('title-run')
 	// 	$('.you-fluent-text').addClass('text-run')
@@ -1102,11 +1115,11 @@ function rizesall (scrollTop) {
 	}
 
 
-	if (scrollTop > 16900) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 15000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-Visual-head-title').addClass('title-run')
 		$('.you-Visual-head-text').addClass('text-run')
 
-		if (scrollTop > 18300) {
+		if (scrollTop > 16100) {
 			$('.you-Visual-head-title').removeClass('title-run')
 			$('.you-Visual-head-text').removeClass('text-run')
 		}
@@ -1115,11 +1128,11 @@ function rizesall (scrollTop) {
 		$('.you-Visual-head-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 17400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 15400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-Visual-left-title').addClass('title-run')
 		$('.you-Visual-left-text').addClass('text-run')
 
-		if (scrollTop > 18400) {
+		if (scrollTop > 16500) {
 			$('.you-Visual-left-title').removeClass('title-run')
 			$('.you-Visual-left-text').removeClass('text-run')
 		}
@@ -1128,11 +1141,11 @@ function rizesall (scrollTop) {
 		$('.you-Visual-left-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 18400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 16000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-Visual-leftwo-title').addClass('title-run')
 		$('.you-Visual-leftwo-text').addClass('text-run')
 
-		if (scrollTop > 19400) {
+		if (scrollTop > 17100) {
 			$('.you-Visual-leftwo-title').removeClass('title-run')
 			$('.you-Visual-leftwo-text').removeClass('text-run')
 		}
@@ -1141,11 +1154,11 @@ function rizesall (scrollTop) {
 		$('.you-Visual-leftwo-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 19000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 16600) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-Memory-head-title').addClass('title-run')
 		$('.you-Memory-head-text').addClass('text-run')
 
-		if (scrollTop > 20200) {
+		if (scrollTop > 17900) {
 			$('.you-Memory-head-title').removeClass('title-run')
 			$('.you-Memory-head-text').removeClass('text-run')
 		}
@@ -1154,11 +1167,11 @@ function rizesall (scrollTop) {
 		$('.you-Memory-head-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 19400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 17000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-fuse-title').addClass('title-run')
 		$('.you-fuse-text').addClass('text-run')
 
-		if (scrollTop > 20700) {
+		if (scrollTop > 18200) {
 			$('.you-fuse-title').removeClass('title-run')
 			$('.you-fuse-text').removeClass('text-run')
 		}
@@ -1168,17 +1181,30 @@ function rizesall (scrollTop) {
 	}
 
 
-	if (scrollTop > 20000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 17600) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-Memory-leftwo-title').addClass('title-run')
 		$('.you-Memory-leftwo-text').addClass('text-run')
 
-		if (scrollTop > 21200) {
+		if (scrollTop > 18600) {
 			$('.you-Memory-leftwo-title').removeClass('title-run')
 			$('.you-Memory-leftwo-text').removeClass('text-run')
 		}
 	} else {
 		$('.you-Memory-leftwo-title').removeClass('title-run')
 		$('.you-Memory-leftwo-text').removeClass('text-run')
+	}
+
+	if (scrollTop > 18200) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		$('.you-Memory-leftwo-title-active').addClass('title-run')
+		$('.you-Memory-leftwo-title-active').addClass('text-run')
+
+		if (scrollTop > 19200) {
+			$('.you-Memory-leftwo-title-active').removeClass('title-run')
+			$('.you-Memory-leftwo-title-active').removeClass('text-run')
+		}
+	} else {
+		$('.you-Memory-leftwo-title-active').removeClass('title-run')
+		$('.you-Memory-leftwo-title-active').removeClass('text-run')
 	}
 
 	// if (scrollTop > 21500) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
@@ -1194,11 +1220,11 @@ function rizesall (scrollTop) {
 	// 	$('.you-fluent-text').removeClass('text-run')
 	// }
 
-	if (scrollTop > 20000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 18800) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-album-head-title').addClass('title-run')
 		$('.you-album-head-text').addClass('text-run')
 
-		if (scrollTop > 22200) {
+		if (scrollTop > 20000) {
 			$('.you-album-head-title').removeClass('title-run')
 			$('.you-album-head-text').removeClass('text-run')
 		}
@@ -1207,11 +1233,11 @@ function rizesall (scrollTop) {
 		$('.you-album-head-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 22200) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 20000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-work-head-title').addClass('title-run')
 		$('.you-work-head-text').addClass('text-run')
 
-		if (scrollTop > 23300) {
+		if (scrollTop > 21200) {
 			$('.you-work-head-title').removeClass('title-run')
 			$('.you-work-head-text').removeClass('text-run')
 		}
@@ -1220,11 +1246,11 @@ function rizesall (scrollTop) {
 		$('.you-work-head-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 22300) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 20300) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-work-left-title').addClass('title-run')
 		$('.you-work-left-text').addClass('text-run')
 
-		if (scrollTop > 23600) {
+		if (scrollTop > 21400) {
 			$('.you-work-left-title').removeClass('title-run')
 			$('.you-work-left-text').removeClass('text-run')
 		}
@@ -1233,11 +1259,11 @@ function rizesall (scrollTop) {
 		$('.you-work-left-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 23400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 21000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-work-leftwo-title').addClass('title-run')
 		$('.you-work-leftwo-text').addClass('text-run')
 
-		if (scrollTop > 24500) {
+		if (scrollTop > 22000) {
 			$('.you-work-leftwo-title').removeClass('title-run')
 			$('.you-work-leftwo-text').removeClass('text-run')
 		}
