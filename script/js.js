@@ -11,6 +11,17 @@ $(window).scroll(function () {
 		rizesall(scrollTop)
 	}
 
+	// 回到顶部
+	if (scrollTop > 500) {
+		$('.ma-mask').css({
+			"display": "block"
+		})
+	} else {
+		$('.ma-mask').css({
+			"display": "none"
+		})
+	}
+
 	new Swiper('.swiper-container1', {
 		slidesPerView: 5,
 		spaceBetween: 50,
@@ -630,16 +641,6 @@ function rizebig (scrollTop) {
 	if (scrollTop > 29100) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-funtouch-left').addClass('title-run')
 
-		// 回到顶部
-		if (scrollTop > 500) {
-			$('.ma-mask').css({
-				"display": "block"
-			})
-		} else {
-			$('.ma-mask').css({
-				"display": "none"
-			})
-		}
 		if (scrollTop > 30100) $('.you-funtouch-left').removeClass('title-run')
 	} else {
 		$('.you-funtouch-left').removeClass('title-run')
@@ -675,14 +676,14 @@ function rizesall (scrollTop) {
 		$('.ma-new-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 1650) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 1050) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-huarong-title').addClass('title-run')
 		$('.ma-huarong-text').addClass('text-run')
 
 		$('.ma-huarong-grid-bg').addClass('huarong-bg')
 		$('.ma-huarong-grid-img').addClass('huarong-img')
 
-		if (scrollTop > 2600) {
+		if (scrollTop > 2010) {
 			$('.ma-huarong-grid-bg').removeClass('huarong-bg')
 			$('.ma-huarong-grid-img').removeClass('huarong-img')
 			$('.ma-huarong-text').removeClass('text-run')
@@ -695,11 +696,11 @@ function rizesall (scrollTop) {
 		$('.ma-huarong-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 2450) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 1301) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-template-title').addClass('title-run')
 		$('.ma-template-text').addClass('text-run')
 
-		if (scrollTop > 3800) {
+		if (scrollTop > 2563) {
 			$('.ma-template-text').removeClass('text-run')
 			$('.ma-template-title').removeClass('title-run')
 		}
@@ -708,11 +709,11 @@ function rizesall (scrollTop) {
 		$('.ma-template-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 3450) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 2193) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-new-icon-title').addClass('title-run')
 		$('.ma-new-icon-text').addClass('text-run')
 
-		if (scrollTop > 4600) {
+		if (scrollTop > 3028) {
 			$('.ma-new-icon-text').removeClass('text-run')
 			$('.ma-new-icon-title').removeClass('title-run')
 		}
