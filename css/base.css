@@ -1086,6 +1086,56 @@
     	margin-left: -75px;
     }
 
+    /*鹅卵石交互体系*/
+	.ma-box-concent {
+		padding: 60px 10px;
+	}
+
+    .ma-box-system {
+    	padding-top: 0;
+    }
+
+    .ma-system h4{
+    	font-size: 38px;
+    	line-height: 120px;
+    	padding-bottom: 0;
+    }
+
+    .ma-system p{
+    	font-size: 20px;
+    }
+
+    .ma-system-content{
+    	height: 400px;
+    	border-radius: 16px;
+    	padding: 10px;
+
+    }
+
+    .ma-system-img-left{
+    	width: 50%;
+    	left: 25%;
+    	bottom: 20px;
+    }
+
+    .ma-system-img-right{
+    	height: 240px;
+    }
+
+    .ma-box-system h5{
+	    font-size: 20px;
+	    letter-spacing: 0;
+	    line-height: 30px;
+	    margin-bottom: 10px;
+    }
+
+    .ma-box-system span{
+    	display: inline-block;
+    	font-size: 12px;
+    	line-height: 20px;
+    }
+
+
 
     /*大标题移动*/
     .title-move {

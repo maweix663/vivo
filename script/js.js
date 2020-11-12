@@ -713,7 +713,7 @@ function rizesall (scrollTop) {
 		$('.ma-new-icon-title').addClass('title-run')
 		$('.ma-new-icon-text').addClass('text-run')
 
-		if (scrollTop > 3028) {
+		if (scrollTop > 3229) {
 			$('.ma-new-icon-text').removeClass('text-run')
 			$('.ma-new-icon-title').removeClass('title-run')
 		}
@@ -722,12 +722,12 @@ function rizesall (scrollTop) {
 		$('.ma-new-icon-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 4450) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 2681) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-system-title').addClass('title-move')
 		$('.ma-system-text').addClass('text-run')
 
 
-		if (scrollTop > 5300) {
+		if (scrollTop > 3720) {
 			$('.ma-system-text').removeClass('text-run')
 			$('.ma-system-title').removeClass('title-move')
 		}
@@ -736,12 +736,12 @@ function rizesall (scrollTop) {
 		$('.ma-system-title').removeClass('title-move')
 	}
 
-	if (scrollTop > 4550) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 3086) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-system-view-title').addClass('title-run')
 		$('.ma-system-view-text').addClass('text-run')
 
 
-		if (scrollTop > 5600) {
+		if (scrollTop > 3948) {
 			$('.ma-system-view-text').removeClass('text-run')
 			$('.ma-system-view-title').removeClass('title-run')
 		}
