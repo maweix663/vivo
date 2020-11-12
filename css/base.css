@@ -103,6 +103,7 @@
 .swiper-ma-world {
 	height: 700px;
 	margin-top: 100px;
+	margin-left: -50px;
 }
 
 .ma-new-world-view .ma-right img {
@@ -373,7 +374,7 @@
 .ma-super img {
 	width: 240px;
 	height: 526px;
-	margin-left: 60px;
+	margin-left: 110px;
 }
 
 .ma-super-view {
@@ -795,7 +796,7 @@
 	height: 592px;
 	top: 260px;
 	left: 50%;
-	margin-left: -185px;
+	margin-left: -135px;
 }
 
 .ma-behavior-tags {
@@ -906,8 +907,8 @@
 }
 
 
-/*屏幕大于1024px*/
-@media only screen and (min-width: 1024px) {
+/*屏幕大于1200px*/
+@media only screen and (min-width: 1200px) {
     /*华容网格*/
     .huarong-bg {
         position: relative;
@@ -976,14 +977,14 @@
 
 
 
-.number-animate{margin-left: 50px; height: 400px;font-size: 100px;overflow: hidden; display: inline-block; position: relative; }
+.number-animate{margin-left: 80px; height: 400px;font-size: 100px;overflow: hidden; display: inline-block; position: relative; }
 .number-animate .number-animate-dot{ width: 21px; float: left; text-align: center;}
 .number-animate .number-animate-dom{ width: 200px;  text-align: center; float: left; position: relative; top: 0;}
 .number-animate .number-animate-dom img,
 .number-animate .number-animate-dot img{float: left;width: 100%;height: 400px;}
 
-/*屏幕小于1024px*/
-@media only screen and (max-width: 1024px) {
+/*屏幕小于1200px*/
+@media only screen and (max-width: 1200px) {
     .ma-new-world h4{
     	font-size: 38px;
     	color: #E86855;

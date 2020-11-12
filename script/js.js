@@ -5,7 +5,7 @@ var li = $('.ma-behavior-tags ul li')
 $(window).scroll(function () {
 	var scrollTop = $(window).scrollTop()
 
-	if (metaWidth > 1024) {
+	if (metaWidth > 1200) {
 		rizebig(scrollTop)
 	} else {
 		rizesall(scrollTop)
@@ -49,7 +49,7 @@ $(window).scroll(function () {
 
 });
 
-// 分辨率大于 1024
+// 分辨率大于 1200
 function rizebig (scrollTop) {
 	if (scrollTop > 100) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-new-world-title').addClass('title-move')
@@ -337,15 +337,17 @@ function rizebig (scrollTop) {
 		$('.ma-fly-title').removeClass('title-run')
 	}
 
-	console.log(scrollTop)
 	if (scrollTop > 14140) {
 		$('.ma-weather-bg1').addClass('bg-opacity-one')
+		$('.ma-weather-bg2').addClass('bg-opacity-two')
 
 		if (scrollTop > 15738) {
 			$('.ma-weather-bg1').removeClass('bg-opacity-one')
+			$('.ma-weather-bg2').removeClass('bg-opacity-two')
 		}
 	} else {
 		$('.ma-weather-bg1').removeClass('bg-opacity-one')
+		$('.ma-weather-bg2').removeClass('bg-opacity-two')
 	}
 
 	if (scrollTop > 14437) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
@@ -658,7 +660,7 @@ function rizebig (scrollTop) {
 	}
 }
 
-// 分辨率小于 1024
+// 分辨率小于 1200
 function rizesall (scrollTop) {
 	console.log(scrollTop)
 	if (scrollTop > 100) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
@@ -1272,13 +1274,13 @@ function running() {
 	// 平行世界--旋转
 	var obj = {}
 
-	if (metaWidth > 1024) {
+	if (metaWidth > 1200) {
 		obj = {
 			effect: 'coverflow',
 			slidesPerView: 3,
 			centeredSlides: true,
 			coverflowEffect: {
-				rotate: -50,
+				rotate: -40,
 				stretch: -30,
 				depth: 80,
 				modifier: 1,
