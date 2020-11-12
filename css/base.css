@@ -1165,12 +1165,9 @@
     }
 
     .ma-new-icon-content{
-    	width: 100%;
-    }
-
-    .ma-new-icon-content{
     	top: 0;
-    	top: 50px;
+    	width: 100%;
+    	height: 100%;
     }
 
     .ma-new-icon-left img{
@@ -1302,7 +1299,7 @@
 
     /*时间线设计体系*/
     .ma-box-time{
-    	padding: 0;
+    	padding: 0 0 60px 0;
     }
 
     .ma-time-head h3{
@@ -1509,9 +1506,67 @@
 	    margin-left: -60px;
     }
 
+    .ma-behavior-tags{
+	    margin-left: -140px;
+	    width: 280px;
+    }
 
+    .ma-behavior-tags ul li{
+    	width: 40px;
+    	font-size: 14px;
+    }
 
+    .ma-behavior-tags ul li.active:before{
+    	width: 40px;
+    	left: 0;
+    }
 
+    .ma-behavior-step{
+    	width: 400px;
+	    margin-left: -200px;
+	    height: 100px;
+	    margin-top: -50px;
+    }
+
+    .number-animate{
+    	margin-left: 0; 
+	    height: 100px;
+	    width: 100%;
+    }
+    .number-animate .number-animate-dom{
+    	width: 100px;
+    }
+
+    .number-animate .number-animate-dom img, .number-animate .number-animate-dot img{
+    	height: 100px;
+    }
+
+    .ma-deformation{
+    	height: 500px;
+
+    }
+
+    .ma-deformation-view{
+	    height: auto;
+	    width: 100%;
+	    bottom: 0;
+	    left: 0;
+	    margin-left: 0;
+    }
+
+    .ma-deformation-img-left, .ma-deformation-img-right{
+	    width: 120px;
+	    height: auto; 
+	    bottom: 0px;
+    }
+
+    .ma-deformation-img-right{
+    	right: 10%;
+    }
+
+    .ma-deformation-img-left{
+    	left: 10%;
+    }
 
     /*大标题移动*/
     .title-move {

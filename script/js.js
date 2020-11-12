@@ -1072,10 +1072,10 @@ function rizesall (scrollTop) {
 	}
 
 	
-	if (scrollTop > 15340) {
+	if (scrollTop > 8999) {
 		numRun()
 
-		if (scrollTop > 16900){
+		if (scrollTop > 10200){
 			num = 0
 			clearInterval(timer)
 			numRun()
@@ -1089,10 +1089,10 @@ function rizesall (scrollTop) {
 		li.eq(0).addClass('active')
 	}
 
-	if (scrollTop > 16026) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 9464) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-deformation-title').addClass('title-run')
 		$('.ma-deformation-text').addClass('text-run')
-		if (scrollTop > 17046) {
+		if (scrollTop > 10462) {
 			$('.ma-deformation-text').removeClass('text-run')
 			$('.ma-deformation-title').removeClass('title-run')
 		}
