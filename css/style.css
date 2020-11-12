@@ -273,7 +273,7 @@
 /*小标题移动*/
 @keyframes mymove {
     from {
-        top: 100px;
+        top: -100px;
         opacity: 0;
     }
 
@@ -288,7 +288,7 @@
 /*Safari and Chrome*/
     {
     from {
-        top: 100px;
+        top: -100px;
         opacity: 0;
     }
 
@@ -301,7 +301,7 @@
 /*文字移动*/
 @keyframes textmove {
     from {
-        bottom: 100px;
+        bottom: -100px;
         opacity: 0;
     }
 
@@ -316,7 +316,7 @@
 /*Safari and Chrome*/
     {
     from {
-        bottom: 100px;
+        bottom: -100px;
         opacity: 0;
     }
 

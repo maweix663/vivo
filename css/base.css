@@ -10,9 +10,7 @@
 .ma-head {
 	background-image: url("../images/head-01.jpg");
     background-repeat: no-repeat;   
-    background-size: 100% 100%;  
-    max-height: 1024px;
-    min-height: 768px;
+    background-size: 100% 100%; 
     height: calc(100vh - 100px); 
     position: relative;  
 }
@@ -22,6 +20,7 @@
     position: absolute;
     left: 50%;
     bottom: 5%;
+    display: none;
 }
 
 /*全新数字世界出发点*/
@@ -899,6 +898,15 @@
 	right: 0px;
 }
 
+.ma-width-5 {
+	width: 50%;
+}
+
+.ma-lens-width {
+	margin-top: 40px;
+	width: 50%;
+}
+
 /*时光视窗*/
 .bg-opacity-one {
 	animation: bgopacity .25s ease-in-out forwards;
@@ -1063,81 +1071,135 @@
 
 /*屏幕小于1200px*/
 @media only screen and (max-width: 1200px) {
+	.ma-box-block{
+    	overflow: hidden;
+    	padding: 10px;
+    	border-radius: 16px;
+	    height: 600px;
+	    width: 303px;
+	    margin: 20px auto 20px auto;
+	    position: relative;
+	    box-sizing: border-box;
+    }
+
+	.ma-box{
+		padding-top: 30px;
+	}
+
+	.ma-head{
+		height: 212px;
+	}
+
+	.ma-head a{
+		margin-left: -110px;
+	}
+
     .ma-new-world h4{
-    	font-size: 38px;
+    	font-size: 32px;
     	color: #E86855;
-    	line-height: 120px;
-    	padding-bottom: 0;
+    	line-height: 42px;
+    	padding-bottom: 12px;
     }
 
     .ma-new-world p {
-    	font-size: 20px;
+    	font-size: 17px;
+    	line-height: 27px;
     }
 
-    .ma-new-world-view{
-    	height: 500px;
+    .ma-new-world-view .ma-left {
+    	height: 150px;
+    }
+
+    .ma-new-world-view .ma-left-content img {
+    	display: none;
     }
 
     .ma-new-world-view .ma-left, .ma-right{
-    	width: 50%;
+    	width: 100%;
     }
 
     .ma-new-world-view .ma-left-content{
     	left: 0;
     	margin-left: 0;
-    	height: 340px;
+    	height: auto;
     	width: 100%;
+    	top: 0;
+    	margin-top: 0;
     }
 
     .ma-box h5{
-	    font-size: 30px;
-	    line-height: 50px;
+	    font-size: 24px;
+	    line-height: 32px;
     }
 
-    .ma-box span{
+    .ma-new-world-view .ma-left span{
     	display: inline-block;
-    	font-size: 20px;
-    	line-height: 30px;
+    	font-size: 14px;
+    	line-height: 24px;
     }
 
     .ma-new-world-click{
     	width: 100px;
     	height: 100px;
+    	display: none;
     }
 
     .swiper-ma-world{
-    	height: 200px;
-    	margin-top: 150px;
+    	height: 400px;
+    	margin-top: 0;
     	margin-left: -40px;
     }
 
+    .ma-new-world-view{
+    	padding-top: 90px;
+    	display: inline-block;
+    	height: auto;
+    }
+
     .ma-new-world-view .ma-right img{
-    	height: 200px;
+    	height: 406px;
     }
 
     /*华容网格*/
     .ma-huarong-grid{
-    	height: 300px;
+    	height: 610px;
+    	position: relative;
+    }
+
+    .ma-huarong-grid-right{
+    	flex: none;
+    	position: absolute;
+    	width: 100%;
+    	height: 150px;
+    	top: 60px;
+    	left: 0;
+    }
+
+    .ma-huarong-grid .ma-huarong-grid-left{
+    	position: absolute;
+    	top: 210px;
+    	height: 460px;
     }
 
     .ma-huarong-grid h5{
-    	font-size: 30px;
-    	line-height: 50px;
+    	font-size: 24px;
+    	line-height: 32px;
     }
 
     .ma-huarong-grid-content{
     	width: 100%;
+    	height: 120px;
     }
 
     .ma-huarong-grid-right span{
     	display: inline-block;
-	    font-size: 20px;
-	    line-height: 30px;
+	    font-size: 14px;
+    	line-height: 24px;
     }
 
     .ma-huarong-grid-img{
-	    width: 100px;
-	    margin-left: -50px;
+	    width: 230px;
+	    margin-left: -115px;
     }
 
     .ma-huarong-grid-bg,.ma-huarong-grid-content{
@@ -1151,33 +1213,72 @@
     	height: 100%;
     }
 
+    .ma-template .ma-new-world-view{
+    	padding-top: 0;
+    }
+
+    .ma-template .ma-new-world-view .ma-left{
+    	height: 170px;
+    }
+
+    .ma-template .ma-new-world-view .ma-right{
+    	height: 532px;
+    	position: relative;
+    }
+
     .ma-template .ma-new-world-view .ma-right img{
     	position: absolute;
-	    height: 300px;
-	    top: 100px;
-	    left: 40px;
+	    height: 502px;
+	    width: 230px;
+	    top: 30px;
+	    left: 50%;
+	    margin-left: -115px;
     }
 
     /*原子组件*/
     .ma-new-icon{
-    	height: 500px;
+    	display: block;
+    	position: relative;
+    	height: 770px;
     	box-sizing: border-box;
+    }
+
+    .ma-new-icon .ma-new-icon-left, .ma-new-icon-right{
+    	position: absolute;
+    	width: 100%;
+    }
+
+    .ma-new-icon .ma-new-icon-left{
+    	top: 238px;
+    	height: 502px;
+    }
+
+    .ma-new-icon .ma-new-icon-right{
+    	height: 158px;
+    }
+
+    .ma-new-icon-right span{
+    	display: inline-block;
+	    font-size: 14px;
+	    line-height: 24px;
     }
 
     .ma-new-icon-content{
     	top: 0;
     	width: 100%;
-    	height: 100%;
+    	height: auto;
     }
 
     .ma-new-icon-left img{
-    	width: 150px;
-    	margin-left: -75px;
+    	width: 230px;
+	    top: 0;
+	    margin-left: -115px;
+	    height: 502px;
     }
 
     /*鹅卵石交互体系*/
 	.ma-box-concent {
-		padding: 60px 10px;
+		padding: 60px 0 0 0;
 	}
 
     .ma-box-system {
@@ -1187,70 +1288,97 @@
 
     .ma-system h4{
     	font-size: 38px;
-    	line-height: 120px;
-    	padding-bottom: 0;
+    	line-height: 42px;
+    	padding-bottom: 12px;
     }
 
     .ma-system p{
-    	font-size: 20px;
+    	font-size: 17px;
+    	line-height: 27px;
+    }
+
+    .ma-system .ma-system-view{
+    	display: inline-block;
+    }
+
+    .ma-system-view-left, .ma-system-view-right{
+    	width: 100%;
+    }
+
+    .ma-system-view-left {
+    	padding-right: 0;
+    	height: 580px;
+    	overflow: hidden;
     }
 
     .ma-system-content{
-    	height: 400px;
+    	height: 100%;
     	border-radius: 16px;
     	padding: 10px;
 
     }
 
     .ma-system-img-left{
-    	width: 50%;
-    	left: 25%;
-    	bottom: 20px;
+    	width: 230px;
+	    left: 36px;
+	    height: 502px;
+	    bottom: -102px;
+    }
+
+    .ma-system-view-right{
+    	padding-left: 0;
+    	height: 580px;
+    	margin-top: 20px;
     }
 
     .ma-system-img-right{
-    	height: 240px;
+    	height: 400px;
     }
 
     .ma-box-system h5{
-	    font-size: 30px;
-	    line-height: 50px;
+	    font-size: 24px;
+	    line-height: 32px;
 	    margin-bottom: 10px;
-    }
-
-    .ma-system-content h5{
-    	font-size: 20px;
-	    line-height: 30px;
     }
 
     .ma-box-system span{
     	display: inline-block;
-    	font-size: 12px;
-    	line-height: 20px;
+    	font-size: 14px;
+    	line-height: 24px;
     }
 
     /*运行后台*/
     .ma-running {
-    	height: 400px;
-    	padding: 10px;
+    	margin-top: -10px!important;
+    }
+
+    .ma-box-phone {
+    	background: #fff;
+    }
+
+    .ma-width-5 {
+    	width: 283px;
+	    position: absolute;
+	    top: 10px;
     }
 
     .ma-running img{
-	    width: 120px;
-	    height: 280px;
-	    top: 60px;
-	    right: 10%;
+	    width: 190px;
+	    height: 410px;
+	    bottom: 40px;
+	    top: auto;
+	    right: 50%;
+	    margin-right: -95px;
     }
 
     .ma-running p{
-    	font-size: 20px;
-    	line-height: 30px;
+    	font-size: 14px;
+    	line-height: 24px;
     }
 
     /*超级卡包*/
     .ma-super{
-    	height: 400px;
-    	padding: 10px;
+    	height: 650px!important;
     }
 
     .ma-super-title-content{
@@ -1258,42 +1386,50 @@
     }
 
     .ma-super p{
-    	font-size: 20px;
-    	line-height: 30px;
+    	font-size: 14px;
+    	line-height: 24px;
     }
 
     .ma-super-view{
-    	margin: 40px auto auto auto;
-    	width: 394px;
-   		height: 240px;
+    	position: absolute;
+    	margin: 0;
+	    width: 283px;
+	    height: 500px;
     }
 
     .ma-super img{
-    	width: 100px;
-	    height: 200px;
-	    margin-left: 20px;
+    	width: 190px;
+	    height: 410px;
+	    margin-left: 45px;
+	    margin-top: 60px;
     }
 
     /*镜头包*/
     .ma-lens{
-    	padding: 60px 10px 0 10px;
-    	height: 600px!important;
+    	height: 626px!important;
+    	margin-bottom: 60px!important;
+    }
+
+    .ma-lens-width {
+    	margin: 0;
+    	width: 100%;
     }
 
     .ma-lens p{
-    	font-size: 20px;
-    	line-height: 30px;
+    	font-size: 14px;
+    	line-height: 24px;
     }
 
     .ma-lens-left{
     	width: 50%;
+    	display: none;
     }
 
     .ma-lens-right{
-	    height: auto;
-	    width: 150px;
-	    right: 20px;
-	    top: 150px;
+	    height: 410px;
+	    width: 190px;
+	    right: 46px;
+	    top: 180px;
     }
 
 
@@ -1303,47 +1439,46 @@
     }
 
     .ma-time-head h3{
-    	font-size: 38px;
-    	line-height: 120px;
-    	margin-bottom: 0;
+    	font-size: 32px;
+    	line-height: 42px;
+    	margin-bottom: 12px;
     }
 
     .ma-time-head p{
-    	font-size: 20px;
-    }
-
-    .ma-box-block{
-    	overflow: hidden;
-    	padding: 10px;
-    	border-radius: 16px;
-	    height: 400px;
-	    width: 90%;
-	    margin: 0 auto 20px auto;
-	    position: relative;
-	    box-sizing: border-box;
+    	font-size: 17px;
+    	line-height: 27px;
     }
 
     .ma-box-time h5{
-    	font-size: 30px;
-    	line-height: 50px;
+    	font-size: 24px;
+    	line-height: 32px;
     	margin-bottom: 10px;
     }
 
+    .ma-icon p{
+    	font-size: 14px;
+    	line-height: 24px;
+    }
+
+    .ma-icon {
+    	height: 480px;
+    }
+
     .ma-icon .ma-icon-img-run{
-    	width: 150px;
-	    height: 200px;
-	    margin-left: -75px;
+    	width: 190px;
+	    height: 282px;
+	    margin-left: -95px;
     }
 
     .ma-icon-fly{
-    	width: 150px;
-	    height: 200px;
-	    margin-left: -75px;
+    	width: 190px;
+	    height: 282px;
+	    margin-left: -95px;
     }
 
     .ma-icon-fly img{
-	    width: 20px;
-	    height: 20px;
+	    width: 30px;
+	    height: 30px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon1{
@@ -1352,17 +1487,17 @@
     }
 
     .ma-icon-fly .ma-icon-fly-icon2{
-    	left: 40px;
+    	left: 50px;
     	bottom: 80px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon3{
-    	left: 70px;
+    	left: 90px;
     	bottom: 80px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon4{
-    	left: 100px;
+    	left: 130px;
     	bottom: 80px;
     }
 
@@ -1372,34 +1507,38 @@
     }
 
     .ma-icon-fly .ma-icon-fly-icon6{
-    	left: 40px;
+    	left: 50px;
     	bottom: 40px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon7{
-    	left: 70px;
+    	left: 90px;
     	bottom: 40px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon8{
-    	left: 100px;
+    	left: 130px;
     	bottom: 40px;
     }
 
     .ma-icon .ma-icon-img{
-    	width: 400px;
-	    bottom: 10px;
-	    height: auto;
+    	width: 230px;
+	    height: 132px;
+	    bottom: 100px;
 	    left: 50%;
-	    margin-left: -200px;
+	    margin-left: -115px;
+    }
+
+    .ma-clock {
+    	height: 530px;
     }
 
     .ma-icon-view{
-	    height: 200px;
-	    width: 100%;
+	    height: 346px;
+	    width: 234px;
 	    bottom: 0px;
 	    left: 0;
-	    margin-left: 0px; 
+	    margin-left: 35px;
     }
 
     .ma-icon-img-left, .ma-icon-img-right{
@@ -1409,40 +1548,67 @@
     }
 
     .ma-icon-img-left{
-    	left: 10%;
+    	width: 100%;
+	    left: 0;
+	    height: 100%;
     }
 
     .ma-icon-img-right{
-    	right: 10%;
+    	display: none;
     }
 
-    .ma-notice img,.ma-day img{
-	    width: 40%;
-	    height: auto; 
-	    bottom: -70px;
-	    right: 10px;
+    .ma-notice{
+    	display: block;
+    }
+
+    .ma-notice p,.ma-day p{
+    	font-size: 14px;
+    	line-height: 24px;
+    }
+
+    .ma-notice img{
+	    width: 232px;
+	    height: 322px; 
+	    bottom: 0px;
+	    right: 35px;
+    }
+
+    .ma-day {
+    	height: 650px;
+    }
+
+    .ma-day img{
+    	width: 190px;
+	    height: 410px; 
+	    bottom: 20px;
+	    right: 56px;
+	    top: auto;
     }
 
     /*原景视窗*/
     .ma-window-head h3{
-    	font-size: 38px;
-	    line-height: 120px;
+    	font-size: 32px;
+	    line-height: 42px;
 	    margin-bottom: 0;
     }
 
-    .ma-window-head p{
-    	font-size: 20px;
+    .ma-window-head p,.ma-fly p{
+    	font-size: 17px;
+    	line-height: 27px;
+    }
+
+    .ma-window-content{
+    	height: 358px;
+    	margin-top: 40px;
     }
 
     .ma-window-content img{
-    	width: 50%;
-	    height: auto; 
-	    bottom: 40px;
-	    right: 0; 
-	    margin-right: 0; 
+    	width: 303px;
+    	height: 358px;
     }
 
     .ma-window-title p{
+    	display: none;
     	color: #1D1D1F;
 	    letter-spacing: 0;
 	    line-height: 38px;
@@ -1452,35 +1618,35 @@
 
     /*天空视窗*/
     .ma-fly{
-    	height: 500px;
+    	height: 580px;
     }
 
     .ma-fly-view{
     	position: absolute;
-	    height: 100%;
-	    width: 100%;
+	    height: 328px;
+    	width: 190px;
 	    bottom: 0px;
-	    left: 0;
-	    bottom: -100px;
+	    left: 56px;
 	    margin-left: 0px; 
     }
 
     .ma-fly-img-left,.ma-fly-img-right{
-    	width: 150px;
-        height: auto; 
+    	height: 328px;
+    	width: 190px; 
     }
 
     .ma-fly-img-left{
-    	left: 10%;
+    	left: 0;
     }
 
     .ma-fly-img-right{
-    	right: 10%;
+    	right: 0;
+    	display: none;
     }
 
     /*时光视窗*/
     .ma-weather{
-    	height: 280px;
+    	height: 620px;
     }
 
     .ma-weather h5,.ma-behavior h5{
@@ -1488,22 +1654,22 @@
     	line-height: 20px;
     }
 
-    .ma-weather p,.ma-behavior p{
+    .ma-weather p,.ma-behavior p,.ma-deformation p{
     	font-size: 14px;
     	line-height: 20px;
     }
 
     /**/
     .ma-behavior{
-    	height: 500px;
+    	height: 792px;
     }
 
     .ma-behavior-phone{
-    	width: 120px;
-	    height: 280px;
-	    top: 140px;
+    	width: 190px;
+	    height: 410px;
+	    top: 280px;
 	    left: 50%;
-	    margin-left: -60px;
+	    margin-left: -95px;
     }
 
     .ma-behavior-tags{
@@ -1522,50 +1688,51 @@
     }
 
     .ma-behavior-step{
-    	width: 400px;
-	    margin-left: -200px;
+    	width: 280px;
+	    margin-left: -140px;
 	    height: 100px;
-	    margin-top: -50px;
+	    margin-top: 0;
     }
 
     .number-animate{
     	margin-left: 0; 
-	    height: 100px;
+	    height: 70px;
 	    width: 100%;
     }
     .number-animate .number-animate-dom{
-    	width: 100px;
+    	width: 70px;
     }
 
     .number-animate .number-animate-dom img, .number-animate .number-animate-dot img{
-    	height: 100px;
+    	height: 70px;
     }
 
     .ma-deformation{
-    	height: 500px;
+    	height: 650px;
 
     }
 
     .ma-deformation-view{
-	    height: auto;
-	    width: 100%;
-	    bottom: 0;
-	    left: 0;
+	    height: 410px;
+	    width: 190px;
+	    bottom: 40px;
+	    left: 56px;
 	    margin-left: 0;
     }
 
     .ma-deformation-img-left, .ma-deformation-img-right{
-	    width: 120px;
-	    height: auto; 
-	    bottom: 0px;
+	    height: 410px;
+	    width: 190px;
+	    margin-left: 0;;
     }
 
     .ma-deformation-img-right{
     	right: 10%;
+    	display: none;
     }
 
     .ma-deformation-img-left{
-    	left: 10%;
+    	left: 0;
     }
 
     /*大标题移动*/
