@@ -337,6 +337,17 @@ function rizebig (scrollTop) {
 		$('.ma-fly-title').removeClass('title-run')
 	}
 
+	console.log(scrollTop)
+	if (scrollTop > 14140) {
+		$('.ma-weather-bg1').addClass('bg-opacity-one')
+
+		if (scrollTop > 15738) {
+			$('.ma-weather-bg1').removeClass('bg-opacity-one')
+		}
+	} else {
+		$('.ma-weather-bg1').removeClass('bg-opacity-one')
+	}
+
 	if (scrollTop > 14437) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-weather-title').addClass('title-run')
 		$('.ma-weather-text').addClass('text-run')

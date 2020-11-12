@@ -196,6 +196,7 @@
     }
 
     .ma-box-block {
+        overflow: hidden;
         width: 1024px;
         margin: 0 auto;
         background-image: linear-gradient(-44deg, #5DC4F6 0%, #5D9DF6 37%, #BE8AC7 54%, #FF6E6E 65%, #EE7A69 77%, #EEBB69 89%, #F9EBBE 100%);
