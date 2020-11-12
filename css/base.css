@@ -319,6 +319,7 @@
 
 /*运行后台*/
 .ma-running {
+	position: relative;
 	display: flex;
 	align-items: center;
 	height: 600px;
@@ -610,6 +611,7 @@
 	height: 850px;
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .ma-day h5 {
@@ -724,6 +726,7 @@
 
 /*时光视窗*/
 .ma-weather {
+	position: relative;
 	height: 786px;
 	display: flex;
 	align-items: center;
@@ -759,6 +762,7 @@
 
 /*行为壁纸*/
 .ma-behavior {
+	position: relative;
 	height: 980px;
 	background: #F5F5F7!important;
 	overflow: hidden;
