@@ -805,11 +805,11 @@ function rizesall (scrollTop) {
 		$('.ma-system-view-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 5750) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 3660) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-running-title').addClass('title-run')
 		$('.ma-running-text').addClass('text-run')
 
-		if (scrollTop > 6800) {
+		if (scrollTop > 4615) {
 			$('.ma-running-text').removeClass('text-run')
 			$('.ma-running-title').removeClass('title-run')
 		}
@@ -818,11 +818,11 @@ function rizesall (scrollTop) {
 		$('.ma-running-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 6200) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 3973) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-super-title').addClass('title-run')
 		$('.ma-super-text').addClass('text-run')
 
-		if (scrollTop > 7200) {
+		if (scrollTop > 4797) {
 			$('.ma-super-text').removeClass('text-run')
 			$('.ma-super-title').removeClass('title-run')
 		}
@@ -831,11 +831,11 @@ function rizesall (scrollTop) {
 		$('.ma-super-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 7050) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 4384) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-lens-title').addClass('title-run')
 		$('.ma-lens-text').addClass('text-run')
 
-		if (scrollTop > 8020) {
+		if (scrollTop > 5265) {
 			$('.ma-lens-text').removeClass('text-run')
 			$('.ma-lens-title').removeClass('title-run')
 		}
@@ -844,11 +844,11 @@ function rizesall (scrollTop) {
 		$('.ma-lens-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 8050) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 5020) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-time-head-title').addClass('title-move')
 		$('.ma-time-head-text').addClass('text-run')
 
-		if (scrollTop > 9180) {
+		if (scrollTop > 5980) {
 			$('.ma-time-head-text').removeClass('text-run')
 			$('.ma-time-head-title').removeClass('title-move')
 		}
@@ -857,11 +857,11 @@ function rizesall (scrollTop) {
 		$('.ma-time-head-title').removeClass('title-move')
 	}
 
-	if (scrollTop > 8380) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 5304) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-icon-title').addClass('title-run')
 		$('.ma-icon-text').addClass('text-run')
 
-		if (scrollTop > 9350) {
+		if (scrollTop > 6247) {
 			$('.ma-icon-text').removeClass('text-run')
 			$('.ma-icon-title').removeClass('title-run')
 		}
@@ -870,7 +870,7 @@ function rizesall (scrollTop) {
 		$('.ma-icon-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 9230) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 5942) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-icon-fly').addClass('animated bounceOutDown')
 
 		// $('.ma-icon-fly-icon1').addClass('animated bounceOutDown')
@@ -882,7 +882,7 @@ function rizesall (scrollTop) {
 		// $('.ma-icon-fly-icon7').addClass('animated bounceOutDown')
 		// $('.ma-icon-fly-icon8').addClass('animated bounceOutDown')
 
-		if (scrollTop > 10000) {
+		if (scrollTop > 6499) {
 			$('.ma-icon-fly').removeClass('animated bounceOutDown')
 			// $('.ma-icon-fly-icon1').removeClass('animated bounceOutDown')
 			// $('.ma-icon-fly-icon2').removeClass('animated bounceOutDown')
@@ -905,11 +905,11 @@ function rizesall (scrollTop) {
 		// $('.ma-icon-fly-icon8').removeClass('animated bounceOutDown')
 	}
 
-	if (scrollTop > 9150) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 5797) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-icons-title').addClass('title-run')
 		$('.ma-icons-text').addClass('text-run')
 
-		if (scrollTop > 10180) {
+		if (scrollTop > 6695) {
 			$('.ma-icons-text').removeClass('text-run')
 			$('.ma-icons-title').removeClass('title-run')
 		}
@@ -918,11 +918,11 @@ function rizesall (scrollTop) {
 		$('.ma-icons-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 10000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 6230) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-clock-title').addClass('title-run')
 		$('.ma-clock-text').addClass('text-run')
 
-		if (scrollTop > 10970) {
+		if (scrollTop > 7149) {
 			$('.ma-clock-text').removeClass('text-run')
 			$('.ma-clock-title').removeClass('title-run')
 		}
@@ -931,10 +931,10 @@ function rizesall (scrollTop) {
 		$('.ma-clock-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 10950) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 6688) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-notice-title').addClass('title-run')
 		$('.ma-notice-text').addClass('text-run')
-		if (scrollTop > 12000) {
+		if (scrollTop > 7756) {
 			$('.ma-notice-text').removeClass('text-run')
 			$('.ma-notice-title').removeClass('title-run')
 		}
@@ -943,10 +943,10 @@ function rizesall (scrollTop) {
 		$('.ma-notice-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 11726) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 7191) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-day-title').addClass('title-run')
 		$('.ma-day-text').addClass('text-run')
-		if (scrollTop > 12768) {
+		if (scrollTop > 8225) {
 			$('.ma-day-text').removeClass('text-run')
 			$('.ma-day-title').removeClass('title-run')
 		}
@@ -955,11 +955,11 @@ function rizesall (scrollTop) {
 		$('.ma-day-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 12276) { //这里100代表你要动画的元$('.ma-day-title').addClass('title-run')
+	if (scrollTop > 7539) { //这里100代表你要动画的元$('.ma-day-title').addClass('title-run')
 		$('.ma-window-head-title').addClass('title-run')
 		$('.ma-window-head-text').addClass('text-run')
 
-		if (scrollTop > 13303) {
+		if (scrollTop > 8518) {
 			$('.ma-window-head-title').removeClass('title-run')
 			$('.ma-window-head-text').removeClass('text-run')
 		}
@@ -968,20 +968,20 @@ function rizesall (scrollTop) {
 		$('.ma-window-head-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 12862) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 8067) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-window-title').addClass('title-run')
 
-		if (scrollTop > 13840) $('.ma-window-title').removeClass('title-run')
+		if (scrollTop > 8857) $('.ma-window-title').removeClass('title-run')
 	} else {
 
 		$('.ma-window-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 13379) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 8327) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-fly-title').addClass('title-run')
 		$('.ma-fly-text').addClass('text-run')
 
-		if (scrollTop > 14428) {
+		if (scrollTop > 9287) {
 			$('.ma-fly-text').removeClass('text-run')
 			$('.ma-fly-title').removeClass('title-run')
 		}
@@ -990,11 +990,11 @@ function rizesall (scrollTop) {
 		$('.ma-fly-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 14437) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 8855) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-weather-title').addClass('title-run')
 		$('.ma-weather-text').addClass('text-run')
 
-		if (scrollTop > 15528) {
+		if (scrollTop > 9834) {
 			$('.ma-weather-text').removeClass('text-run')
 			$('.ma-weather-title').removeClass('title-run')
 		}
@@ -1003,7 +1003,63 @@ function rizesall (scrollTop) {
 		$('.ma-weather-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 15007) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 9170) {
+		$('.ma-weather-bg1').addClass('bg-opacity-one')
+		$('.ma-weather-bg2').addClass('bg-opacity-two')
+		$('.ma-weather-bg3').addClass('bg-opacity-three')
+		$('.ma-weather-bg4').addClass('bg-opacity-four')
+		$('.ma-weather-bg5').addClass('bg-opacity-five')
+		$('.ma-weather-bg6').addClass('bg-opacity-six')
+		$('.ma-weather-bg7').addClass('bg-opacity-senve')
+		$('.ma-weather-bg8').addClass('bg-opacity-eight')
+		$('.ma-weather-bg9').addClass('bg-opacity-nine')
+		$('.ma-weather-bg10').addClass('bg-opacity-ten')
+		$('.ma-weather-bg11').addClass('bg-opacity-eleven')
+		$('.ma-weather-bg12').addClass('bg-opacity-twelve')
+		$('.ma-weather-bg13').addClass('bg-opacity-thirteen')
+		$('.ma-weather-bg14').addClass('bg-opacity-fourteen')
+		$('.ma-weather-bg15').addClass('bg-opacity-fifteen')
+		$('.ma-weather-bg16').addClass('bg-opacity-sixtheen')
+
+		if (scrollTop > 9872) {
+			$('.ma-weather-bg1').removeClass('bg-opacity-one')
+			$('.ma-weather-bg2').removeClass('bg-opacity-two')
+			$('.ma-weather-bg3').removeClass('bg-opacity-three')
+			$('.ma-weather-bg4').removeClass('bg-opacity-four')
+			$('.ma-weather-bg5').removeClass('bg-opacity-five')
+			$('.ma-weather-bg6').removeClass('bg-opacity-six')
+			$('.ma-weather-bg7').removeClass('bg-opacity-senve')
+			$('.ma-weather-bg8').removeClass('bg-opacity-eight')
+			$('.ma-weather-bg9').removeClass('bg-opacity-nine')
+			$('.ma-weather-bg10').removeClass('bg-opacity-ten')
+			$('.ma-weather-bg11').removeClass('bg-opacity-eleven')
+			$('.ma-weather-bg12').removeClass('bg-opacity-twelve')
+			$('.ma-weather-bg13').removeClass('bg-opacity-thirteen')
+			$('.ma-weather-bg14').removeClass('bg-opacity-fourteen')
+			$('.ma-weather-bg15').removeClass('bg-opacity-fifteen')
+			$('.ma-weather-bg16').removeClass('bg-opacity-sixtheen')
+		}
+	} else {
+		$('.ma-weather-bg1').removeClass('bg-opacity-one')
+		$('.ma-weather-bg2').removeClass('bg-opacity-two')
+		$('.ma-weather-bg3').removeClass('bg-opacity-three')
+		$('.ma-weather-bg4').removeClass('bg-opacity-four')
+		$('.ma-weather-bg5').removeClass('bg-opacity-five')
+		$('.ma-weather-bg6').removeClass('bg-opacity-six')
+		$('.ma-weather-bg7').removeClass('bg-opacity-senve')
+		$('.ma-weather-bg8').removeClass('bg-opacity-eight')
+		$('.ma-weather-bg9').removeClass('bg-opacity-nine')
+		$('.ma-weather-bg10').removeClass('bg-opacity-ten')
+		$('.ma-weather-bg11').removeClass('bg-opacity-eleven')
+		$('.ma-weather-bg12').removeClass('bg-opacity-twelve')
+		$('.ma-weather-bg13').removeClass('bg-opacity-thirteen')
+		$('.ma-weather-bg14').removeClass('bg-opacity-fourteen')
+		$('.ma-weather-bg15').removeClass('bg-opacity-fifteen')
+		$('.ma-weather-bg16').removeClass('bg-opacity-sixtheen')
+	}
+	
+
+	if (scrollTop > 9177) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-behavior-title').addClass('title-run')
 		$('.ma-behavior-text').addClass('text-run')
 		if (scrollTop > 16042) {

@@ -995,6 +995,10 @@
         animation: huarongimg 1.5s 1s ease-in-out forwards;
         -webkit-animation: huarongimg 1.5s 1s ease-in-out forwards;
     }
+
+    .ma-super-title-content {
+    	width: 50%;
+    }
 }
 
 /*华容网格*/
@@ -1157,6 +1161,7 @@
     /*原子组件*/
     .ma-new-icon{
     	height: 500px;
+    	box-sizing: border-box;
     }
 
     .ma-new-icon-content{
@@ -1180,6 +1185,7 @@
 
     .ma-box-system {
     	padding-top: 0;
+    	padding-bottom: 0;
     }
 
     .ma-system h4{
@@ -1210,10 +1216,14 @@
     }
 
     .ma-box-system h5{
-	    font-size: 20px;
-	    letter-spacing: 0;
-	    line-height: 30px;
+	    font-size: 30px;
+	    line-height: 50px;
 	    margin-bottom: 10px;
+    }
+
+    .ma-system-content h5{
+    	font-size: 20px;
+	    line-height: 30px;
     }
 
     .ma-box-system span{
@@ -1221,6 +1231,285 @@
     	font-size: 12px;
     	line-height: 20px;
     }
+
+    /*运行后台*/
+    .ma-running {
+    	height: 400px;
+    	padding: 10px;
+    }
+
+    .ma-running img{
+	    width: 120px;
+	    height: 280px;
+	    top: 60px;
+	    right: 10%;
+    }
+
+    .ma-running p{
+    	font-size: 20px;
+    	line-height: 30px;
+    }
+
+    /*超级卡包*/
+    .ma-super{
+    	height: 400px;
+    	padding: 10px;
+    }
+
+    .ma-super-title-content{
+    	width: 100%;
+    }
+
+    .ma-super p{
+    	font-size: 20px;
+    	line-height: 30px;
+    }
+
+    .ma-super-view{
+    	margin: 40px auto auto auto;
+    	width: 394px;
+   		height: 240px;
+    }
+
+    .ma-super img{
+    	width: 100px;
+	    height: 200px;
+	    margin-left: 20px;
+    }
+
+    /*镜头包*/
+    .ma-lens{
+    	padding: 60px 10px 0 10px;
+    	height: 600px!important;
+    }
+
+    .ma-lens p{
+    	font-size: 20px;
+    	line-height: 30px;
+    }
+
+    .ma-lens-left{
+    	width: 50%;
+    }
+
+    .ma-lens-right{
+	    height: auto;
+	    width: 150px;
+	    right: 20px;
+	    top: 150px;
+    }
+
+
+    /*时间线设计体系*/
+    .ma-box-time{
+    	padding: 0;
+    }
+
+    .ma-time-head h3{
+    	font-size: 38px;
+    	line-height: 120px;
+    	margin-bottom: 0;
+    }
+
+    .ma-time-head p{
+    	font-size: 20px;
+    }
+
+    .ma-box-block{
+    	overflow: hidden;
+    	padding: 10px;
+    	border-radius: 16px;
+	    height: 400px;
+	    width: 90%;
+	    margin: 0 auto 20px auto;
+	    position: relative;
+	    box-sizing: border-box;
+    }
+
+    .ma-box-time h5{
+    	font-size: 30px;
+    	line-height: 50px;
+    	margin-bottom: 10px;
+    }
+
+    .ma-icon .ma-icon-img-run{
+    	width: 150px;
+	    height: 200px;
+	    margin-left: -75px;
+    }
+
+    .ma-icon-fly{
+    	width: 150px;
+	    height: 200px;
+	    margin-left: -75px;
+    }
+
+    .ma-icon-fly img{
+	    width: 20px;
+	    height: 20px;
+    }
+
+    .ma-icon-fly .ma-icon-fly-icon1{
+    	left: 10px;
+    	bottom: 80px;
+    }
+
+    .ma-icon-fly .ma-icon-fly-icon2{
+    	left: 40px;
+    	bottom: 80px;
+    }
+
+    .ma-icon-fly .ma-icon-fly-icon3{
+    	left: 70px;
+    	bottom: 80px;
+    }
+
+    .ma-icon-fly .ma-icon-fly-icon4{
+    	left: 100px;
+    	bottom: 80px;
+    }
+
+    .ma-icon-fly .ma-icon-fly-icon5{
+    	left: 10px;
+    	bottom: 40px;
+    }
+
+    .ma-icon-fly .ma-icon-fly-icon6{
+    	left: 40px;
+    	bottom: 40px;
+    }
+
+    .ma-icon-fly .ma-icon-fly-icon7{
+    	left: 70px;
+    	bottom: 40px;
+    }
+
+    .ma-icon-fly .ma-icon-fly-icon8{
+    	left: 100px;
+    	bottom: 40px;
+    }
+
+    .ma-icon .ma-icon-img{
+    	width: 400px;
+	    bottom: 10px;
+	    height: auto;
+	    left: 50%;
+	    margin-left: -200px;
+    }
+
+    .ma-icon-view{
+	    height: 200px;
+	    width: 100%;
+	    bottom: 0px;
+	    left: 0;
+	    margin-left: 0px; 
+    }
+
+    .ma-icon-img-left, .ma-icon-img-right{
+	    width: 120px;
+	    height: auto; 
+	    bottom: -40px;
+    }
+
+    .ma-icon-img-left{
+    	left: 10%;
+    }
+
+    .ma-icon-img-right{
+    	right: 10%;
+    }
+
+    .ma-notice img,.ma-day img{
+	    width: 40%;
+	    height: auto; 
+	    bottom: -70px;
+	    right: 10px;
+    }
+
+    /*原景视窗*/
+    .ma-window-head h3{
+    	font-size: 38px;
+	    line-height: 120px;
+	    margin-bottom: 0;
+    }
+
+    .ma-window-head p{
+    	font-size: 20px;
+    }
+
+    .ma-window-content img{
+    	width: 50%;
+	    height: auto; 
+	    bottom: 40px;
+	    right: 0; 
+	    margin-right: 0; 
+    }
+
+    .ma-window-title p{
+    	color: #1D1D1F;
+	    letter-spacing: 0;
+	    line-height: 38px;
+	    ffont-family: FZLTHJW--GB1-0;
+	    font-size: 20px;
+    }
+
+    /*天空视窗*/
+    .ma-fly{
+    	height: 500px;
+    }
+
+    .ma-fly-view{
+    	position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    bottom: 0px;
+	    left: 0;
+	    bottom: -100px;
+	    margin-left: 0px; 
+    }
+
+    .ma-fly-img-left,.ma-fly-img-right{
+    	width: 150px;
+        height: auto; 
+    }
+
+    .ma-fly-img-left{
+    	left: 10%;
+    }
+
+    .ma-fly-img-right{
+    	right: 10%;
+    }
+
+    /*时光视窗*/
+    .ma-weather{
+    	height: 280px;
+    }
+
+    .ma-weather h5,.ma-behavior h5{
+    	font-size: 20px;
+    	line-height: 20px;
+    }
+
+    .ma-weather p,.ma-behavior p{
+    	font-size: 14px;
+    	line-height: 20px;
+    }
+
+    /**/
+    .ma-behavior{
+    	height: 500px;
+    }
+
+    .ma-behavior-phone{
+    	width: 120px;
+	    height: 280px;
+	    top: 140px;
+	    left: 50%;
+	    margin-left: -60px;
+    }
+
+
 
 
 
