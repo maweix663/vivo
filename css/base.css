@@ -901,13 +901,83 @@
 
 /*时光视窗*/
 .bg-opacity-one {
-	animation: bgopacity .5s ease-in-out forwards;
-    -webkit-animation: bgopacity .5s ease-in-out forwards;
+	animation: bgopacity .25s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s ease-in-out forwards;
 }
 
 .bg-opacity-two {
-	animation: bgopacity .5s .5s ease-in-out forwards;
-    -webkit-animation: bgopacity .5s .5s ease-in-out forwards;
+	animation: bgopacity .25s .5s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s .5s ease-in-out forwards;
+}
+
+.bg-opacity-three {
+	animation: bgopacity .25s .75s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s .75s ease-in-out forwards;
+}
+
+.bg-opacity-four {
+	animation: bgopacity .25s 1s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s 1s ease-in-out forwards;
+}
+
+.bg-opacity-five {
+	animation: bgopacity .25s 1.25s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s 1.25s ease-in-out forwards;
+}
+
+.bg-opacity-six {
+	animation: bgopacity .25s 1.5s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s 1.5s ease-in-out forwards;
+}
+
+.bg-opacity-senve {
+	animation: bgopacity .25s 1.75s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s 1.75s ease-in-out forwards;
+}
+
+.bg-opacity-eight {
+	animation: bgopacity .25s 2s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s .2s ease-in-out forwards;
+}
+
+.bg-opacity-nine {
+	animation: bgopacity .25s 2.25s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s 2.25s ease-in-out forwards;
+}
+
+.bg-opacity-ten {
+	animation: bgopacity .25s 2.5s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s 2.5s ease-in-out forwards;
+}
+
+.bg-opacity-eleven {
+	animation: bgopacity .25s 2.75s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s 2.75s ease-in-out forwards;
+}
+
+.bg-opacity-twelve {
+	animation: bgopacity .25s 3s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s 3s ease-in-out forwards;
+}
+
+.bg-opacity-thirteen {
+	animation: bgopacity .25s 3.25s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s 3.25s ease-in-out forwards;
+}
+
+.bg-opacity-fourteen {
+	animation: bgopacity .25s 3.5s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s .5s ease-in-out forwards;
+}
+
+.bg-opacity-fifteen {
+	animation: bgopacity .25s 3.75s ease-in-out forwards;
+    -webkit-animation: bgopacity .25s 3.75s ease-in-out forwards;
+}
+
+.bg-opacity-sixtheen {
+	animation: bgopacity .25s 4s ease-in-out;
+    -webkit-animation: bgopacity .25s 4s ease-in-out;
 }
 
 
