@@ -362,6 +362,13 @@ margin-right: -100px;
     border-radius: 32px;
     border: 1px solid #7BADF0;
     padding: 0 20px;
+    overflow: hidden;
+}
+
+.you-album-ul .you-album-night img{
+    width: 264.5px;
+    height: 573px;
+    padding: 58px 97px 0 98.5px;
 }
 
 .you-album-ul .you-album-portrait {
@@ -369,6 +376,13 @@ margin-right: -100px;
     height: 850px;
     border-radius: 32px;
     border: 1px solid #7BADF0;
+    overflow: hidden;
+}
+
+.you-album-ul .you-album-portrait img{
+    width: 130px;
+    height: 549px;
+    padding: 212px 0 0 45px;
 }
 
 .you-album-ul h3 {

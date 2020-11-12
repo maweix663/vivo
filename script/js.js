@@ -1331,6 +1331,9 @@ li.click(function(){
 
 
 // 相册
+$(window).scroll(function () {
+	$('.you-album-ul .you-album-portrait').find('p').fadeOut('slow')
+})
 $('.you-album-ul').on('click','li',function(){
 	$(this).addClass('curr')
 	.stop()
@@ -1343,5 +1346,15 @@ $('.you-album-ul').on('click','li',function(){
 	width:'175px'
 	},'slow')
 	.removeClass('curr');
-	$(this).find('p').stop().fadeIn('slow').parent().siblings().find('p').stop().fadeOut('slow')
+	$(this).find('p').stop().fadeIn('slow').parent().siblings().find('p').stop().fadeOut('slow');
+
+	// $(this).find('img').stop().animate({
+	// 	width:'264.5px',
+	// 	height: '573px',
+	// 	padding: '58px 97px 0 98.5px'
+	// },'slow').siblings().stop().animate({
+	// 	width: '130px',
+	// 	height: '549px',
+	// 	padding: '212px 0 0 45px'
+	// },'slow')
 })
