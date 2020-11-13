@@ -24,17 +24,6 @@ $(window).scroll(function () {
 		})
 	}
 
-	new Swiper('.swiper-container1', {
-		slidesPerView: 5,
-		spaceBetween: 50,
-		centeredSlides: true,
-		loop: true,
-		scrollbar: {
-			el: '.swiper-scrollbar',
-			hide: false,
-		  },
-	})
-
 	new Swiper('.swiper-container2', {
 		scrollbar: {
 			el: '.swiper-scrollbar',
@@ -584,7 +573,6 @@ function rizebig (scrollTop) {
 	if (scrollTop > 22300) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-work-left-title').addClass('title-run')
 		$('.you-work-left-text').addClass('text-run')
-
 		if (scrollTop > 23600) {
 			$('.you-work-left-title').removeClass('title-run')
 			$('.you-work-left-text').removeClass('text-run')
@@ -592,6 +580,21 @@ function rizebig (scrollTop) {
 	} else {
 		$('.you-work-left-title').removeClass('title-run')
 		$('.you-work-left-text').removeClass('text-run')
+	}
+
+	if (scrollTop > 23280) {
+		word(1)
+	} else {
+		word(0)
+	}
+	if (scrollTop > 23330) {
+		word(2)
+	}
+	if (scrollTop > 23380) {
+		word(3)
+	}
+	if (scrollTop > 23430) {
+		word(4)
 	}
 
 	if (scrollTop > 23400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
@@ -1514,15 +1517,68 @@ $('.you-album-ul').on('click','li',function(){
 	$(this).addClass('curr')
 	.stop()
 	.animate({
-	width:'460px',
+	width:'510px',
 	},'slow')
 	.removeClass('currbox')
 	.siblings()
 	.stop()
 	.animate({
-	width:'175px'
+	width:'210px'
 	},'slow')
 	.removeClass('curr')
 	.addClass('currbox');
 	$(this).find('p').stop().fadeIn('slow').parent().addClass('you-album-active').parent().removeClass('you-album-active').siblings().find('p').stop().fadeOut('slow');
 })
+
+ var cona = new Swiper('.swiper-cona', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	centeredSlides: true,
+	simulateTouch:false,
+	mousewheel: false,
+})
+
+var conb = new Swiper('.swiper-conb', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	centeredSlides: true,
+	simulateTouch:false,
+	mousewheel: false,
+})
+
+var cond = new Swiper('.swiper-cond', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	centeredSlides: true,
+	lsimulateTouch:false,
+	mousewheel: false,
+})
+
+var conf = new Swiper('.swiper-conf', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	centeredSlides: true,
+	simulateTouch:false,
+	mousewheel: false,
+})
+
+var conc = new Swiper('.swiper-conc', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	centeredSlides: true,
+	simulateTouch:false,
+	mousewheel: false,
+	controller: {
+	control: [cona,conb,cond,conf],
+	}
+})
+
+// 文档编辑
+function word(val) {
+	clearInterval(timer)
+	timer = setTimeout(function () {
+		conc.slideTo(val);
+		$('.you-worl-speed').stop()
+		.animate({left:40 * val +'px'})
+	 }, 10);
+}

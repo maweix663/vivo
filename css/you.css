@@ -350,12 +350,12 @@
 
 .you-album-ul {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .you-album-ul li {
     background-image: linear-gradient(180deg, #FFFFFF 8%, #F9F9F9 81%);
-    margin-right: 10px;
+    margin-right: 32px;
     cursor: pointer;
     text-align: center;
     position: relative;
@@ -366,7 +366,7 @@
 }
 
 .you-album-ul .you-album-night {
-    width: 460px;
+    width: 510px;
     height: 850px;
     border-radius: 32px;
     border: 1px solid #7BADF0;
@@ -781,6 +781,7 @@
 
 .you-work-right {
     margin-top: 42.2px;
+    display: flex;
 }
 
 .you-slide {
@@ -794,7 +795,56 @@
 }
 
 .you-work-content-life .you-work-right .swiper-container1 {
-    height: 550px;
+    height: 475px;
+    width: 224px;
+}
+
+.swiper-conc{
+    z-index: 5;
+}
+.swiper-cona{
+    left: 136px;
+}
+.swiper-conb{
+    left: 60px;
+}
+.swiper-conf{
+    right: 136px;
+}
+.swiper-cond{
+    right: 60px;
+}
+.swiper-conb,
+.swiper-cond {
+    transform: scale(0.9);
+    z-index: 2;
+}
+
+.swiper-cona,
+.swiper-conf {
+    transform: scale(0.8);
+}
+
+.you-work-scroll{
+    width: 200px;
+    height: 6px;
+    background: rgb(233, 232, 232);
+    border-radius: 3px;
+    margin: 20px auto 0;
+    position: relative;
+}
+
+.you-worl-speed{
+    width: 40px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    border-radius: 3px;
+    background: #1D1D1F;
+}
+
+.you-work-content-life .you-work-right .swiper-container1 .swiper-slide{
+    width: 224px;
 }
 
 .you-work-content-life .you-work-right img {
@@ -816,7 +866,7 @@
     -webkit-align-items: center;
     align-items: center;
     transition: 300ms;
-    transform: scale(0.8);
+    /* transform: scale(0.8); */
 }
 
 .you-work-content-life .you-work-right .swiper-slide-active,
