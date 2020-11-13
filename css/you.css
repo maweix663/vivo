@@ -354,12 +354,14 @@
 }
 
 .you-album-ul li {
-    background: #fff;
+    background-image: linear-gradient(180deg, #FFFFFF 8%, #F9F9F9 81%);
     margin-right: 10px;
     cursor: pointer;
+    text-align: center;
+    position: relative;
 }
 
-.you-album-ul li:nth-child(5) {
+.you-album-ul li:nth-child(4) {
     margin: 0;
 }
 
@@ -368,28 +370,59 @@
     height: 850px;
     border-radius: 32px;
     border: 1px solid #7BADF0;
-    padding: 0 20px;
     overflow: hidden;
 }
 
-.you-album-ul .you-album-night img {
+.you-album-ul li img {
     width: 264.5px;
     height: 573px;
-    padding: 58px 97px 0 98.5px;
+    padding-top: 58px;
+    margin: 0 50px;
+}
+
+.you-album-ul li div {
+    background: #fff;
+    height: 258px;
+    padding: 0 20px;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.you-album-ul li .you-album-active {
+    text-align: left;
+}
+
+.you-album-ul li .you-album-active h3 {
+    text-align: left;
 }
 
 .you-album-ul .you-album-portrait {
-    width: 175px;
+    width: 210px;
     height: 850px;
     border-radius: 32px;
     border: 1px solid #7BADF0;
     overflow: hidden;
 }
 
-.you-album-ul .you-album-portrait img {
-    width: 130px;
-    height: 549px;
-    padding: 212px 0 0 45px;
+.you-album-ul .currbox img{
+    margin-top: 100px;
+}
+
+.you-album-ul .currbox div{
+    padding: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.you-album-ul .currbox p{
+    display: none;
 }
 
 .you-album-ul h3 {
@@ -398,6 +431,11 @@
     letter-spacing: 0;
     line-height: 48px;
     text-align: center;
+    font-weight: 600;
+}
+.you-album-ul p{
+    opacity: 0.8;
+    margin-top: 6px;
 }
 
 .you-album-ul p,
