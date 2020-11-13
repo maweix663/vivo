@@ -800,11 +800,17 @@
 	top: 260px;
 	left: 50%;
 	margin-left: -135px;
+	background-image: url("../images/phone-bg.png");
+    background-repeat: no-repeat;   
+    background-size: 100% 100%;
 }
 
 #example_video {
-	width: 100%;
-	height: 100%;
+	position: absolute;
+    width: 258px;
+    top: 10px;
+    left: 6px;
+    border-radius: 20px;
 }
 
 .ma-behavior-tags {
@@ -1068,11 +1074,21 @@
 
 
 
-.number-animate{margin-left: 40px; height: 400px;font-size: 100px;overflow: hidden; display: inline-block; position: relative; }
-.number-animate .number-animate-dot{ width: 21px; float: left; text-align: center;}
-.number-animate .number-animate-dom{ width: 200px;  text-align: center; float: left; position: relative; top: 0;}
-.number-animate .number-animate-dom img,
-.number-animate .number-animate-dot img{float: left;width: 100%;height: 400px;}
+.number-animate{margin-left: 0px; height: 400px;font-size: 100px;overflow: hidden; display: inline-block; position: relative; }
+.number-animate .number-animate-dot{ width: 225px; float: left; text-align: center;}
+.number-animate .number-animate-dom{ width: 225px;  text-align: center; float: left; position: relative; top: 0;}
+.number-animate .number-animate-dom span,
+.number-animate .number-animate-dot span{
+	float: left;
+	width: 100%;
+	height: 500px;
+	font-family: OPPOSans-Bold;
+	font-size: 380px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 500px;
+	text-shadow: 10px 10px 15px rgba(136,136,136,0.25);
+}
 
 /*屏幕小于1200px*/
 @media only screen and (max-width: 1200px) {
@@ -1677,6 +1693,12 @@
 	    margin-left: -95px;
     }
 
+    #example_video{
+    	width: 180px;
+	    top: 6px;
+	    left: 4px;
+    }
+
     .ma-behavior-tags{
 	    margin-left: -140px;
 	    width: 280px;
@@ -1690,6 +1712,7 @@
     .ma-behavior-tags ul li.active:before{
     	width: 40px;
     	left: 0;
+
     }
 
     .ma-behavior-step{
@@ -1697,19 +1720,24 @@
 	    margin-left: -140px;
 	    height: 100px;
 	    margin-top: 0;
+	    top: 200px;
     }
 
     .number-animate{
     	margin-left: 0; 
 	    height: 70px;
 	    width: 100%;
+	    
     }
     .number-animate .number-animate-dom{
     	width: 70px;
     }
 
-    .number-animate .number-animate-dom img, .number-animate .number-animate-dot img{
+    .number-animate .number-animate-dom span, .number-animate .number-animate-dot span{
     	height: 70px;
+    	font-size: 80px;
+    	line-height: 70px;
+    	text-shadow: 5px 5px 7px rgba(136,136,136,0.25);
     }
 
     .ma-deformation{

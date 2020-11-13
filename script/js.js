@@ -768,8 +768,6 @@ function rizebig (scrollTop) {
 
 // 分辨率小于 1200
 function rizesall (scrollTop) {
-	console.log(scrollTop)
-
 	if (scrollTop > 50) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-new-text-title').addClass('title-move')
 		$('.ma-new-text').addClass('text-run')
@@ -1123,19 +1121,26 @@ function rizesall (scrollTop) {
 		$('.ma-behavior-title').removeClass('title-run')
 	}
 
-	
 	if (scrollTop > 11519) {
-		numRun()
-
 		if (scrollTop > 12223){
+			video.pause()
+			videoRun = true
 			num = 0
 			clearInterval(timer)
 			numRun()
 			li.removeClass('active')
 			li.eq(0).addClass('active')
+		} else {
+			if (videoRun == true) {
+				numRun()
+				restVideo(1)
+				videoRun = false
+			}
 		}
 	} else {
 		num = 0
+		video.pause()
+		videoRun = true
 		clearInterval(timer)
 		li.removeClass('active')
 		li.eq(0).addClass('active')
