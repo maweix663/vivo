@@ -316,6 +316,15 @@
     bottom: 0px;
 }
 
+.ma-system-content-img{
+	position: absolute;
+    width: 270px;
+    height: 592px;
+    top: 260px;
+    left: 50%;
+    margin-left: -135px;
+}
+
 /*运行后台*/
 .ma-running {
 	position: relative;
@@ -822,6 +831,14 @@
 }
 
 #quanxin_video{
+	position: absolute;
+    width: 258px;
+    top: 10px;
+    left: 6px;
+    border-radius: 20px;
+}
+
+#jiaohu_video{
 	position: absolute;
     width: 258px;
     top: 10px;
@@ -1709,6 +1726,10 @@
 	    margin-left: -95px;
     }
 
+    .ma-system-content-img {
+    	top: 140px;
+    }
+
     #example_video{
     	width: 180px;
 	    top: 6px;
@@ -1725,6 +1746,10 @@
     	width: 180px;
 	    top: 6px;
 	    left: 4px;
+    }
+
+    #jiaohu_video {
+
     }
 
     .ma-behavior-tags{

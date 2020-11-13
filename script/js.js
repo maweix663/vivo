@@ -4,10 +4,12 @@ var timer = null
 var videoRun = true
 var huarongRun = true
 var quanxinRun = true
+var jiaohuRun = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
 var quanxinvideo = document.getElementById('quanxin_video');
+var jiaohuvideo = document.getElementById('jiaohu_video');
 
 
 var video = document.getElementById('example_video');
@@ -184,14 +186,26 @@ function rizebig (scrollTop) {
 		$('.ma-system-title').removeClass('title-move')
 	}
 
+
+
+
+
 	if (scrollTop > 4550) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-system-view-title').addClass('title-run')
-		$('.ma-system-view-text').addClass('text-run')
+		if (scrollTop > 5600){
+			jiaohuvideo.pause()
+			jiaohuRun = true
 
-
-		if (scrollTop > 5600) {
 			$('.ma-system-view-text').removeClass('text-run')
 			$('.ma-system-view-title').removeClass('title-run')
+		} else {
+			if (jiaohuRun == true) {
+				jiaohuRun = false
+				jiaohuvideo.pause();
+				jiaohuvideo.load();
+				jiaohuvideo.play()
+				$('.ma-system-view-title').addClass('title-run')
+				$('.ma-system-view-text').addClass('text-run')
+			}
 		}
 	} else {
 		$('.ma-system-view-text').removeClass('text-run')
