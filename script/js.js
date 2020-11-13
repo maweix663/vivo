@@ -6,11 +6,14 @@ var videoRun = true
 var huarongRun = true
 var quanxinRun = true
 var jiaohuRun = true
+var kongzhiRun = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
 var quanxinvideo = document.getElementById('quanxin_video');
 var jiaohuvideo = document.getElementById('jiaohu_video');
+var kongzhivideo = document.getElementById('kongzhi_video');
+
 
 
 var video = document.getElementById('example_video');
@@ -184,13 +187,12 @@ function rizebig (scrollTop) {
 	}
 
 
-
-
-
 	if (scrollTop > 4550) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		if (scrollTop > 5600){
 			jiaohuvideo.pause()
 			jiaohuRun = true
+			kongzhivideo.pause()
+
 
 			$('.ma-system-view-text').removeClass('text-run')
 			$('.ma-system-view-title').removeClass('title-run')
@@ -200,11 +202,20 @@ function rizebig (scrollTop) {
 				jiaohuvideo.pause();
 				jiaohuvideo.load();
 				jiaohuvideo.play()
+
+				kongzhivideo.pause()
+				kongzhivideo.load();
+				kongzhivideo.play()
+
 				$('.ma-system-view-title').addClass('title-run')
 				$('.ma-system-view-text').addClass('text-run')
 			}
 		}
 	} else {
+		jiaohuvideo.pause()
+		jiaohuRun = true
+		kongzhivideo.pause()
+
 		$('.ma-system-view-text').removeClass('text-run')
 		$('.ma-system-view-title').removeClass('title-run')
 	}
@@ -474,8 +485,7 @@ function rizebig (scrollTop) {
 		$('.ma-behavior-text').removeClass('text-run')
 		$('.ma-behavior-title').removeClass('title-run')
 	}
-	// console.log(videoRun)
-	// console.log(scrollTop)
+	
 	if (scrollTop > 15340) {
 		if (scrollTop > 16900){
 			video.pause()
@@ -911,19 +921,52 @@ function rizesall (scrollTop) {
 		$('.ma-system-text').removeClass('text-run')
 		$('.ma-system-title').removeClass('title-move')
 	}
-
-	if (scrollTop > 2974) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-system-view-title').addClass('title-run')
-		$('.ma-system-view-text').addClass('text-run')
-
-
-		if (scrollTop > 4438) {
-			$('.ma-system-view-text').removeClass('text-run')
-			$('.ma-system-view-title').removeClass('title-run')
+	console.log(scrollTop)
+	if (scrollTop > 3238) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		
+		if (scrollTop > 4259){
+			jiaohuvideo.pause()
+			jiaohuRun = true
+			$('.ma-system-view-text-left').removeClass('text-run')
+			$('.ma-system-view-title-left').removeClass('title-run')
+		} else {
+			if (jiaohuRun == true) {
+				jiaohuRun = false
+				jiaohuvideo.pause();
+				jiaohuvideo.load();
+				jiaohuvideo.play()
+				$('.ma-system-view-title-left').addClass('title-run')
+				$('.ma-system-view-text-left').addClass('text-run')
+			}
 		}
 	} else {
-		$('.ma-system-view-text').removeClass('text-run')
-		$('.ma-system-view-title').removeClass('title-run')
+		jiaohuRun = true
+		jiaohuvideo.pause();
+		$('.ma-system-view-text-left').removeClass('text-run')
+		$('.ma-system-view-title-left').removeClass('title-run')
+	}
+
+	if (scrollTop > 3861) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		if (scrollTop > 4085){
+			kongzhivideo.pause()
+			kongzhiRun = true
+			$('.ma-system-view-title-right').removeClass('title-run')
+			$('.ma-system-view-text-right').removeClass('text-run')
+		} else {
+			if (kongzhiRun == true) {
+				kongzhiRun = false
+				kongzhivideo.pause();
+				kongzhivideo.load();
+				kongzhivideo.play()
+				$('.ma-system-view-title-right').addClass('title-run')
+				$('.ma-system-view-text-right').addClass('text-run')
+			}
+		}
+	} else {
+		kongzhiRun = true
+		kongzhivideo.pause();
+		$('.ma-system-view-text-right').removeClass('text-run')
+		$('.ma-system-view-title-right').removeClass('title-run')
 	}
 
 	if (scrollTop > 4205) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。

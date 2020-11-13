@@ -314,6 +314,7 @@
 	height: 750px;
 	left: 0px;
     bottom: 0px;
+    overflow: hidden;
 }
 
 .ma-system-content-img{
@@ -844,6 +845,12 @@
     top: 10px;
     left: 6px;
     border-radius: 20px;
+}
+
+#kongzhi_video{
+	position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 .ma-behavior-tags {
@@ -1721,11 +1728,11 @@
     .ma-behavior-phone{
     	width: 190px;
 	    height: 410px;
-	    top: 280px;
+	    top: 140px;
 	    left: 50%;
 	    margin-left: -95px;
     }
-    
+
     .ma-new-icon-img{
     	top: 0;
     }
@@ -1753,7 +1760,9 @@
     }
 
     #jiaohu_video {
-
+    	width: 190px;
+    	top: 0;
+    	left: 0;
     }
 
     .ma-behavior-tags{
