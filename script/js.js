@@ -1,6 +1,7 @@
 var metaWidth = $(window).width()
 var num = 0
 var timer = null
+var timers = null
 var videoRun = true
 var huarongRun = true
 var quanxinRun = true
@@ -473,14 +474,14 @@ function rizebig (scrollTop) {
 		$('.ma-behavior-text').removeClass('text-run')
 		$('.ma-behavior-title').removeClass('title-run')
 	}
-
-	
+	// console.log(videoRun)
+	// console.log(scrollTop)
 	if (scrollTop > 15340) {
 		if (scrollTop > 16900){
 			video.pause()
 			videoRun = true
 			num = 0
-			clearInterval(timer)
+			clearInterval(timers)
 			numRun()
 			li.removeClass('active')
 			li.eq(0).addClass('active')
@@ -495,7 +496,7 @@ function rizebig (scrollTop) {
 		num = 0
 		video.pause()
 		videoRun = true
-		clearInterval(timer)
+		clearInterval(timers)
 		li.removeClass('active')
 		li.eq(0).addClass('active')
 	}
@@ -1196,7 +1197,7 @@ function rizesall (scrollTop) {
 			video.pause()
 			videoRun = true
 			num = 0
-			clearInterval(timer)
+			clearInterval(timers)
 			numRun()
 			li.removeClass('active')
 			li.eq(0).addClass('active')
@@ -1211,7 +1212,7 @@ function rizesall (scrollTop) {
 		num = 0
 		video.pause()
 		videoRun = true
-		clearInterval(timer)
+		clearInterval(timers)
 		li.removeClass('active')
 		li.eq(0).addClass('active')
 	}
@@ -1594,21 +1595,21 @@ function running() {
 
 // 行为壁纸
 function numRun() {
-	clearInterval(timer)
+	clearInterval(timers)
     var odo = new Odometer('.ma-behavior-step',{
         num : num
     });
 
 
     //改变数值
-    timer = setInterval(()=>{
+    timers = setInterval(()=>{
     	num += 267
     	odo.update(num)
 
     	if (num >= 8000) {
     		num = 0
     		odo.update(8000)
-	    	clearInterval(timer)
+	    	clearInterval(timers)
 	    }
     },1000)
 
@@ -1620,7 +1621,7 @@ li.click(function(){
 	li.removeClass('active')
 	$(this).addClass('active')
 	num = 0
-	clearInterval(timer)
+	clearInterval(timers)
 	numRun()
 	restVideo($(this).index() + 1)
 })

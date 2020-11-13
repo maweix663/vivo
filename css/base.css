@@ -1721,9 +1721,13 @@
     .ma-behavior-phone{
     	width: 190px;
 	    height: 410px;
-	    top: 0;
+	    top: 280px;
 	    left: 50%;
 	    margin-left: -95px;
+    }
+    
+    .ma-new-icon-img{
+    	top: 0;
     }
 
     .ma-system-content-img {
