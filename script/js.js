@@ -3,15 +3,19 @@ var num = 0
 var timer = null
 var videoRun = true
 var huarongRun = true
-var li = $('.ma-behavior-tags ul li')
-$('.ma-new-world-title').addClass('title-move')
-$('.ma-new-world-text').addClass('text-run')
-
+var quanxinRun = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
+var quanxinvideo = document.getElementById('quanxin_video');
+
+
 var video = document.getElementById('example_video');
 var source = document.getElementById('videoMP4');
+
+var li = $('.ma-behavior-tags ul li')
+$('.ma-new-world-title').addClass('title-move')
+$('.ma-new-world-text').addClass('text-run')
 
 function restVideo (num) {
 	video.pause()
@@ -143,14 +147,25 @@ function rizebig (scrollTop) {
 	}
 
 	if (scrollTop > 3450) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-new-icon-title').addClass('title-run')
-		$('.ma-new-icon-text').addClass('text-run')
+		if (scrollTop > 4600){
+			quanxinvideo.pause()
+			quanxinRun = true
 
-		if (scrollTop > 4600) {
 			$('.ma-new-icon-text').removeClass('text-run')
 			$('.ma-new-icon-title').removeClass('title-run')
+		} else {
+			if (quanxinRun == true) {
+				quanxinRun = false
+				quanxinvideo.pause();
+				quanxinvideo.load();
+				quanxinvideo.play()
+				$('.ma-new-icon-title').addClass('title-run')
+				$('.ma-new-icon-text').addClass('text-run')
+			}
 		}
 	} else {
+		quanxinvideo.pause()
+		quanxinRun = true
 		$('.ma-new-icon-text').removeClass('text-run')
 		$('.ma-new-icon-title').removeClass('title-run')
 	}
@@ -842,14 +857,25 @@ function rizesall (scrollTop) {
 	}
 
 	if (scrollTop > 1968) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-new-icon-title').addClass('title-run')
-		$('.ma-new-icon-text').addClass('text-run')
+		if (scrollTop > 2866){
+			quanxinvideo.pause()
+			quanxinRun = true
 
-		if (scrollTop > 2866) {
 			$('.ma-new-icon-text').removeClass('text-run')
 			$('.ma-new-icon-title').removeClass('title-run')
+		} else {
+			if (quanxinRun == true) {
+				quanxinRun = false
+				quanxinvideo.pause();
+				quanxinvideo.load();
+				quanxinvideo.play()
+				$('.ma-new-icon-title').addClass('title-run')
+				$('.ma-new-icon-text').addClass('text-run')
+			}
 		}
 	} else {
+		quanxinvideo.pause()
+		quanxinRun = true
 		$('.ma-new-icon-text').removeClass('text-run')
 		$('.ma-new-icon-title').removeClass('title-run')
 	}

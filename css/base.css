@@ -178,7 +178,7 @@
 	height: 100%;
 }
 
-.ma-new-icon-left img{
+.ma-new-icon-img{
 	position: absolute;
     width: 300px;
     top: 70px;
@@ -814,6 +814,14 @@
 }
 
 #huarong_video{
+	position: absolute;
+    width: 258px;
+    top: 10px;
+    left: 6px;
+    border-radius: 20px;
+}
+
+#quanxin_video{
 	position: absolute;
     width: 258px;
     top: 10px;
@@ -1696,7 +1704,7 @@
     .ma-behavior-phone{
     	width: 190px;
 	    height: 410px;
-	    top: 280px;
+	    top: 0;
 	    left: 50%;
 	    margin-left: -95px;
     }
@@ -1708,6 +1716,12 @@
     }
 
     #huarong_video{
+    	width: 180px;
+	    top: 6px;
+	    left: 4px;
+    }
+
+    #quanxin_video{
     	width: 180px;
 	    top: 6px;
 	    left: 4px;
