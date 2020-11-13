@@ -23,6 +23,18 @@
     display: none;
 }
 
+.ma-behavior-phone {
+	position: absolute;
+	width: 270px;
+	height: 592px;
+	top: 260px;
+	left: 50%;
+	margin-left: -135px;
+	background-image: url("../images/phone-bg.png");
+    background-repeat: no-repeat;   
+    background-size: 100% 100%;
+}
+
 /*全新数字世界出发点*/
 .ma-new-world {
 	text-align: center;
@@ -133,7 +145,7 @@
 
 .ma-huarong-grid-img{
 	position: absolute;
-    width: 300px;
+    width: 270px;
     top: 70px;
     left: 50%;
     margin-left: -150px;
@@ -180,7 +192,7 @@
 
 .ma-new-icon-img{
 	position: absolute;
-    width: 300px;
+    width: 270px;
     top: 70px;
     left: 50%;
     margin-left: -150px;
@@ -351,12 +363,14 @@
 	line-height: 32px;
 }
 
-.ma-running img {
+.ma-running-img {
 	position: absolute;
 	width: 240px;
 	height: 526px;
 	top: 37px;
-	right: 172px;
+	right: 170px;
+	left: auto;
+	margin-left: -135px;
 }
 
 /*超级卡包*/
@@ -388,7 +402,41 @@
 }
 
 .ma-super-view {
-	margin-top: 60px;
+	position: absolute;
+    width: 100%;
+    height: 600px;
+    left: 0;
+    bottom: 0;
+}
+
+.ma-kabao1,.ma-kabao2,.ma-kabao3{
+	width: 250px;
+	height: 545px;
+	top: auto;
+    bottom: 40px;
+    margin-left: 0;
+    overflow: hidden;
+}
+
+.ma-kabao1{
+	left: 110px;
+}
+
+.ma-kabao2{
+	left: 480px;
+}
+
+.ma-kabao3{
+	left: auto;
+	right: 110px;
+}
+
+#kabao1_video,#kabao2_video,#kabao3_video{
+	position: absolute;
+    width: 238px;
+    top: 9px;
+    left: 6px;
+    border-radius: 16px;
 }
 
 /*镜头包*/
@@ -803,18 +851,6 @@
     margin-left: -450px;
 }
 
-.ma-behavior-phone {
-	position: absolute;
-	width: 270px;
-	height: 592px;
-	top: 260px;
-	left: 50%;
-	margin-left: -135px;
-	background-image: url("../images/phone-bg.png");
-    background-repeat: no-repeat;   
-    background-size: 100% 100%;
-}
-
 #example_video {
 	position: absolute;
     width: 258px;
@@ -851,6 +887,14 @@
 	position: absolute;
     width: 100%;
     bottom: 0;
+}
+
+#houtai_video{
+	position: absolute;
+    width: 230px;
+    top: 8px;
+    left: 5px;
+    border-radius: 20px;
 }
 
 .ma-behavior-tags {
@@ -1458,6 +1502,11 @@
 	    height: 500px;
     }
 
+    .ma-kabao1,.ma-kabao2,.ma-kabao3{
+    	width: 250px;
+    	height: 545px;
+    }
+
     .ma-super img{
     	width: 190px;
 	    height: 410px;
@@ -1763,6 +1812,12 @@
     	width: 190px;
     	top: 0;
     	left: 0;
+    }
+
+    #houtai_video{
+    	width: 180px;
+	    top: 6px;
+	    left: 5px;
     }
 
     .ma-behavior-tags{
