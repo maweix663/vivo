@@ -439,6 +439,18 @@
     border-radius: 16px;
 }
 
+#icon_video{
+	width: 100%;
+}
+
+#clock_video{
+	width: 302px;
+    top: 10px;
+    position: absolute;
+    left: 8px;
+	border-radius: 16px;
+}
+
 /*镜头包*/
 .ma-lens {
 	height: 800px;
@@ -601,8 +613,8 @@
 .ma-icon .ma-icon-img {
 	position: absolute;
 	width: 738px;
-	height: 362px;
-	bottom: 140px;
+	height: 492px;
+    bottom: 80px;
 	left: 50%;
 	margin-left: -369px;
 }
@@ -619,12 +631,14 @@
 .ma-icon-img-left,.ma-icon-img-right {
 	position: absolute;
 	width: 320px;
-	height: 546px;
-	bottom: 0px;
+	height: 694px;
+	bottom: -200px;
 }
 
 .ma-icon-img-left{
 	left: 0px;
+	top: auto;
+	margin: 0;
 }
 
 .ma-icon-img-right{
@@ -890,6 +904,14 @@
 }
 
 #houtai_video{
+	position: absolute;
+    width: 230px;
+    top: 8px;
+    left: 5px;
+    border-radius: 20px;
+}
+
+#ma-kabao1{
 	position: absolute;
     width: 230px;
     top: 8px;
@@ -1657,12 +1679,6 @@
 	    bottom: -40px;
     }
 
-    .ma-icon-img-left{
-    	width: 100%;
-	    left: 0;
-	    height: 100%;
-    }
-
     .ma-icon-img-right{
     	display: none;
     }
@@ -1782,6 +1798,14 @@
 	    margin-left: -95px;
     }
 
+    .ma-icon-img-left{
+    	width: 164px;
+	    left: 30px;
+	    height: 100%;
+	    margin: 0;
+	    top: -20px;
+    }
+
     .ma-new-icon-img{
     	top: 0;
     }
@@ -1819,6 +1843,25 @@
 	    top: 6px;
 	    left: 5px;
     }
+
+    #kabao1_video{
+    	width: 178px;
+    }
+
+    #clock_video{
+    	width: 152px;
+	    top: 6px;
+	    left: 6px;
+    }
+
+    .ma-kabao2,.ma-kabao3{
+		display: none;
+	}
+
+	.ma-kabao1{
+		top: 40px;
+		margin-left: -80px;
+	}
 
     .ma-behavior-tags{
 	    margin-left: -140px;

@@ -2288,7 +2288,11 @@
             <h5 class="ma-icons-title">行为图标</h5>
             <p class="ma-icons-text">OriginOS的图标带来全新感知，现在，阴晴雨雪、春夏秋冬的真实自然变化得以体现，错过的电话和短信会灵动地提醒你，甚至便签和文件会留下使用过的痕迹。</p>
 
-            <img class="ma-icon-img" src="./images/demo-12.png">
+            <div class="ma-icon-img">
+              <video id="icon_video" preload muted>
+                <source id="iconMP4" src="./lib/icon.mp4" />
+              </video>
+            </div>
           </section>
 
           <section class="ma-icon ma-box-block ma-clock">
@@ -2296,7 +2300,12 @@
             <p class="ma-clock-text">独特的闹钟开关设计，每一次的触碰都是对未来美好的期许。你可以非常方便的快速创建或修改闹钟，直观的感知到生效状态的变化，给你带来无比的安心与确定。</p>
 
             <div class="ma-icon-view">
-              <img class="ma-icon-img-left" src="./images/demo-09.png">
+              <div class="ma-behavior-phone ma-icon-img-left">
+                <video id="clock_video" preload muted>
+                  <source id="clockMP4" src="./lib/clock.mp4" />
+                </video>
+              </div>
+              
               <img class="ma-icon-img-right" src="./images/demo-09.png">
             </div>
           </section>

@@ -11,6 +11,8 @@ var houtaiRun = true
 var kabao1Run = true
 var kabao2Run = true
 var kabao3Run = true
+var iconRun = true
+var clockRun = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
@@ -21,6 +23,8 @@ var houtaivideo = document.getElementById('houtai_video');
 var kabao1video = document.getElementById('kabao1_video');
 var kabao2video = document.getElementById('kabao2_video');
 var kabao3video = document.getElementById('kabao3_video');
+var iconvideo = document.getElementById('icon_video');
+var clockvideo = document.getElementById('clock_video');
 
 
 var video = document.getElementById('example_video');
@@ -366,29 +370,55 @@ function rizebig (scrollTop) {
 		// $('.ma-icon-fly-icon7').removeClass('animated bounceOutDown')
 		// $('.ma-icon-fly-icon8').removeClass('animated bounceOutDown')
 	}
-
+	
 	if (scrollTop > 9150) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-icons-title').addClass('title-run')
-		$('.ma-icons-text').addClass('text-run')
+		if (scrollTop > 10180){
+			iconvideo.pause()
+			iconRun = true
 
-		if (scrollTop > 10180) {
+
 			$('.ma-icons-text').removeClass('text-run')
 			$('.ma-icons-title').removeClass('title-run')
+		} else {
+			if (iconRun == true) {
+				iconRun = false
+				iconvideo.pause();
+				iconvideo.load();
+				iconvideo.play()
+
+				$('.ma-icons-title').addClass('title-run')
+				$('.ma-icons-text').addClass('text-run')
+			}
 		}
 	} else {
+		iconvideo.pause()
+		iconRun = true
 		$('.ma-icons-text').removeClass('text-run')
 		$('.ma-icons-title').removeClass('title-run')
 	}
 
 	if (scrollTop > 10000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-clock-title').addClass('title-run')
-		$('.ma-clock-text').addClass('text-run')
+		if (scrollTop > 10970){
+			clockvideo.pause()
+			clockRun = true
 
-		if (scrollTop > 10970) {
+
 			$('.ma-clock-text').removeClass('text-run')
 			$('.ma-clock-title').removeClass('title-run')
+		} else {
+			if (clockRun == true) {
+				clockRun = false
+				clockvideo.pause();
+				clockvideo.load();
+				clockvideo.play()
+
+				$('.ma-clock-title').addClass('title-run')
+				$('.ma-clock-text').addClass('text-run')
+			}
 		}
 	} else {
+		clockvideo.pause()
+		clockRun = true
 		$('.ma-clock-text').removeClass('text-run')
 		$('.ma-clock-title').removeClass('title-run')
 	}
@@ -1043,14 +1073,28 @@ function rizesall (scrollTop) {
 	}
 
 	if (scrollTop > 4798) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-super-title').addClass('title-run')
-		$('.ma-super-text').addClass('text-run')
+		if (scrollTop > 5740){
+			kabao1video.pause()
+			kabao1Run = true
 
-		if (scrollTop > 5740) {
+
 			$('.ma-super-text').removeClass('text-run')
 			$('.ma-super-title').removeClass('title-run')
+		} else {
+			if (kabao1Run == true) {
+				kabao1Run = false
+				kabao1video.pause();
+				kabao1video.load();
+				kabao1video.play()
+
+				$('.ma-super-title').addClass('title-run')
+				$('.ma-super-text').addClass('text-run')
+			}
 		}
+
 	} else {
+		kabao1video.pause()
+		kabao1Run = true
 		$('.ma-super-text').removeClass('text-run')
 		$('.ma-super-title').removeClass('title-run')
 	}
@@ -1130,27 +1174,53 @@ function rizesall (scrollTop) {
 	}
 
 	if (scrollTop > 6951) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-icons-title').addClass('title-run')
-		$('.ma-icons-text').addClass('text-run')
+		if (scrollTop > 7811){
+			iconvideo.pause()
+			iconRun = true
 
-		if (scrollTop > 7811) {
+
 			$('.ma-icons-text').removeClass('text-run')
 			$('.ma-icons-title').removeClass('title-run')
+		} else {
+			if (iconRun == true) {
+				iconRun = false
+				iconvideo.pause();
+				iconvideo.load();
+				iconvideo.play()
+
+				$('.ma-icons-title').addClass('title-run')
+				$('.ma-icons-text').addClass('text-run')
+			}
 		}
 	} else {
+		iconvideo.pause()
+		iconRun = true
 		$('.ma-icons-text').removeClass('text-run')
 		$('.ma-icons-title').removeClass('title-run')
 	}
 
 	if (scrollTop > 7440) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-clock-title').addClass('title-run')
-		$('.ma-clock-text').addClass('text-run')
+		if (scrollTop > 8295){
+			clockvideo.pause()
+			clockRun = true
 
-		if (scrollTop > 8295) {
+
 			$('.ma-clock-text').removeClass('text-run')
 			$('.ma-clock-title').removeClass('title-run')
+		} else {
+			if (clockRun == true) {
+				clockRun = false
+				clockvideo.pause();
+				clockvideo.load();
+				clockvideo.play()
+
+				$('.ma-clock-title').addClass('title-run')
+				$('.ma-clock-text').addClass('text-run')
+			}
 		}
 	} else {
+		clockvideo.pause()
+		clockRun = true
 		$('.ma-clock-text').removeClass('text-run')
 		$('.ma-clock-title').removeClass('title-run')
 	}
