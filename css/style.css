@@ -181,7 +181,9 @@
 .you-one-title,
 .you-one-text,
 .you-funtouch-left-title,
-.you-funtouch-left-text
+.you-funtouch-left-text,
+.photo-head-title,
+.photo-head-text
 {
     opacity: 0;
 }
