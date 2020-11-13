@@ -16,13 +16,14 @@
   <!-- 页面 css 链接，必须使用相对路径 -->
   <link rel="stylesheet" href="./css/swiper.min.css">
   <link rel="stylesheet" href="./css/animate.min.css">
-  <link href="stylesheet" rel="stylesheet" href="./css/aliplayer.css">
+  
   <link href="./css/base.css" rel="stylesheet">
   <link href="./css/you.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/video.css">
+  <script type="text/javascript" src="./script/video.js"></script>
 
-  <script type="text/javascript" src="./script/aliplayer.js"></script>
-  <script type="text/javascript" src="./script/aliplayercomponents.js"></script>
+  
 </head>
 
 <body>
@@ -2118,7 +2119,11 @@
             <div class="ma-huarong-grid-left">
               <img class="ma-huarong-grid-bg" src="./images/img-02.png">
 
-              <img class="ma-huarong-grid-img" src="./images/demo-04.png">
+              <div class="ma-huarong-grid-img ma-behavior-phone">
+                <video id="huarong_video" preload muted>
+                  <source id="huarongMP4" src="./lib/huarong.mp4" />
+                </video>
+              </div>
             </div>
 
             <div class="ma-huarong-grid-right">
@@ -2150,7 +2155,11 @@
 
           <section class="ma-new-icon ma-box-concent ma-box-phone">
             <div class="ma-new-icon-left">
-              <img src="./images/demo-06.png">
+              <div class="ma-new-icon-img ma-behavior-phone">
+                <video id="quanxin_video" preload muted>
+                  <source id="quanxinMP4" src="./lib/quanxin.mp4" />
+                </video>
+              </div>
             </div>
 
             <div class="ma-new-icon-right">
@@ -2175,7 +2184,11 @@
                   <h5 class="ma-system-view-title">交互池</h5>
                   <span class="ma-system-view-text">无论你曾经的交互手势习惯是怎样的，通过交互池你都能找到符合你习惯的交互手势，你甚至可以发挥想象，创造属于你的手势组合。</span>
 
-                  <img class="ma-system-img-left" src="./images/demo-08.png">
+                  <div class="ma-behavior-phone">
+                    <video id="jiaohu_video" preload muted>
+                      <source id="jiaohuMP4" src="./lib/jiaohu.mp4" />
+                    </video>
+                  </div>
                 </div>
               </div>
 
@@ -2334,8 +2347,6 @@
                 光是人感受世间万物的基础，当光与时间叠加，时光的昼夜更迭就推动了人类宇宙万物的不断前进。这次我们把人对光的美妙感知带到我们的系统当中来，将用户的壁纸置身设计在工作台当中，通过光影与时间的叠加，感受时光的点滴变化，这就是时光壁纸。
               </p>
             </div>
-
-            
           </section>
 
           <section class="ma-behavior ma-box-block">
@@ -2346,7 +2357,11 @@
 
             <div class="ma-behavior-step"></div>
             
-            <img class="ma-behavior-phone" src="./images/demo-14.png">
+            <div class="ma-behavior-phone">
+              <video id="example_video" preload muted>
+                <source id="videoMP4" src="./lib/1.mp4" />
+              </video>
+            </div>
 
             <div class="ma-behavior-tags">
               <ul>
