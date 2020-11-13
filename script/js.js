@@ -2,12 +2,14 @@ var metaWidth = $(window).width()
 var num = 0
 var timer = null
 var videoRun = true
+var huarongRun = true
 var li = $('.ma-behavior-tags ul li')
 $('.ma-new-world-title').addClass('title-move')
 $('.ma-new-world-text').addClass('text-run')
 
 
 // 多个视频处理
+var huarongvideo = document.getElementById('huarong_video');
 var video = document.getElementById('example_video');
 var source = document.getElementById('videoMP4');
 
@@ -95,19 +97,32 @@ function rizebig (scrollTop) {
 	}
 
 	if (scrollTop > 1650) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-huarong-title').addClass('title-run')
-		$('.ma-huarong-text').addClass('text-run')
+		
 
-		$('.ma-huarong-grid-bg').addClass('huarong-bg')
-		$('.ma-huarong-grid-img').addClass('huarong-img')
+		if (scrollTop > 2600){
+			huarongvideo.pause()
+			huarongRun = true
 
-		if (scrollTop > 2600) {
 			$('.ma-huarong-grid-bg').removeClass('huarong-bg')
 			$('.ma-huarong-grid-img').removeClass('huarong-img')
 			$('.ma-huarong-text').removeClass('text-run')
 			$('.ma-huarong-title').removeClass('title-run')
+		} else {
+			if (huarongRun == true) {
+				huarongRun = false
+				huarongvideo.pause();
+				huarongvideo.load();
+				huarongvideo.play()
+				$('.ma-huarong-title').addClass('title-run')
+				$('.ma-huarong-text').addClass('text-run')
+
+				$('.ma-huarong-grid-bg').addClass('huarong-bg')
+				$('.ma-huarong-grid-img').addClass('huarong-img')
+			}
 		}
 	} else {
+		huarongvideo.pause()
+		huarongRun = true
 		$('.ma-huarong-grid-bg').removeClass('huarong-bg')
 		$('.ma-huarong-grid-img').removeClass('huarong-img')
 		$('.ma-huarong-text').removeClass('text-run')
@@ -782,19 +797,31 @@ function rizesall (scrollTop) {
 	}
 
 	if (scrollTop > 509) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-huarong-title').addClass('title-run')
-		$('.ma-huarong-text').addClass('text-run')
+		if (scrollTop > 1928){
+			huarongvideo.pause()
+			huarongRun = true
 
-		$('.ma-huarong-grid-bg').addClass('huarong-bg')
-		$('.ma-huarong-grid-img').addClass('huarong-img')
-
-		if (scrollTop > 1928) {
 			$('.ma-huarong-grid-bg').removeClass('huarong-bg')
 			$('.ma-huarong-grid-img').removeClass('huarong-img')
 			$('.ma-huarong-text').removeClass('text-run')
 			$('.ma-huarong-title').removeClass('title-run')
+		} else {
+			if (huarongRun == true) {
+				huarongRun = false
+				$('.ma-huarong-title').addClass('title-run')
+				$('.ma-huarong-text').addClass('text-run')
+
+				$('.ma-huarong-grid-bg').addClass('huarong-bg')
+				$('.ma-huarong-grid-img').addClass('huarong-img')
+				huarongvideo.pause();
+				huarongvideo.load();
+				huarongvideo.play()
+				
+			}
 		}
 	} else {
+		huarongvideo.pause()
+		huarongRun = true
 		$('.ma-huarong-grid-bg').removeClass('huarong-bg')
 		$('.ma-huarong-grid-img').removeClass('huarong-img')
 		$('.ma-huarong-text').removeClass('text-run')

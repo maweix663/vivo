@@ -813,6 +813,14 @@
     border-radius: 20px;
 }
 
+#huarong_video{
+	position: absolute;
+    width: 258px;
+    top: 10px;
+    left: 6px;
+    border-radius: 20px;
+}
+
 .ma-behavior-tags {
 	position: absolute;
 	width: 560px;
@@ -1694,6 +1702,12 @@
     }
 
     #example_video{
+    	width: 180px;
+	    top: 6px;
+	    left: 4px;
+    }
+
+    #huarong_video{
     	width: 180px;
 	    top: 6px;
 	    left: 4px;
