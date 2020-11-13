@@ -16,13 +16,14 @@
   <!-- 页面 css 链接，必须使用相对路径 -->
   <link rel="stylesheet" href="./css/swiper.min.css">
   <link rel="stylesheet" href="./css/animate.min.css">
-  <link href="stylesheet" rel="stylesheet" href="./css/aliplayer.css">
+  
   <link href="./css/base.css" rel="stylesheet">
   <link href="./css/you.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/video.css">
+  <script type="text/javascript" src="./script/video.js"></script>
 
-  <script type="text/javascript" src="./script/aliplayer.js"></script>
-  <script type="text/javascript" src="./script/aliplayercomponents.js"></script>
+  
 </head>
 
 <body>
@@ -2346,7 +2347,11 @@
 
             <div class="ma-behavior-step"></div>
             
-            <img class="ma-behavior-phone" src="./images/demo-14.png">
+            <div class="ma-behavior-phone">
+              <video id="example_video" muted>
+                <source id="videoMP4" src="./lib/1.mp4" />
+              </video>
+            </div>
 
             <div class="ma-behavior-tags">
               <ul>

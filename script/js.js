@@ -1,9 +1,23 @@
 var metaWidth = $(window).width()
 var num = 0
 var timer = null
+var videoRun = true
 var li = $('.ma-behavior-tags ul li')
 $('.ma-new-world-title').addClass('title-move')
 $('.ma-new-world-text').addClass('text-run')
+
+
+// 多个视频处理
+var video = document.getElementById('example_video');
+var source = document.getElementById('videoMP4');
+
+function restVideo (num) {
+	video.pause()
+    video.setAttribute('src','./lib/' + num + '.mp4');
+    video.load();
+    video.play();
+}
+
 $(window).scroll(function () {
 	var scrollTop = $(window).scrollTop()
 
@@ -410,6 +424,7 @@ function rizebig (scrollTop) {
 	if (scrollTop > 15007) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-behavior-title').addClass('title-run')
 		$('.ma-behavior-text').addClass('text-run')
+
 		if (scrollTop > 16042) {
 			$('.ma-behavior-text').removeClass('text-run')
 			$('.ma-behavior-title').removeClass('title-run')
@@ -421,17 +436,25 @@ function rizebig (scrollTop) {
 
 	
 	if (scrollTop > 15340) {
-		numRun()
-
 		if (scrollTop > 16900){
+			video.pause()
+			videoRun = true
 			num = 0
 			clearInterval(timer)
 			numRun()
 			li.removeClass('active')
 			li.eq(0).addClass('active')
+		} else {
+			if (videoRun == true) {
+				numRun()
+				restVideo(1)
+				videoRun = false
+			}
 		}
 	} else {
 		num = 0
+		video.pause()
+		videoRun = true
 		clearInterval(timer)
 		li.removeClass('active')
 		li.eq(0).addClass('active')
@@ -1486,7 +1509,7 @@ function numRun() {
 
     //改变数值
     timer = setInterval(()=>{
-    	num += 623
+    	num += 267
     	odo.update(num)
 
     	if (num >= 8000) {
@@ -1506,6 +1529,7 @@ li.click(function(){
 	num = 0
 	clearInterval(timer)
 	numRun()
+	restVideo($(this).index() + 1)
 })
 
 
