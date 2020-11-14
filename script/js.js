@@ -1956,3 +1956,19 @@ function word(val) {
 		.animate({left:40 * val +'px'})
 	 }, 10);
 }
+
+// 进程优化
+function optimize() {
+    $('.you-filled-fix').stop()
+    .animate({height:'50px'},'slow')
+    $('.you-water-fix')
+    .stop()
+    .animate({top:'78px'},'slow')
+}
+function unoptimize() {
+    $('.you-filled-fix').stop()
+    .animate({height:'128px'},'slow')
+    $('.you-water-fix')
+    .stop()
+    .animate({top:'0px'},'slow')
+}
