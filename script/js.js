@@ -1893,7 +1893,7 @@ function running() {
 			centeredSlides: true,
 			coverflowEffect: {
 				rotate: -40,
-				stretch: -30,
+				stretch: -50,
 				depth: 80,
 				modifier: 1,
 				slideShadows: false

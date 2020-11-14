@@ -15,6 +15,14 @@
     position: relative;  
 }
 
+.swiper-slide-active{
+	opacity: 1;
+}
+
+.swiper-slide-next,.swiper-slide-prev{
+	opacity: 0.4;
+}
+
 .el-slider.is-vertical {
 	background-image: url("../images/svg-2.svg");
     background-repeat: no-repeat;   
