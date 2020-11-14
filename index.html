@@ -2083,7 +2083,7 @@
 
     <!-- 在这个 div 里面进行页面开发 -->
     <div id="vivo-product-wrap" class="unvisible J_replace_content">
-      <div class="ma-box-scroll" id="app">
+      <div class="ma-box-scroll">
         <div class="ma-box">
           <section class="ma-head">
             <a href="#">宣传视频链接</a>
@@ -2355,7 +2355,7 @@
               我们透过天空视窗将真实的自然现象带到了主屏，在这里，各种天气现象都收纳其中…一片云层的形状、大小以及密度，都是模拟及采样了不同地区的上千种景别绘制出来。甚至，连云层的移动速度都会因风力大小而有不同的表现。</p>
 
             <div class="ma-fly-view">
-              <div class="block">
+              <div id="app" class="block">
                 <el-slider
                   v-model="values"
                   :step="step"
@@ -2366,14 +2366,14 @@
               </div>
 
               <div class="ma-behavior-phone ma-fly-img-left">
-                <video id="example_video" preload muted>
-                  <source id="videoMP4" src="./lib/1.mp4" />
+                <video id="tianqi1_video" preload muted>
+                  <source id="tianq1MP4" src="./lib/tianqi1.mp4" />
                 </video>
               </div>
 
               <div class="ma-behavior-phone ma-fly-img-right">
-                <video id="example_video" preload muted>
-                  <source id="videoMP4" src="./lib/1.mp4" />
+                <video id="leidian_video" preload muted>
+                  <source id="leidianMP4" src="./lib/leidian.mp4" />
                 </video>
               </div>
             </div>

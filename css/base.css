@@ -466,6 +466,13 @@
     left: 8px;
 	border-radius: 16px;
 }
+#leidian_video,#tianqi1_video{
+	position: absolute;
+    width: 261px;
+    top: 8px;
+    left: 6px;
+    border-radius: 16px;
+}
 
 .block{
 	position: absolute;
@@ -818,6 +825,7 @@
 
 .ma-fly-img-right{
 	right: 0px;
+	left: auto;
 }
 
 /*时光视窗*/

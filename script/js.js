@@ -15,6 +15,7 @@ var iconRun = true
 var clockRun = true
 var tianqiRun = true
 var bianxingRun = true
+var leidianRun = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
@@ -29,6 +30,7 @@ var iconvideo = document.getElementById('icon_video');
 var clockvideo = document.getElementById('clock_video');
 var tianqivideo = document.getElementById('tianqi_video');
 var bianxingvideo = document.getElementById('bianxing_video');
+var leidianvideo = document.getElementById('leidian_video');
 
 var video = document.getElementById('example_video');
 var source = document.getElementById('videoMP4');
@@ -505,14 +507,27 @@ function rizebig (scrollTop) {
 	}
 
 	if (scrollTop > 13379) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-fly-title').addClass('title-run')
-		$('.ma-fly-text').addClass('text-run')
+		if (scrollTop > 14428){
+			leidianvideo.pause()
+			leidianRun = true
 
-		if (scrollTop > 14428) {
 			$('.ma-fly-text').removeClass('text-run')
 			$('.ma-fly-title').removeClass('title-run')
+		} else {
+
+			if (leidianRun == true) {
+				leidianRun = false
+				leidianvideo.pause();
+				leidianvideo.load();
+				leidianvideo.play()
+
+				$('.ma-fly-title').addClass('title-run')
+				$('.ma-fly-text').addClass('text-run')
+			}
 		}
 	} else {
+		leidianvideo.pause()
+		leidianRun = true
 		$('.ma-fly-text').removeClass('text-run')
 		$('.ma-fly-title').removeClass('title-run')
 	}
