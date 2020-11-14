@@ -54,6 +54,14 @@
 	line-height: 32px;
 }
 
+.ma-phone-text {
+	display: none;
+}
+
+.ma-web-text {
+	display: block;
+}
+
 .ma-head a{
 	margin-left: -30px;
     position: absolute;
@@ -1333,11 +1341,19 @@
 	}
 
 	.ma-head{
-		height: 212px;
+		height: 266px;
 	}
 
 	.ma-head a{
 		margin-left: -110px;
+	}
+
+	.ma-phone-text{
+		display: block;
+	}
+
+	.ma-web-text {
+		display: none;
 	}
 
     .ma-new-world h4{
@@ -1410,6 +1426,7 @@
     .ma-huarong-grid{
     	height: 610px;
     	position: relative;
+    	padding-top: 20px!important;
     }
 
     .ma-huarong-grid-right{
@@ -1417,13 +1434,13 @@
     	position: absolute;
     	width: 100%;
     	height: 150px;
-    	top: 60px;
+    	top: 20px;
     	left: 0;
     }
 
     .ma-huarong-grid .ma-huarong-grid-left{
     	position: absolute;
-    	top: 210px;
+    	top: 200px;
     	height: 460px;
     }
 
@@ -1464,7 +1481,7 @@
     }
 
     .ma-template .ma-new-world-view .ma-left{
-    	height: 170px;
+    	height: 190px;
     }
 
     .ma-template .ma-new-world-view .ma-right{
@@ -1511,6 +1528,7 @@
 
     .ma-new-icon-content{
     	top: 0;
+    	left: 0;
     	width: 100%;
     	height: auto;
     }
@@ -1522,6 +1540,10 @@
 	    height: 502px;
     }
 
+    .ma-box{
+    	padding-bottom: 0;
+    }
+
     /*鹅卵石交互体系*/
 	.ma-box-concent {
 		padding: 60px 0 0 0;
@@ -1529,6 +1551,10 @@
 
 	.ma-new-world{
 		padding-top: 90px;
+	}
+
+	.ma-template {
+		padding-top: 40px;
 	}
 
     .ma-box-system {
@@ -1691,7 +1717,7 @@
 
     /*时间线设计体系*/
     .ma-box-time{
-    	padding: 0 0 60px 0;
+    	padding: 0;
     }
 
     .ma-time-head h3{
@@ -1832,6 +1858,11 @@
     	font-size: 32px;
 	    line-height: 42px;
 	    margin-bottom: 0;
+	    padding-top: 20px;
+    }
+
+    .ma-fly p.ma-block-text{
+    	font-size: 12px;
     }
 
     .ma-window-head p,.ma-fly p{
@@ -1956,6 +1987,10 @@
     	top: 140px;
     }
 
+    .ma-running-img{
+    	top: 150px;
+    }
+
     .ma-icon-img-left{
     	width: 164px;
 	    left: 30px;
@@ -2044,6 +2079,7 @@
     .ma-behavior-tags{
 	    margin-left: -140px;
 	    width: 280px;
+	    bottom: 20px;
     }
 
     .ma-behavior-tags ul li{
@@ -2067,18 +2103,19 @@
 
     .number-animate{
     	margin-left: 0; 
-	    height: 70px;
+	    height: 100%;
 	    width: 100%;
 	    
     }
     .number-animate .number-animate-dom{
     	width: 70px;
+    	top: -30px;
     }
 
     .number-animate .number-animate-dom span, .number-animate .number-animate-dot span{
-    	height: 70px;
+    	height: 100px;
     	font-size: 80px;
-    	line-height: 70px;
+    	line-height: 100px;
     	text-shadow: 5px 5px 7px rgba(136,136,136,0.25);
     }
 
