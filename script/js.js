@@ -33,6 +33,7 @@ var bianxingvideo = document.getElementById('bianxing_video');
 var video = document.getElementById('example_video');
 var source = document.getElementById('videoMP4');
 
+
 var li = $('.ma-behavior-tags ul li')
 $('.ma-new-world-title').addClass('title-move')
 $('.ma-new-world-text').addClass('text-run')
@@ -41,6 +42,7 @@ function restVideo (num) {
 	video.pause()
     video.setAttribute('src','./lib/' + num + '.mp4');
     video.load();
+    video.playbackRate = 4;
     video.play();
 }
 
@@ -1835,7 +1837,7 @@ function numRun() {
 
     //改变数值
     timers = setInterval(()=>{
-    	num += 267
+    	num += 987
     	odo.update(num)
 
     	if (num >= 8000) {
@@ -1843,7 +1845,7 @@ function numRun() {
     		odo.update(8000)
 	    	clearInterval(timers)
 	    }
-    },1000)
+    },800)
 
     
 }
