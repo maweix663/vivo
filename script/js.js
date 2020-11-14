@@ -13,6 +13,7 @@ var kabao2Run = true
 var kabao3Run = true
 var iconRun = true
 var clockRun = true
+var tianqiRun = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
@@ -25,7 +26,7 @@ var kabao2video = document.getElementById('kabao2_video');
 var kabao3video = document.getElementById('kabao3_video');
 var iconvideo = document.getElementById('icon_video');
 var clockvideo = document.getElementById('clock_video');
-
+var tianqivideo = document.getElementById('tianqi_video');
 
 var video = document.getElementById('example_video');
 var source = document.getElementById('videoMP4');
@@ -434,15 +435,29 @@ function rizebig (scrollTop) {
 		$('.ma-notice-text').removeClass('text-run')
 		$('.ma-notice-title').removeClass('title-run')
 	}
-
+	
 	if (scrollTop > 11726) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-day-title').addClass('title-run')
-		$('.ma-day-text').addClass('text-run')
-		if (scrollTop > 12768) {
+		if (scrollTop > 12768){
+			tianqivideo.pause()
+			tianqiRun = true
+
+
 			$('.ma-day-text').removeClass('text-run')
 			$('.ma-day-title').removeClass('title-run')
+		} else {
+			if (tianqiRun == true) {
+				tianqiRun = false
+				tianqivideo.pause();
+				tianqivideo.load();
+				tianqivideo.play()
+
+				$('.ma-day-title').addClass('title-run')
+				$('.ma-day-text').addClass('text-run')
+			}
 		}
 	} else {
+		tianqivideo.pause()
+		tianqiRun = true
 		$('.ma-day-text').removeClass('text-run')
 		$('.ma-day-title').removeClass('title-run')
 	}
@@ -1238,13 +1253,27 @@ function rizesall (scrollTop) {
 	}
 
 	if (scrollTop > 8587) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-day-title').addClass('title-run')
-		$('.ma-day-text').addClass('text-run')
-		if (scrollTop > 9497) {
+		if (scrollTop > 9497){
+			tianqivideo.pause()
+			tianqiRun = true
+
+
 			$('.ma-day-text').removeClass('text-run')
 			$('.ma-day-title').removeClass('title-run')
+		} else {
+			if (tianqiRun == true) {
+				tianqiRun = false
+				tianqivideo.pause();
+				tianqivideo.load();
+				tianqivideo.play()
+
+				$('.ma-day-title').addClass('title-run')
+				$('.ma-day-text').addClass('text-run')
+			}
 		}
 	} else {
+		tianqivideo.pause()
+		tianqiRun = true
 		$('.ma-day-text').removeClass('text-run')
 		$('.ma-day-title').removeClass('title-run')
 	}

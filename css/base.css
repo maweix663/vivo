@@ -445,7 +445,15 @@
 
 #clock_video{
 	width: 302px;
-    top: 10px;
+    top: 14px;
+    position: absolute;
+    left: 8px;
+	border-radius: 16px;
+}
+
+#tianqi_video{
+	width: 324px;
+    top: 12px;
     position: absolute;
     left: 8px;
 	border-radius: 16px;
@@ -701,12 +709,13 @@
 	line-height: 32px;
 }
 
-.ma-day img {
+.ma-day-img {
 	position: absolute;
 	width: 340px;
-	height: 750px;
+	height: 740px;
 	top: 40px;
 	right: 70px;
+	left: auto;
 }
 
 /*原景视窗*/
@@ -1703,14 +1712,6 @@
     	height: 650px;
     }
 
-    .ma-day img{
-    	width: 190px;
-	    height: 410px; 
-	    bottom: 20px;
-	    right: 56px;
-	    top: auto;
-    }
-
     /*原景视窗*/
     .ma-window-head h3{
     	font-size: 32px;
@@ -1806,6 +1807,14 @@
 	    top: -20px;
     }
 
+    .ma-day-img{
+    	width: 190px;
+	    height: 410px; 
+	    bottom: 20px;
+	    right: 56px;
+	    top: auto;
+    }
+
     .ma-new-icon-img{
     	top: 0;
     }
@@ -1852,6 +1861,12 @@
     	width: 152px;
 	    top: 6px;
 	    left: 6px;
+    }
+
+    #tianqi_video{
+    	width: 180px;
+	    top: 8px;
+	    left: 4px;
     }
 
     .ma-kabao2,.ma-kabao3{
