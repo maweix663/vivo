@@ -12,19 +12,34 @@ const Odometer = (function(win,doc) {
             this.$parent = doc.querySelector(x);
 
             this.html = `<div class="number-animate-dom" data-num="{{num}}">
-                        <span class="number-animate-span-img">0</span>
-                        <span class="number-animate-span-img">1</span>
-                        <span class="number-animate-span-img">2</span>
-                        <span class="number-animate-span-img">3</span>
-                        <span class="number-animate-span-img">4</span>
-                        <span class="number-animate-span-img">5</span>
-                        <span class="number-animate-span-img">6</span>
-                        <span class="number-animate-span-img">7</span>
-                        <span class="number-animate-span-img">8</span>
-                        <span class="number-animate-span-img">9</span>
-                        <span class="number-animate-span-img">0</span>
-                        <span class="number-animate-span-img">.</span>
+                        <img class="number-animate-span-img" src="./images/00.png"/>
+                        <img class="number-animate-span-img" src="./images/011.png"/>
+                        <img class="number-animate-span-img" src="./images/22.png"/>
+                        <img class="number-animate-span-img" src="./images/33.png"/>
+                        <img class="number-animate-span-img" src="./images/44.png"/>
+                        <img class="number-animate-span-img" src="./images/55.png"/>
+                        <img class="number-animate-span-img" src="./images/66.png"/>
+                        <img class="number-animate-span-img" src="./images/77.png"/>
+                        <img class="number-animate-span-img" src="./images/88.png"/>
+                        <img class="number-animate-span-img" src="./images/99.png"/>
+                        <img class="number-animate-span-img" src="./images/00.png"/>
+                        <img class="number-animate-span-img" src="./images/00.png"/>
                       </div>`;
+
+            // this.html = `<div class="number-animate-dom" data-num="{{num}}">
+            //             <span class="number-animate-span-img">0</span>
+            //             <span class="number-animate-span-img">1</span>
+            //             <span class="number-animate-span-img">2</span>
+            //             <span class="number-animate-span-img">3</span>
+            //             <span class="number-animate-span-img">4</span>
+            //             <span class="number-animate-span-img">5</span>
+            //             <span class="number-animate-span-img">6</span>
+            //             <span class="number-animate-span-img">7</span>
+            //             <span class="number-animate-span-img">8</span>
+            //             <span class="number-animate-span-img">9</span>
+            //             <span class="number-animate-span-img">0</span>
+            //             <span class="number-animate-span-img">.</span>
+            //           </div>`;
             this.extend( this.setting, y );
             this.init(this.$parent,y)
         }

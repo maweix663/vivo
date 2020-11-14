@@ -18,6 +18,7 @@ var bianxingRun = true
 var leidianRun = true
 var tianqi1Run = true
 var zujianRun = true
+var yuanzi = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
@@ -35,8 +36,9 @@ var bianxingvideo = document.getElementById('bianxing_video');
 var leidianvideo = document.getElementById('leidian_video');
 var tianqi1video = document.getElementById('tianqi1_video');
 var zujianvideo = document.getElementById('zujian_video');
+var yuanzivideo = document.getElementById('yuanzi_video');
 
-var video = document.getElementById('example_video');
+var video = document.getElementById('example_video1');
 var source = document.getElementById('videoMP4');
 var tianqi1source = document.getElementById('tianq1MP4');
 
@@ -45,11 +47,15 @@ $('.ma-new-world-title').addClass('title-move')
 $('.ma-new-world-text').addClass('text-run')
 
 function restVideo (num) {
-	video.pause()
-    video.setAttribute('src','./lib/' + num + '.mp4');
-    video.load();
-    video.playbackRate = 4;
-    video.play();
+	var idName = 'example_video' + num
+
+	$('.ma-behavior-video').css({"display":"none"})
+	$('#' + idName).css({"display":"block"})
+
+	$('#' + idName)[0].pause()
+    $('#' + idName)[0].currentTime=0
+    $('#' + idName)[0].playbackRate=4
+    $('#' + idName)[0].play()
 }
 
 function tianqiVideo (num) {
@@ -59,9 +65,8 @@ function tianqiVideo (num) {
 	$('#' + idName).css({"display":"block"})
 
 	$('#' + idName)[0].pause()
-    $('#' + idName)[0].setAttribute('src','./lib/tianqi'+ num +'.mp4');
-    $('#' + idName)[0].load();
-    $('#' + idName)[0].play();
+    $('#' + idName)[0].currentTime=0
+    $('#' + idName)[0].play()
 }
 
 new Vue({
@@ -192,7 +197,7 @@ function rizebig (scrollTop) {
 			if (huarongRun == true) {
 				huarongRun = false
 				huarongvideo.pause();
-				huarongvideo.load();
+				huarongvideo.currentTime=0;
 				huarongvideo.play()
 				$('.ma-huarong-title').addClass('title-run')
 				$('.ma-huarong-text').addClass('text-run')
@@ -221,7 +226,7 @@ function rizebig (scrollTop) {
 			if (zujianRun == true) {
 				zujianRun = false
 				zujianvideo.pause();
-				zujianvideo.load();
+				zujianvideo.currentTime=0;
 				zujianvideo.play()
 				$('.ma-template-title').addClass('title-run')
 				$('.ma-template-text').addClass('text-run')
@@ -245,7 +250,7 @@ function rizebig (scrollTop) {
 			if (quanxinRun == true) {
 				quanxinRun = false
 				quanxinvideo.pause();
-				quanxinvideo.load();
+				quanxinvideo.currentTime=0;
 				quanxinvideo.play()
 				$('.ma-new-icon-title').addClass('title-run')
 				$('.ma-new-icon-text').addClass('text-run')
@@ -286,11 +291,11 @@ function rizebig (scrollTop) {
 			if (jiaohuRun == true) {
 				jiaohuRun = false
 				jiaohuvideo.pause();
-				jiaohuvideo.load();
+				jiaohuvideo.currentTime=0;
 				jiaohuvideo.play()
 
 				kongzhivideo.pause()
-				kongzhivideo.load();
+				kongzhivideo.currentTime=0;
 				kongzhivideo.play()
 
 				$('.ma-system-view-title').addClass('title-run')
@@ -318,7 +323,7 @@ function rizebig (scrollTop) {
 			if (houtaiRun == true) {
 				houtaiRun = false
 				houtaivideo.pause();
-				houtaivideo.load();
+				houtaivideo.currentTime=0;
 				houtaivideo.play()
 
 				$('.ma-running-title').addClass('title-run')
@@ -348,15 +353,15 @@ function rizebig (scrollTop) {
 			if (kabao1Run == true) {
 				kabao1Run = false
 				kabao1video.pause();
-				kabao1video.load();
+				kabao1video.currentTime=0;
 				kabao1video.play()
 
 				kabao2video.pause();
-				kabao2video.load();
+				kabao2video.currentTime=0;
 				kabao2video.play()
 
 				kabao3video.pause();
-				kabao3video.load();
+				kabao3video.currentTime=0;
 				kabao3video.play()
 
 				$('.ma-super-title').addClass('title-run')
@@ -413,6 +418,7 @@ function rizebig (scrollTop) {
 
 	if (scrollTop > 9230) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-icon-fly').addClass('animated bounceOutDown')
+		$('.ma-icon-bg-run').addClass('icon-bg')
 
 		// $('.ma-icon-fly-icon1').addClass('animated bounceOutDown')
 		// $('.ma-icon-fly-icon2').addClass('animated bounceOutDown')
@@ -425,6 +431,7 @@ function rizebig (scrollTop) {
 
 		if (scrollTop > 10000) {
 			$('.ma-icon-fly').removeClass('animated bounceOutDown')
+			$('.ma-icon-bg-run').removeClass('icon-bg')
 			// $('.ma-icon-fly-icon1').removeClass('animated bounceOutDown')
 			// $('.ma-icon-fly-icon2').removeClass('animated bounceOutDown')
 			// $('.ma-icon-fly-icon3').removeClass('animated bounceOutDown')
@@ -436,6 +443,7 @@ function rizebig (scrollTop) {
 		}
 	} else {
 		$('.ma-icon-fly').removeClass('animated bounceOutDown')
+		$('.ma-icon-bg-run').removeClass('icon-bg')
 		// $('.ma-icon-fly-icon1').removeClass('animated bounceOutDown')
 		// $('.ma-icon-fly-icon2').removeClass('animated bounceOutDown')
 		// $('.ma-icon-fly-icon3').removeClass('animated bounceOutDown')
@@ -458,7 +466,7 @@ function rizebig (scrollTop) {
 			if (iconRun == true) {
 				iconRun = false
 				iconvideo.pause();
-				iconvideo.load();
+				iconvideo.currentTime=0;
 				iconvideo.play()
 
 				$('.ma-icons-title').addClass('title-run')
@@ -484,7 +492,7 @@ function rizebig (scrollTop) {
 			if (clockRun == true) {
 				clockRun = false
 				clockvideo.pause();
-				clockvideo.load();
+				clockvideo.currentTime=0;
 				clockvideo.play()
 
 				$('.ma-clock-title').addClass('title-run')
@@ -499,13 +507,27 @@ function rizebig (scrollTop) {
 	}
 
 	if (scrollTop > 11357) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-notice-title').addClass('title-run')
-		$('.ma-notice-text').addClass('text-run')
-		if (scrollTop > 12470) {
+		if (scrollTop > 12470){
+			yuanzivideo.pause()
+			yuanziRun = true
+
+
 			$('.ma-notice-text').removeClass('text-run')
 			$('.ma-notice-title').removeClass('title-run')
+		} else {
+			if (yuanziRun == true) {
+				yuanziRun = false
+				yuanzivideo.pause();
+				yuanzivideo.currentTime=0;
+				yuanzivideo.play()
+
+				$('.ma-notice-title').addClass('title-run')
+				$('.ma-notice-text').addClass('text-run')
+			}
 		}
 	} else {
+		yuanzivideo.pause()
+		yuanziRun = true
 		$('.ma-notice-text').removeClass('text-run')
 		$('.ma-notice-title').removeClass('title-run')
 	}
@@ -522,7 +544,7 @@ function rizebig (scrollTop) {
 			if (tianqiRun == true) {
 				tianqiRun = false
 				tianqivideo.pause();
-				tianqivideo.load();
+				tianqivideo.currentTime=0;
 				tianqivideo.play()
 
 				$('.ma-day-title').addClass('title-run')
@@ -570,11 +592,11 @@ function rizebig (scrollTop) {
 			if (leidianRun == true) {
 				leidianRun = false
 				leidianvideo.pause();
-				leidianvideo.load();
+				leidianvideo.currentTime=0;
 				leidianvideo.play()
 
 				tianqi1video.pause();
-				tianqi1video.load();
+				tianqi1video.currentTime=0;
 				tianqi1video.play()
 
 				$('.ma-fly-title').addClass('title-run')
@@ -707,7 +729,7 @@ function rizebig (scrollTop) {
 			if (bianxingRun == true) {
 				bianxingRun = false
 				bianxingvideo.pause();
-				bianxingvideo.load();
+				bianxingvideo.currentTime=0;
 				bianxingvideo.play()
 
 				$('.ma-deformation-title').addClass('title-run')
@@ -794,17 +816,17 @@ function rizebig (scrollTop) {
 	})
 
 
-	if (scrollTop > 20000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-        $('.you-Memory-leftwo-title-active').addClass('title-run')
-        $('.you-Memory-leftwo-text-active').addClass('text-run')
+	if (scrollTop > 20518) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+        $('.you-Memory-leftwo-title').addClass('title-run')
+        $('.you-Memory-leftwo-text').addClass('text-run')
 
-        if (scrollTop > 21200) {
-            $('.you-Memory-leftwo-title-active').removeClass('title-run')
-            $('.you-Memory-leftwo-text-active').removeClass('text-run')
+        if (scrollTop > 22165) {
+            $('.you-Memory-leftwo-title').removeClass('title-run')
+            $('.you-Memory-leftwo-text').removeClass('text-run')
         }
     } else {
-        $('.you-Memory-leftwo-title-active').removeClass('title-run')
-        $('.you-Memory-leftwo-text-active').removeClass('text-run')
+        $('.you-Memory-leftwo-title').removeClass('title-run')
+        $('.you-Memory-leftwo-text').removeClass('text-run')
     }
 
 	if (scrollTop > 17600) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
@@ -1064,7 +1086,7 @@ function rizesall (scrollTop) {
 				$('.ma-huarong-grid-bg').addClass('huarong-bg')
 				$('.ma-huarong-grid-img').addClass('huarong-img')
 				huarongvideo.pause();
-				huarongvideo.load();
+				huarongvideo.currentTime=0;
 				huarongvideo.play()
 				
 			}
@@ -1089,7 +1111,7 @@ function rizesall (scrollTop) {
 			if (zujianRun == true) {
 				zujianRun = false
 				zujianvideo.pause();
-				zujianvideo.load();
+				zujianvideo.currentTime=0;
 				zujianvideo.play()
 				$('.ma-template-title').addClass('title-run')
 				$('.ma-template-text').addClass('text-run')
@@ -1113,7 +1135,7 @@ function rizesall (scrollTop) {
 			if (quanxinRun == true) {
 				quanxinRun = false
 				quanxinvideo.pause();
-				quanxinvideo.load();
+				quanxinvideo.currentTime=0;
 				quanxinvideo.play()
 				$('.ma-new-icon-title').addClass('title-run')
 				$('.ma-new-icon-text').addClass('text-run')
@@ -1151,7 +1173,7 @@ function rizesall (scrollTop) {
 			if (jiaohuRun == true) {
 				jiaohuRun = false
 				jiaohuvideo.pause();
-				jiaohuvideo.load();
+				jiaohuvideo.currentTime=0;
 				jiaohuvideo.play()
 				$('.ma-system-view-title-left').addClass('title-run')
 				$('.ma-system-view-text-left').addClass('text-run')
@@ -1174,7 +1196,7 @@ function rizesall (scrollTop) {
 			if (kongzhiRun == true) {
 				kongzhiRun = false
 				kongzhivideo.pause();
-				kongzhivideo.load();
+				kongzhivideo.currentTime=0;
 				kongzhivideo.play()
 				$('.ma-system-view-title-right').addClass('title-run')
 				$('.ma-system-view-text-right').addClass('text-run')
@@ -1199,7 +1221,7 @@ function rizesall (scrollTop) {
 			if (houtaiRun == true) {
 				houtaiRun = false
 				houtaivideo.pause();
-				houtaivideo.load();
+				houtaivideo.currentTime=0;
 				houtaivideo.play()
 
 				$('.ma-running-title').addClass('title-run')
@@ -1225,7 +1247,7 @@ function rizesall (scrollTop) {
 			if (kabao1Run == true) {
 				kabao1Run = false
 				kabao1video.pause();
-				kabao1video.load();
+				kabao1video.currentTime=0;
 				kabao1video.play()
 
 				$('.ma-super-title').addClass('title-run')
@@ -1326,7 +1348,7 @@ function rizesall (scrollTop) {
 			if (iconRun == true) {
 				iconRun = false
 				iconvideo.pause();
-				iconvideo.load();
+				iconvideo.currentTime=0;
 				iconvideo.play()
 
 				$('.ma-icons-title').addClass('title-run')
@@ -1352,7 +1374,7 @@ function rizesall (scrollTop) {
 			if (clockRun == true) {
 				clockRun = false
 				clockvideo.pause();
-				clockvideo.load();
+				clockvideo.currentTime=0;
 				clockvideo.play()
 
 				$('.ma-clock-title').addClass('title-run')
@@ -1390,7 +1412,7 @@ function rizesall (scrollTop) {
 			if (tianqiRun == true) {
 				tianqiRun = false
 				tianqivideo.pause();
-				tianqivideo.load();
+				tianqivideo.currentTime=0;
 				tianqivideo.play()
 
 				$('.ma-day-title').addClass('title-run')
@@ -1438,11 +1460,11 @@ function rizesall (scrollTop) {
 			if (leidianRun == true) {
 				leidianRun = false
 				leidianvideo.pause();
-				leidianvideo.load();
+				leidianvideo.currentTime=0;
 				leidianvideo.play()
 
 				tianqi1video.pause();
-				tianqi1video.load();
+				tianqi1video.currentTime=0;
 				tianqi1video.play()
 
 				$('.ma-fly-title').addClass('title-run')
@@ -1575,7 +1597,7 @@ function rizesall (scrollTop) {
 			if (bianxingRun == true) {
 				bianxingRun = false
 				bianxingvideo.pause();
-				bianxingvideo.load();
+				bianxingvideo.currentTime=0;
 				bianxingvideo.play()
 
 				$('.ma-deformation-title').addClass('title-run')
@@ -1947,15 +1969,16 @@ function running() {
 
 	$('.ma-btn-left').click(function () {
 		worldRun.slidePrev();
+		$('.ma-desk-img').attr('src', './images/desk-02.png')
 	})
 	$('.ma-btn-right').click(function () {
 		worldRun.slideNext();
+		$('.ma-desk-img').attr('src', './images/desk-01.png')
 	})
 }
 
 // 行为壁纸
 function numRun() {
-	clearInterval(timers)
     var odo = new Odometer('.ma-behavior-step',{
         num : num
     });

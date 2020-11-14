@@ -2107,7 +2107,7 @@
                   <h5 class="ma-new-text-title">平行世界</h5>
                   <span class="ma-new-text">OriginOS充满探索精神，我们在创新的同时保留了对传统的兼容。现在，你可以自由穿梭于探索与经典两个世界之间。</span>
 
-                  <img src="./images/desk-02.png">
+                  <img class="ma-desk-img" src="./images/desk-02.png">
                   <i class="ma-new-world-click ma-btn-left" style="left:0;"></i>
                   <i class="ma-new-world-click ma-btn-right" style="right:0;"></i>
                 </div>
@@ -2161,7 +2161,7 @@
               <div class="ma-right">
                 <div class="ma-zujian-img ma-behavior-phone">
                   <video id="zujian_video" preload muted>
-                    <source id="zujianMP4" src="./lib/quanxin.mp4" />
+                    <source id="zujianMP4" src="./lib/zujian.mp4" />
                   </video>
                   <img src="./images/phone-bg.png">
                 </div>
@@ -2337,17 +2337,20 @@
 错过的电话和短信会灵动地提醒你，甚至便签和文件会留下使用过的痕迹。</p>
             </div>
 
-            <img class="ma-icon-img-run" src="./images/demo-09.png">
+            <div class="ma-icon-bg-run">
+              <img class="ma-icon-img-run" src="./images/demo-09.jpg">
+              <img class="ma-icon-bg" src="./images/phone-bg.png">
+            </div>
 
             <div style="animation-duration: 1.5s;animation-timing-function: ease-in-out;" class="ma-icon-fly">
-              <img class="ma-icon-fly-icon1" src="./images/img-01.png">
-              <img class="ma-icon-fly-icon2" src="./images/img-01.png">
-              <img class="ma-icon-fly-icon3" src="./images/img-01.png">
-              <img class="ma-icon-fly-icon4" src="./images/img-01.png">
-              <img class="ma-icon-fly-icon5" src="./images/img-01.png">
-              <img class="ma-icon-fly-icon6" src="./images/img-01.png">
-              <img class="ma-icon-fly-icon7" src="./images/img-01.png">
-              <img class="ma-icon-fly-icon8" src="./images/img-01.png">
+              <img class="ma-icon-fly-icon1" src="./images/icon-01.png">
+              <img class="ma-icon-fly-icon2" src="./images/icon-02.png">
+              <img class="ma-icon-fly-icon3" src="./images/icon-03.png">
+              <img class="ma-icon-fly-icon4" src="./images/icon-04.png">
+              <img class="ma-icon-fly-icon5" src="./images/icon-05.png">
+              <img class="ma-icon-fly-icon6" src="./images/icon-06.png">
+              <img class="ma-icon-fly-icon7" src="./images/icon-07.png">
+              <img class="ma-icon-fly-icon8" src="./images/icon-08.png">
             </div>
           </section>
 
@@ -2387,7 +2390,7 @@
                 <img src="./images/phone-bg.png">
               </div>
 
-              <img class="ma-icon-img-right" src="./images/demo-09.png">
+              <img class="ma-icon-img-right" src="./images/demo-03.png">
             </div>
           </section>
 
@@ -2398,7 +2401,13 @@
                 这个时代充满信息噪音，原子通知能从中提取关键信息，总是能在最恰当的时候告知你最关心的事项。它涵盖了点心的生活场景，并以优雅的方式进行提醒，真正做到不打扰、不错过。</p>
             </div>
 
-            <img src="./images/demo-08.png">
+            <div class="ma-behavior-phone ma-notice-img">
+              <video id="yuanzi_video" preload muted>
+                <source src="./lib/yuanzi.mp4" />
+              </video>
+              <img src="./images/phone-bg.png">
+            </div>
+            <!-- <img src="./images/demo-08.png"> -->
           </section>
 
           <section class="ma-box-block ma-day">
@@ -2427,7 +2436,8 @@
           </section>
 
           <section class="ma-box-block ma-window-content">
-            <img src="./images/img-03.png">
+            <img class="ma-window-img" src="./images/img-03.png">
+            <img class="ma-window-img-text" src="./images/img-04.svg">
             <div class="ma-window-title" style="width: 50%;padding: 10px;box-sizing: border-box;">
               <p>在壁纸之上，</p>
               <p>建立数字与物理世界的紧密联系</p>
@@ -2515,8 +2525,32 @@
             <div class="ma-behavior-step"></div>
 
             <div class="ma-behavior-phone">
-              <video id="example_video" preload muted>
+              <video id="example_video1" class="ma-behavior-video" preload muted>
                 <source id="videoMP4" src="./lib/1.mp4" />
+              </video>
+
+              <video id="example_video2" class="ma-behavior-video" preload muted>
+                <source src="./lib/2.mp4" />
+              </video>
+
+              <video id="example_video3" class="ma-behavior-video" preload muted>
+                <source src="./lib/3.mp4" />
+              </video>
+
+              <video id="example_video4" class="ma-behavior-video" preload muted>
+                <source src="./lib/4.mp4" />
+              </video>
+
+              <video id="example_video5" class="ma-behavior-video" preload muted>
+                <source src="./lib/5.mp4" />
+              </video>
+
+              <video id="example_video6" class="ma-behavior-video" preload muted>
+                <source src="./lib/6.mp4" />
+              </video>
+
+              <video id="example_video7" class="ma-behavior-video" preload muted>
+                <source src="./lib/7.mp4" />
               </video>
               <img src="./images/phone-bg.png">
             </div>
@@ -2628,9 +2662,11 @@
                   <h2 class="you-fuse-title">内存融合</h2>
                   <p class="you-fuse-text">创新性地将RAM和ROM通过算法优化融合起来， 大幅提升后台多应用场景下的体验，实现“内存融合+3G”的体验效果。</p>
                 </div>
-                <div class="you-fuse-img-fu">
-                  <img src="./images/demo-03.png">
-                </div>
+                <!-- <div class="you-fuse-img-fu">
+                  <img src="./images/neicun.png">
+                </div> -->
+
+                <img class="you-fuse-img-fu-img" src="./images/neicun.png">
               </div>
             </div>
 
@@ -2744,7 +2780,7 @@
                   </div>
                 </li>
                 <li class="you-album-portrait currbox">
-                  <img src="./images/demo-09.png">
+                  <img src="./images/demo-09.jpg">
                   <div>
                     <h3>剪同款</h3>
                     <p>我们提供丰富的卡点视频模板，适应多种风格的创作只需导入图片和视频，即可轻松生成节奏感十足的视频作品</p>
