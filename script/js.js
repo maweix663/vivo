@@ -1,5 +1,5 @@
 var metaWidth = $(window).width()
-var num = 0
+var num = 3241
 var timer = null
 var timers = null
 var videoRun = true
@@ -53,10 +53,15 @@ function restVideo (num) {
 }
 
 function tianqiVideo (num) {
-	tianqi1video.pause()
-    tianqi1video.setAttribute('src','./lib/tianqi'+ num +'.mp4');
-    tianqi1video.load();
-    tianqi1video.play();
+	var idName = 'tianqi' + num + '_video'
+
+	$('.tiankong_shichuang').css({"display":"none"})
+	$('#' + idName).css({"display":"block"})
+
+	$('#' + idName)[0].pause()
+    $('#' + idName)[0].setAttribute('src','./lib/tianqi'+ num +'.mp4');
+    $('#' + idName)[0].load();
+    $('#' + idName)[0].play();
 }
 
 new Vue({
@@ -669,7 +674,7 @@ function rizebig (scrollTop) {
 		if (scrollTop > 17154){
 			video.pause()
 			videoRun = true
-			num = 0
+			num = 3241
 			clearInterval(timers)
 			numRun()
 			li.removeClass('active')
@@ -682,7 +687,7 @@ function rizebig (scrollTop) {
 			}
 		}
 	} else {
-		num = 0
+		num = 3241
 		video.pause()
 		videoRun = true
 		clearInterval(timers)
@@ -1537,7 +1542,7 @@ function rizesall (scrollTop) {
 		if (scrollTop > 12223){
 			video.pause()
 			videoRun = true
-			num = 0
+			num = 3241
 			clearInterval(timers)
 			numRun()
 			li.removeClass('active')
@@ -1550,7 +1555,7 @@ function rizesall (scrollTop) {
 			}
 		}
 	} else {
-		num = 0
+		num = 3241
 		video.pause()
 		videoRun = true
 		clearInterval(timers)
@@ -1958,15 +1963,15 @@ function numRun() {
 
     //改变数值
     timers = setInterval(()=>{
-    	num += 987
+    	num += 3
     	odo.update(num)
 
     	if (num >= 8000) {
-    		num = 0
+    		num = 3241
     		odo.update(8000)
 	    	clearInterval(timers)
 	    }
-    },800)
+    },1)
 
     
 }
@@ -1975,7 +1980,7 @@ function numRun() {
 li.click(function(){
 	li.removeClass('active')
 	$(this).addClass('active')
-	num = 0
+	num = 3241
 	clearInterval(timers)
 	numRun()
 	restVideo($(this).index() + 1)

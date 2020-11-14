@@ -77,9 +77,19 @@
 	top: 260px;
 	left: 50%;
 	margin-left: -135px;
-	background-image: url("../images/phone-bg.png");
-    background-repeat: no-repeat;   
-    background-size: 100% 100%;
+}
+
+.ma-jiaohu-view {
+	top: 310px;
+}
+
+.ma-behavior-phone img {
+	position: absolute;
+	width: 100%!important;
+	height: 100%!important;
+	top: 0!important;
+	left: 0!important;
+	margin-left: 0!important;
 }
 
 /*全新数字世界出发点*/
@@ -241,7 +251,7 @@
 /*全新图标*/
 .ma-new-icon {
 	width: 100%;
-	height: 900px;
+	height: 1000px;
 	display: flex;
 }
 
@@ -254,7 +264,7 @@
 .ma-new-icon-img{
 	width: 382px;
     height: 830px;
-    top: 50px;
+    top: 150px;
 	position: absolute;
     left: 50%;
     margin-left: -150px;
@@ -275,7 +285,7 @@
     height: 300px;
     width: 300px;
     text-align: left;
-    top: 30%;
+    top: 350px;
 }
 
 .ma-new-icon-right span{
@@ -535,12 +545,16 @@
     left: 7px;
 	border-radius: 16px;
 }
-#leidian_video,#tianqi1_video{
+#leidian_video,#tianqi1_video,#tianqi2_video,#tianqi3_video{
 	position: absolute;
     width: 390px;
     top: 8px;
     left: 6px;
     border-radius: 16px;
+}
+
+#tianqi2_video,#tianqi3_video{
+	display: none;
 }
 
 .block{
@@ -1253,6 +1267,10 @@
     	left: auto;
 	    right: 170px;
 	    top: 50px;
+    }
+
+    .ma-fly-img-left {
+    	height: 800px;
     }
 }
 
