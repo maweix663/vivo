@@ -1,6 +1,7 @@
 .ma-box {
 	width: 100%;
 	background: #fff;
+	padding-bottom: 120px;
 }
 
 .ma-box-system h4,.ma-box h4{
@@ -77,7 +78,11 @@
 .ma-new-world {
 	text-align: center;
     box-sizing: border-box;
-    padding: 60px 10px;
+    padding: 160px 0 30px 0;
+}
+
+.ma-template {
+	padding-top: 120px;
 }
 
 .ma-new-world h4{
@@ -113,8 +118,8 @@
 .ma-new-world-view .ma-left-content {
 	left: 50%;
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 362px;
     text-align: left;
     top: 50%;
     margin-top: -150px;
@@ -131,12 +136,13 @@
 
 .ma-new-world-view .ma-left-content img {
 	width: 100%;
+	margin-top: 20px;
 }
 
 .ma-new-world-click {
 	position: absolute;
-	width: 150px;
-	height: 150px;
+	width: 175px;
+	height: 175px;
 	bottom: 0;
 	cursor: pointer;
 }
@@ -147,6 +153,7 @@
 	color: #E86855;
 	letter-spacing: 0;
 	line-height: 64px;
+	margin-bottom: 20px;
 }
 
 .swiper-ma-world {
@@ -169,8 +176,14 @@
 	display: flex;
 }
 
-.ma-huarong-grid .ma-huarong-grid-left,.ma-huarong-grid-right{
+.ma-huarong-grid .ma-huarong-grid-left{
 	flex: 1;
+	position: relative;
+	height: 100%;
+}
+
+.ma-huarong-grid-right{
+	width: 40%;
 	position: relative;
 	height: 100%;
 }
@@ -183,10 +196,11 @@
 
 .ma-huarong-grid-img{
 	position: absolute;
-    width: 270px;
+    width: 376px;
+    height: 816px;
     top: 70px;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -188px;
     opacity: 0;
 }
 
@@ -196,6 +210,7 @@
 	color: #E86855;
 	letter-spacing: 0;
 	line-height: 64px;
+	margin-bottom: 20px;
 }
 
 .ma-huarong-grid-content {
@@ -229,9 +244,10 @@
 }
 
 .ma-new-icon-img{
+	width: 382px;
+    height: 830px;
+    top: 50px;
 	position: absolute;
-    width: 270px;
-    top: 70px;
     left: 50%;
     margin-left: -150px;
 }
@@ -242,10 +258,11 @@
 	color: #E86855;
 	letter-spacing: 0;
 	line-height: 64px;
+	margin-bottom: 20px;
 }
 
 .ma-new-icon-content {
-	left: 0;
+	left: 100px;
     position: absolute;
     height: 300px;
     width: 300px;
@@ -263,9 +280,9 @@
 
 /*原子组件/图标*/
 .ma-template .ma-left-content{
-	top: 150px;
+	top: 295px;
     margin-top: 0px;
-    height: 600px; 
+    height: 310px; 
 }
 
 .ma-template .ma-new-world-view .ma-right img{
@@ -274,8 +291,9 @@
 }
 
 .ma-zujian-img{
-	height: 590px;
-    top: 120px;
+	width: 382px;
+    height: 830px;
+    top: 50px;
 }
 
 /*鹅卵石交互体系*/
@@ -511,7 +529,7 @@
 }
 #leidian_video,#tianqi1_video{
 	position: absolute;
-    width: 261px;
+    width: 390px;
     top: 8px;
     left: 6px;
     border-radius: 16px;
@@ -519,8 +537,16 @@
 
 .block{
 	position: absolute;
-	top: -20px;
-	left: -40px;
+	top: 40px;
+    left: -50px;
+}
+
+.ma-fly p.ma-block-text {
+	margin-left: -10px;
+	font-family: FZLANTY_ZHUNJW_YS--GB1-0;
+	font-size: 19px;
+	color: #549ABD;
+	letter-spacing: 0;
 }
 
 /*镜头包*/
@@ -788,6 +814,7 @@
 }
 
 .ma-window-head h3{
+	padding-top: 100px;
 	font-family: FZLTZCHJW--GB1-0;
 	font-size: 64px;
 	color: #549ABD;
@@ -854,8 +881,8 @@
 
 .ma-fly-img-left,.ma-fly-img-right {
 	position: absolute;
-	width: 272px;
-	height: 592px;
+	width: 408px;
+    height: 592px;
 	bottom: 0px;
 	margin-left: 0px;
 	top: 0;
@@ -951,7 +978,7 @@
 
 #huarong_video{
 	position: absolute;
-    width: 258px;
+    width: 360px;
     top: 10px;
     left: 6px;
     border-radius: 20px;
@@ -959,7 +986,7 @@
 
 #quanxin_video{
 	position: absolute;
-    width: 258px;
+    width: 367px;
     top: 10px;
     left: 6px;
     border-radius: 20px;
@@ -975,7 +1002,7 @@
 
 #zujian_video{
 	position: absolute;
-    width: 258px;
+    width: 367px;
     top: 10px;
     left: 6px;
     border-radius: 20px;
@@ -1009,7 +1036,7 @@
 	height: 40px;
 	left: 50%;
 	margin-left: -280px;
-	bottom: 40px;
+	bottom: 50px;
 }
 
 .ma-behavior-tags ul {
@@ -1052,7 +1079,7 @@
 
 /*变形器*/
 .ma-deformation {
-	height: 930px;
+	height: 730px;
 	background-image: linear-gradient(180deg, #F5F5F7 0%, #FFFFFF 100%)!important;
 	border-radius: 32px;
 	border-radius: 32px;
@@ -1206,7 +1233,7 @@
     }
 
     .ma-deformation-title {
-    	margin-top: 300px;
+    	margin-top: 200px;
     	display: inline-block;
     }
 
@@ -1217,7 +1244,7 @@
     .ma-deformation-view{
     	left: auto;
 	    right: 170px;
-	    top: 150px;
+	    top: 50px;
     }
 }
 
@@ -1280,9 +1307,6 @@
 .number-animate .number-animate-dom{ width: 225px;  text-align: center; float: left; position: relative; top: 0;}
 .number-animate .number-animate-dom span,
 .number-animate .number-animate-dot span{
-	float: left;
-	width: 100%;
-	height: 500px;
 	font-family: OPPOSans-Bold;
 	font-size: 380px;
 	color: #FFFFFF;

@@ -144,6 +144,7 @@ $(window).scroll(function () {
 
 // 分辨率大于 1200
 function rizebig (scrollTop) {
+	console.log(scrollTop)
 	if (scrollTop > 100) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-new-world-title').addClass('title-move')
 		$('.ma-new-world-text').addClass('text-run')
@@ -171,10 +172,10 @@ function rizebig (scrollTop) {
 		$('.ma-new-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 1650) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 1512) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		
 
-		if (scrollTop > 2600){
+		if (scrollTop > 2980){
 			huarongvideo.pause()
 			huarongRun = true
 
@@ -205,7 +206,7 @@ function rizebig (scrollTop) {
 	}
 
 	if (scrollTop > 2450) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		if (scrollTop > 3800){
+		if (scrollTop > 4133){
 			zujianvideo.pause()
 			zujianRun = true
 
@@ -228,8 +229,8 @@ function rizebig (scrollTop) {
 		$('.ma-template-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 3450) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		if (scrollTop > 4600){
+	if (scrollTop > 3667) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		if (scrollTop > 5085){
 			quanxinvideo.pause()
 			quanxinRun = true
 
@@ -252,12 +253,12 @@ function rizebig (scrollTop) {
 		$('.ma-new-icon-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 4450) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 4566) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-system-title').addClass('title-move')
 		$('.ma-system-text').addClass('text-run')
 
 
-		if (scrollTop > 5300) {
+		if (scrollTop > 5642) {
 			$('.ma-system-text').removeClass('text-run')
 			$('.ma-system-title').removeClass('title-move')
 		}
@@ -267,8 +268,8 @@ function rizebig (scrollTop) {
 	}
 
 
-	if (scrollTop > 4550) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		if (scrollTop > 5600){
+	if (scrollTop > 4863) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		if (scrollTop > 6667){
 			jiaohuvideo.pause()
 			jiaohuRun = true
 			kongzhivideo.pause()
@@ -300,8 +301,8 @@ function rizebig (scrollTop) {
 		$('.ma-system-view-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 5750) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		if (scrollTop > 6800){
+	if (scrollTop > 6041) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		if (scrollTop > 7237){
 			houtaivideo.pause()
 			houtaiRun = true
 
@@ -328,8 +329,8 @@ function rizebig (scrollTop) {
 
 	
 
-	if (scrollTop > 6200) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		if (scrollTop > 7200){
+	if (scrollTop > 6603) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		if (scrollTop > 8112){
 			kabao1video.pause()
 			kabao2video.pause()
 			kabao3video.pause()
@@ -366,11 +367,11 @@ function rizebig (scrollTop) {
 		$('.ma-super-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 7050) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 7615) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-lens-title').addClass('title-run')
 		$('.ma-lens-text').addClass('text-run')
 
-		if (scrollTop > 8020) {
+		if (scrollTop > 8957) {
 			$('.ma-lens-text').removeClass('text-run')
 			$('.ma-lens-title').removeClass('title-run')
 		}
@@ -379,11 +380,11 @@ function rizebig (scrollTop) {
 		$('.ma-lens-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 8050) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 8404) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-time-head-title').addClass('title-move')
 		$('.ma-time-head-text').addClass('text-run')
 
-		if (scrollTop > 9180) {
+		if (scrollTop > 9448) {
 			$('.ma-time-head-text').removeClass('text-run')
 			$('.ma-time-head-title').removeClass('title-move')
 		}
@@ -392,11 +393,11 @@ function rizebig (scrollTop) {
 		$('.ma-time-head-title').removeClass('title-move')
 	}
 
-	if (scrollTop > 8380) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 8830) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-icon-title').addClass('title-run')
 		$('.ma-icon-text').addClass('text-run')
 
-		if (scrollTop > 9350) {
+		if (scrollTop > 10233) {
 			$('.ma-icon-text').removeClass('text-run')
 			$('.ma-icon-title').removeClass('title-run')
 		}
@@ -440,8 +441,8 @@ function rizebig (scrollTop) {
 		// $('.ma-icon-fly-icon8').removeClass('animated bounceOutDown')
 	}
 	
-	if (scrollTop > 9150) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		if (scrollTop > 10180){
+	if (scrollTop > 9674) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		if (scrollTop > 11033){
 			iconvideo.pause()
 			iconRun = true
 
@@ -466,8 +467,8 @@ function rizebig (scrollTop) {
 		$('.ma-icons-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 10000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		if (scrollTop > 10970){
+	if (scrollTop > 10658) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		if (scrollTop > 11858){
 			clockvideo.pause()
 			clockRun = true
 
@@ -492,10 +493,10 @@ function rizebig (scrollTop) {
 		$('.ma-clock-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 10950) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 11357) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-notice-title').addClass('title-run')
 		$('.ma-notice-text').addClass('text-run')
-		if (scrollTop > 12000) {
+		if (scrollTop > 12470) {
 			$('.ma-notice-text').removeClass('text-run')
 			$('.ma-notice-title').removeClass('title-run')
 		}
@@ -504,8 +505,8 @@ function rizebig (scrollTop) {
 		$('.ma-notice-title').removeClass('title-run')
 	}
 	
-	if (scrollTop > 11726) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		if (scrollTop > 12768){
+	if (scrollTop > 12055) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		if (scrollTop > 13332){
 			tianqivideo.pause()
 			tianqiRun = true
 
@@ -530,11 +531,11 @@ function rizebig (scrollTop) {
 		$('.ma-day-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 12276) { //这里100代表你要动画的元$('.ma-day-title').addClass('title-run')
+	if (scrollTop > 12696) { //这里100代表你要动画的元$('.ma-day-title').addClass('title-run')
 		$('.ma-window-head-title').addClass('title-run')
 		$('.ma-window-head-text').addClass('text-run')
 
-		if (scrollTop > 13303) {
+		if (scrollTop > 13705) {
 			$('.ma-window-head-title').removeClass('title-run')
 			$('.ma-window-head-text').removeClass('text-run')
 		}
@@ -543,17 +544,17 @@ function rizebig (scrollTop) {
 		$('.ma-window-head-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 12862) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 13275) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-window-title').addClass('title-run')
 
-		if (scrollTop > 13840) $('.ma-window-title').removeClass('title-run')
+		if (scrollTop > 14473) $('.ma-window-title').removeClass('title-run')
 	} else {
 
 		$('.ma-window-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 13379) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		if (scrollTop > 14428){
+	if (scrollTop > 13782) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		if (scrollTop > 15320){
 			leidianvideo.pause()
 			tianqi1video.pause()
 			leidianRun = true
@@ -583,7 +584,7 @@ function rizebig (scrollTop) {
 		$('.ma-fly-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 14140) {
+	if (scrollTop > 14811) {
 		$('.ma-weather-bg1').addClass('bg-opacity-one')
 		$('.ma-weather-bg2').addClass('bg-opacity-two')
 		$('.ma-weather-bg3').addClass('bg-opacity-three')
@@ -601,7 +602,7 @@ function rizebig (scrollTop) {
 		$('.ma-weather-bg15').addClass('bg-opacity-fifteen')
 		$('.ma-weather-bg16').addClass('bg-opacity-sixtheen')
 
-		if (scrollTop > 15738) {
+		if (scrollTop > 16137) {
 			$('.ma-weather-bg1').removeClass('bg-opacity-one')
 			$('.ma-weather-bg2').removeClass('bg-opacity-two')
 			$('.ma-weather-bg3').removeClass('bg-opacity-three')
@@ -638,11 +639,11 @@ function rizebig (scrollTop) {
 		$('.ma-weather-bg16').removeClass('bg-opacity-sixtheen')
 	}
 
-	if (scrollTop > 14437) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 14811) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-weather-title').addClass('title-run')
 		$('.ma-weather-text').addClass('text-run')
 
-		if (scrollTop > 15528) {
+		if (scrollTop > 16137) {
 			$('.ma-weather-text').removeClass('text-run')
 			$('.ma-weather-title').removeClass('title-run')
 		}
@@ -651,11 +652,11 @@ function rizebig (scrollTop) {
 		$('.ma-weather-title').removeClass('title-run')
 	}
 
-	if (scrollTop > 15007) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 15586) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.ma-behavior-title').addClass('title-run')
 		$('.ma-behavior-text').addClass('text-run')
 
-		if (scrollTop > 16042) {
+		if (scrollTop > 16842) {
 			$('.ma-behavior-text').removeClass('text-run')
 			$('.ma-behavior-title').removeClass('title-run')
 		}
@@ -664,8 +665,8 @@ function rizebig (scrollTop) {
 		$('.ma-behavior-title').removeClass('title-run')
 	}
 	
-	if (scrollTop > 15340) {
-		if (scrollTop > 16900){
+	if (scrollTop > 15586) {
+		if (scrollTop > 17154){
 			video.pause()
 			videoRun = true
 			num = 0
@@ -689,8 +690,8 @@ function rizebig (scrollTop) {
 		li.eq(0).addClass('active')
 	}
 
-	if (scrollTop > 16026) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		if (scrollTop > 17046){
+	if (scrollTop > 16600) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+		if (scrollTop > 18063){
 			bianxingvideo.pause()
 			bianxingRun = true
 

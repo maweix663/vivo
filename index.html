@@ -2091,7 +2091,12 @@
 
           <section class="ma-new-world ma-box-concent ma-box-phone">
             <h4 class="ma-new-world-title">全新数字世界出发点</h4>
-            <p class="ma-new-world-text">OriginOS是对未来系统的描绘与实践。它不只改变了过去的桌面和主屏，而且围绕信息层级进行了打散和聚合。它是对信息管理方式的一次全新重塑。</p>
+
+            <div class="ma-new-world-text">
+              <p>OriginOS是对未来系统的描绘与实践。它不只改变了过去的桌面，</p>
+              <p>而且围绕信息层级进行了打散和聚合。它是对信息管理方式的一次全新的重塑。</p>
+            </div>
+            
 
 
             <div class="ma-new-world-view">
@@ -2361,6 +2366,7 @@
 
             <div class="ma-fly-view">
               <div id="app" class="block">
+                <p class="ma-block-text">弱风</p>
                 <el-slider
                   v-model="values"
                   :step="step"
@@ -2369,6 +2375,7 @@
                   @input="changeFly"
                   height="200px">
                 </el-slider>
+                <p class="ma-block-text">强风</p>
               </div>
 
               <div class="ma-behavior-phone ma-fly-img-left">
@@ -2377,8 +2384,8 @@
                 </video>
               </div>
 
-              <div class="ma-behavior-phone ma-fly-img-right">
-                <video id="leidian_video" preload muted>
+              <div class="ma-behavior-phone ma-fly-img-right" style="top: 100px;width: 314px;">
+                <video style="width: 300px;" id="leidian_video" preload muted>
                   <source id="leidianMP4" src="./lib/leidian.mp4" />
                 </video>
               </div>
