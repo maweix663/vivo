@@ -45,6 +45,14 @@
     bottom: 0%;
 }
 
+.ma-window-title {
+	font-family: FZLTZCHJW--GB1-0;
+	font-size: 20px;
+	color: #1D1D1F;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
 .ma-head a{
 	margin-left: -30px;
     position: absolute;
@@ -567,7 +575,7 @@
 }
 
 .ma-time-head p{
-	ffont-family: FZLTHJW--GB1-0;
+	font-family: FZLTHJW--GB1-0;
 	font-size: 24px;
 	color: #1D1D1F;
 	letter-spacing: 0;
