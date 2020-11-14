@@ -1,5 +1,5 @@
 var metaWidth = $(window).width()
-var num = 3241
+var num = 1621
 var timer = null
 var timers = null
 var videoRun = true
@@ -18,7 +18,7 @@ var bianxingRun = true
 var leidianRun = true
 var tianqi1Run = true
 var zujianRun = true
-var yuanzi = true
+var yuanziRun = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
@@ -696,7 +696,7 @@ function rizebig (scrollTop) {
 		if (scrollTop > 17154){
 			video.pause()
 			videoRun = true
-			num = 3241
+			num = 1621
 			clearInterval(timers)
 			numRun()
 			li.removeClass('active')
@@ -709,7 +709,7 @@ function rizebig (scrollTop) {
 			}
 		}
 	} else {
-		num = 3241
+		num = 1621
 		video.pause()
 		videoRun = true
 		clearInterval(timers)
@@ -1337,7 +1337,7 @@ function rizesall (scrollTop) {
 	}
 
 	if (scrollTop > 6951) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		if (scrollTop > 7811){
+		if (scrollTop > 8068){
 			iconvideo.pause()
 			iconRun = true
 
@@ -1389,13 +1389,27 @@ function rizesall (scrollTop) {
 	}
 
 	if (scrollTop > 7988) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-notice-title').addClass('title-run')
-		$('.ma-notice-text').addClass('text-run')
-		if (scrollTop > 8853) {
+		if (scrollTop > 8953){
+			yuanzivideo.pause()
+			yuanziRun = true
+
+
 			$('.ma-notice-text').removeClass('text-run')
 			$('.ma-notice-title').removeClass('title-run')
+		} else {
+			if (yuanziRun == true) {
+				yuanziRun = false
+				yuanzivideo.pause();
+				yuanzivideo.currentTime=0;
+				yuanzivideo.play()
+
+				$('.ma-notice-title').addClass('title-run')
+				$('.ma-notice-text').addClass('text-run')
+			}
 		}
 	} else {
+		yuanzivideo.pause()
+		yuanziRun = true
 		$('.ma-notice-text').removeClass('text-run')
 		$('.ma-notice-title').removeClass('title-run')
 	}
@@ -1564,7 +1578,7 @@ function rizesall (scrollTop) {
 		if (scrollTop > 12223){
 			video.pause()
 			videoRun = true
-			num = 3241
+			num = 1621
 			clearInterval(timers)
 			numRun()
 			li.removeClass('active')
@@ -1577,7 +1591,7 @@ function rizesall (scrollTop) {
 			}
 		}
 	} else {
-		num = 3241
+		num = 1621
 		video.pause()
 		videoRun = true
 		clearInterval(timers)
@@ -1986,15 +2000,16 @@ function numRun() {
 
     //改变数值
     timers = setInterval(()=>{
-    	num += 3
+    	num += 49
     	odo.update(num)
 
     	if (num >= 8000) {
-    		num = 3241
+    		clearInterval(timers)
+    		num = 1621
     		odo.update(8000)
-	    	clearInterval(timers)
+	    	
 	    }
-    },1)
+    },50)
 
     
 }
@@ -2003,7 +2018,7 @@ function numRun() {
 li.click(function(){
 	li.removeClass('active')
 	$(this).addClass('active')
-	num = 3241
+	num = 1621
 	clearInterval(timers)
 	numRun()
 	restVideo($(this).index() + 1)

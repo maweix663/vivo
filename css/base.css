@@ -1394,10 +1394,6 @@
 	    box-sizing: border-box;
     }
 
-	.ma-box{
-		padding-top: 30px;
-	}
-
 	.ma-head{
 		height: 266px;
 	}
@@ -1805,9 +1801,12 @@
     }
 
     .ma-icon .ma-icon-img-run{
-    	width: 190px;
+    	width: 144px;
 	    height: 282px;
-	    margin-left: -95px;
+	    top: 230px;
+	    left: 78px;
+	    margin-left: 0;
+	    border-radius: 16px;
     }
 
     .ma-icon-fly{
@@ -1817,48 +1816,48 @@
     }
 
     .ma-icon-fly img{
-	    width: 30px;
-	    height: 30px;
+	    width: 20px;
+	    height: 20px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon1{
-    	left: 10px;
-    	bottom: 80px;
+    	left: 34px;
+    	bottom: 106px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon2{
-    	left: 50px;
-    	bottom: 80px;
+    	left: 67px;
+    	bottom: 106px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon3{
-    	left: 90px;
-    	bottom: 80px;
+    	left: 100px;
+    	bottom: 106px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon4{
-    	left: 130px;
-    	bottom: 80px;
+    	left: 133px;
+    	bottom: 106px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon5{
-    	left: 10px;
-    	bottom: 40px;
+    	left: 34px;
+    	bottom: 70px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon6{
-    	left: 50px;
-    	bottom: 40px;
+    	left: 67px;
+    	bottom: 70px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon7{
-    	left: 90px;
-    	bottom: 40px;
+    	left: 100px;
+    	bottom: 70px;
     }
 
     .ma-icon-fly .ma-icon-fly-icon8{
-    	left: 130px;
-    	bottom: 40px;
+    	left: 133px;
+    	bottom: 70px;
     }
 
     .ma-icon .ma-icon-img{
@@ -1867,6 +1866,15 @@
 	    bottom: 100px;
 	    left: 50%;
 	    margin-left: -115px;
+    }
+
+    .ma-icon-bg {
+    	width: 150px;
+	    height: 324px;
+	    bottom: -70px;
+	    left: 75px;
+	    margin-left: 0;
+	    position: absolute;
     }
 
     .ma-clock {
@@ -1898,13 +1906,6 @@
     .ma-notice p,.ma-day p{
     	font-size: 14px;
     	line-height: 24px;
-    }
-
-    .ma-notice-img{
-	    width: 232px;
-	    height: 322px; 
-	    bottom: 0px;
-	    right: 35px;
     }
 
     .ma-day {
@@ -1998,6 +1999,27 @@
 	    margin-left: -95px;
     }
 
+    .ma-notice-img{
+	    width: 190px;
+	    height: 410px;
+	    top: 200px;
+	    left: 50%;
+	    margin-left: -95px;
+    }
+
+    .ma-window-content .ma-window-img{
+    	width: 500px;
+    	margin-left: -120px;
+    }
+
+    #yuanzi_video{
+    	width: 180px;
+	    top: 4px;
+	    position: absolute;
+	    left: 4px;
+	    border-radius: 16px;
+    }
+
     .ma-fly-img-left {
     	width: 142px;
 	    height: 310px;
@@ -2035,10 +2057,17 @@
     	width: 220px;
     }
 
-    #tianqi1_video{
+    #tianqi1_video,#tianqi2_video,#tianqi3_video{
     	width: 136px;
 	    top: 4px;
 	    left: 3px;
+    }
+
+    #example_video1,#example_video2,#example_video3,#example_video4,#example_video5,#example_video6,#example_video7{
+    	width: 184px;
+	    display: block;
+	    top: 4px;
+	    left: 2px;
     }
 
     .ma-jiaohu-view{
@@ -2152,8 +2181,8 @@
     }
 
     .ma-behavior-step{
-    	width: 280px;
-	    margin-left: -140px;
+    	width: 303px;
+	    margin-left: 0;
 	    height: 100px;
 	    margin-top: 0;
 	    top: 200px;
@@ -2167,14 +2196,10 @@
     }
     .number-animate .number-animate-dom{
     	width: 70px;
-    	top: -30px;
     }
 
-    .number-animate .number-animate-dom span, .number-animate .number-animate-dot span{
-    	height: 100px;
-    	font-size: 80px;
-    	line-height: 100px;
-    	text-shadow: 5px 5px 7px rgba(136,136,136,0.25);
+    .number-animate .number-animate-dom img, .number-animate .number-animate-dot img{
+    	width: 70px;
     }
 
     .ma-deformation{
