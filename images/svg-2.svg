@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="151px" viewBox="0 0 23 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>风量尺度</title>
+    <defs>
+        <path d="M8,-1.42108547e-14 L22,-1.42108547e-14 L22,-1.42108547e-14 L22,151 L8,151 C3.581722,151 5.41083001e-16,147.418278 0,143 L0,8 C-5.41083001e-16,3.581722 3.581722,-1.33992302e-14 8,-1.42108547e-14 Z" id="path-1"></path>
+        <filter id="filter-3">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="orgrin-os-web设计感部分" transform="translate(-537.000000, -15632.000000)">
+            <g id="编组-18备份-2" transform="translate(360.000000, 15322.000000)">
+                <g id="编组-57" transform="translate(154.000000, 278.000000)">
+                    <g id="矩形" transform="translate(23.500000, 32.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="蒙版" fill="#549ABD" xlink:href="#path-1"></use>
+                        <g filter="url(#filter-3)" id="编组-50">
+                            <g mask="url(#mask-2)">
+                                <g transform="translate(6.000000, 10.000000)" fill="#549ABD">
+                                    <rect id="矩形" x="0" y="128.666667" width="12" height="2"></rect>
+                                    <rect id="矩形" x="0" y="64.3333333" width="12" height="2"></rect>
+                                    <rect id="矩形" x="0" y="0" width="12" height="2"></rect>
+                                    <rect id="矩形备份-13" x="6" y="115.8" width="6" height="2"></rect>
+                                    <rect id="矩形备份-13" x="6" y="102.933333" width="6" height="2"></rect>
+                                    <rect id="矩形备份-13" x="6" y="90.0666667" width="6" height="2"></rect>
+                                    <rect id="矩形备份-13" x="6" y="77.2" width="6" height="2"></rect>
+                                    <rect id="矩形备份-13" x="6" y="51.4666667" width="6" height="2"></rect>
+                                    <rect id="矩形备份-13" x="6" y="38.6" width="6" height="2"></rect>
+                                    <rect id="矩形备份-13" x="6" y="25.7333333" width="6" height="2"></rect>
+                                    <rect id="矩形备份-13" x="6" y="12.8666667" width="6" height="2"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <rect fill="#549ABD" mask="url(#mask-2)" x="18" y="9.09494702e-13" width="4" height="215"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

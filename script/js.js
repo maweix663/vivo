@@ -81,9 +81,18 @@ new Vue({
 		},
 		handleScroll(){
       		let top = document.documentElement.scrollTop||document.body.scrollTop    // 获取页面滚动高度
-        	if (top < 13379 || top > 14428) {
-        		this.values = 100
-        	}
+        	
+        	if (metaWidth > 1200) {
+				if (top < 13379 || top > 14428) {
+	        		this.values = 100
+	        	}
+			} else {
+				if (top < 9798 || top > 10738) {
+	        		this.values = 100
+	        	}
+			}
+
+        	
         }
 	}
 })
@@ -1388,14 +1397,32 @@ function rizesall (scrollTop) {
 	// }
 
 	if (scrollTop > 9798) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-fly-title').addClass('title-run')
-		$('.ma-fly-text').addClass('text-run')
-
-		if (scrollTop > 10738) {
+		if (scrollTop > 10738){
+			leidianvideo.pause()
+			tianqi1video.pause()
+			leidianRun = true
 			$('.ma-fly-text').removeClass('text-run')
 			$('.ma-fly-title').removeClass('title-run')
+		} else {
+
+			if (leidianRun == true) {
+				leidianRun = false
+				leidianvideo.pause();
+				leidianvideo.load();
+				leidianvideo.play()
+
+				tianqi1video.pause();
+				tianqi1video.load();
+				tianqi1video.play()
+
+				$('.ma-fly-title').addClass('title-run')
+				$('.ma-fly-text').addClass('text-run')
+			}
 		}
 	} else {
+		leidianvideo.pause()
+		tianqi1video.pause()
+		leidianRun = true
 		$('.ma-fly-text').removeClass('text-run')
 		$('.ma-fly-title').removeClass('title-run')
 	}
