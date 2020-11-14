@@ -1183,6 +1183,21 @@
     .ma-super-title-content {
     	width: 50%;
     }
+
+    .ma-deformation-title {
+    	margin-top: 300px;
+    	display: inline-block;
+    }
+
+    .ma-deformation-text {
+    	width: 50%;
+    }
+
+    .ma-deformation-view{
+    	left: auto;
+	    right: 170px;
+	    top: 150px;
+    }
 }
 
 /*华容网格*/

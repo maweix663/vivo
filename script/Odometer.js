@@ -39,7 +39,7 @@ const Odometer = (function(win,doc) {
                 if(this.setting.zero) num = (num==0?10:num);
                 this._height = o.offsetHeight/12;  
                 o.style['transform'] = o.style['-webkit-transform'] = 'translateY(' + (num=="." ? -11 * this._height  : -num * this._height)+'px)';
-                o.style['transition'] = o.style['-webkit-transition'] = (num=="." ?  0 : this.setting.speed/1000)+'s'
+                o.style['transition'] = o.style['-webkit-transition'] = (num=="." ?  0 : 0)+'s'
             }
         }
         setNumDom (arrStr){//分割符号
