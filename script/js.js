@@ -46,6 +46,22 @@ function restVideo (num) {
     video.play();
 }
 
+new Vue({
+	el: '#app',
+	data: function() {
+		return { 
+			values: 0,
+			step: 50 
+		}
+	},
+	methods: {
+		changeFly (val) {
+			console.log(val)
+			this.values = val
+		}
+	}
+})
+
 $(window).scroll(function () {
 	var scrollTop = $(window).scrollTop()
 

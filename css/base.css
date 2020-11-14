@@ -467,6 +467,12 @@
 	border-radius: 16px;
 }
 
+.block{
+	position: absolute;
+	top: -20px;
+	left: -40px;
+}
+
 /*镜头包*/
 .ma-lens {
 	height: 800px;
@@ -798,13 +804,16 @@
 
 .ma-fly-img-left,.ma-fly-img-right {
 	position: absolute;
-	width: 320px;
-	height: 546px;
+	width: 272px;
+	height: 592px;
 	bottom: 0px;
+	margin-left: 0px;
+	top: 0;
 }
 
 .ma-fly-img-left{
 	left: 0px;
+
 }
 
 .ma-fly-img-right{

@@ -16,12 +16,14 @@
   <!-- 页面 css 链接，必须使用相对路径 -->
   <link rel="stylesheet" href="./css/swiper.min.css">
   <link rel="stylesheet" href="./css/animate.min.css">
+  <link rel="stylesheet" href="./css/element.css">
   
   <link href="./css/base.css" rel="stylesheet">
   <link href="./css/you.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/video.css">
   <script type="text/javascript" src="./script/video.js"></script>
+  
 
   
 </head>
@@ -2081,7 +2083,7 @@
 
     <!-- 在这个 div 里面进行页面开发 -->
     <div id="vivo-product-wrap" class="unvisible J_replace_content">
-      <div class="ma-box-scroll">
+      <div class="ma-box-scroll" id="app">
         <div class="ma-box">
           <section class="ma-head">
             <a href="#">宣传视频链接</a>
@@ -2353,8 +2355,27 @@
               我们透过天空视窗将真实的自然现象带到了主屏，在这里，各种天气现象都收纳其中…一片云层的形状、大小以及密度，都是模拟及采样了不同地区的上千种景别绘制出来。甚至，连云层的移动速度都会因风力大小而有不同的表现。</p>
 
             <div class="ma-fly-view">
-              <img class="ma-fly-img-left" src="./images/demo-09.png">
-              <img class="ma-fly-img-right" src="./images/demo-09.png">
+              <div class="block">
+                <el-slider
+                  v-model="values"
+                  :step="step"
+                  vertical
+                  @input="changeFly"
+                  height="200px">
+                </el-slider>
+              </div>
+
+              <div class="ma-behavior-phone ma-fly-img-left">
+                <video id="example_video" preload muted>
+                  <source id="videoMP4" src="./lib/1.mp4" />
+                </video>
+              </div>
+
+              <div class="ma-behavior-phone ma-fly-img-right">
+                <video id="example_video" preload muted>
+                  <source id="videoMP4" src="./lib/1.mp4" />
+                </video>
+              </div>
             </div>
           </section>
 
@@ -3093,6 +3114,8 @@
   <script class="J_replace_public" src="./base/script/detail-pack-2019.js"></script>
 
   <!-- 页面 js 链接，必须使用相对路径 -->
+  <script src="./script/vue.js"></script>
+  <script type="text/javascript" src="./script/element.js"></script>
   <script src="./script/swiper.min.js"></script>
   <script src="./script/swiper.animate.min.js"></script>
   <script type="text/javascript" src="./script/Odometer.js"></script>
