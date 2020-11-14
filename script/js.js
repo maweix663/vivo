@@ -16,6 +16,7 @@ var clockRun = true
 var tianqiRun = true
 var bianxingRun = true
 var leidianRun = true
+var tianqi1Run = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
@@ -31,10 +32,11 @@ var clockvideo = document.getElementById('clock_video');
 var tianqivideo = document.getElementById('tianqi_video');
 var bianxingvideo = document.getElementById('bianxing_video');
 var leidianvideo = document.getElementById('leidian_video');
+var tianqi1video = document.getElementById('tianqi1_video');
 
 var video = document.getElementById('example_video');
 var source = document.getElementById('videoMP4');
-
+var tianqi1source = document.getElementById('tianq1MP4');
 
 var li = $('.ma-behavior-tags ul li')
 $('.ma-new-world-title').addClass('title-move')
@@ -48,19 +50,41 @@ function restVideo (num) {
     video.play();
 }
 
+function tianqiVideo (num) {
+	tianqi1video.pause()
+    tianqi1video.setAttribute('src','./lib/tianqi'+ num +'.mp4');
+    tianqi1video.load();
+    tianqi1video.play();
+}
+
 new Vue({
 	el: '#app',
 	data: function() {
 		return { 
-			values: 0,
-			step: 50 
+			values: 100,
+			step: 50
 		}
+	},
+	mounted () {
+	    window.addEventListener('scroll',this.handleScroll)
 	},
 	methods: {
 		changeFly (val) {
-			console.log(val)
 			this.values = val
-		}
+			if (val == 0) {
+				tianqiVideo(3)
+			} else if (val == 50) {
+				tianqiVideo(2)
+			} else {
+				tianqiVideo(1)
+			}
+		},
+		handleScroll(){
+      		let top = document.documentElement.scrollTop||document.body.scrollTop    // 获取页面滚动高度
+        	if (top < 13379 || top > 14428) {
+        		this.values = 100
+        	}
+        }
 	}
 })
 
@@ -509,8 +533,8 @@ function rizebig (scrollTop) {
 	if (scrollTop > 13379) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		if (scrollTop > 14428){
 			leidianvideo.pause()
+			tianqi1video.pause()
 			leidianRun = true
-
 			$('.ma-fly-text').removeClass('text-run')
 			$('.ma-fly-title').removeClass('title-run')
 		} else {
@@ -521,12 +545,17 @@ function rizebig (scrollTop) {
 				leidianvideo.load();
 				leidianvideo.play()
 
+				tianqi1video.pause();
+				tianqi1video.load();
+				tianqi1video.play()
+
 				$('.ma-fly-title').addClass('title-run')
 				$('.ma-fly-text').addClass('text-run')
 			}
 		}
 	} else {
 		leidianvideo.pause()
+		tianqi1video.pause()
 		leidianRun = true
 		$('.ma-fly-text').removeClass('text-run')
 		$('.ma-fly-title').removeClass('title-run')
