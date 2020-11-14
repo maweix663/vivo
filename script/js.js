@@ -14,6 +14,7 @@ var kabao3Run = true
 var iconRun = true
 var clockRun = true
 var tianqiRun = true
+var bianxingRun = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
@@ -27,6 +28,7 @@ var kabao3video = document.getElementById('kabao3_video');
 var iconvideo = document.getElementById('icon_video');
 var clockvideo = document.getElementById('clock_video');
 var tianqivideo = document.getElementById('tianqi_video');
+var bianxingvideo = document.getElementById('bianxing_video');
 
 var video = document.getElementById('example_video');
 var source = document.getElementById('videoMP4');
@@ -604,13 +606,27 @@ function rizebig (scrollTop) {
 	}
 
 	if (scrollTop > 16026) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-deformation-title').addClass('title-run')
-		$('.ma-deformation-text').addClass('text-run')
-		if (scrollTop > 17046) {
+		if (scrollTop > 17046){
+			bianxingvideo.pause()
+			bianxingRun = true
+
+
 			$('.ma-deformation-text').removeClass('text-run')
 			$('.ma-deformation-title').removeClass('title-run')
+		} else {
+			if (bianxingRun == true) {
+				bianxingRun = false
+				bianxingvideo.pause();
+				bianxingvideo.load();
+				bianxingvideo.play()
+
+				$('.ma-deformation-title').addClass('title-run')
+				$('.ma-deformation-text').addClass('text-run')
+			}
 		}
 	} else {
+		bianxingvideo.pause()
+		bianxingRun = true
 		$('.ma-deformation-text').removeClass('text-run')
 		$('.ma-deformation-title').removeClass('title-run')
 	}
@@ -1420,13 +1436,27 @@ function rizesall (scrollTop) {
 	}
 
 	if (scrollTop > 11854) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-deformation-title').addClass('title-run')
-		$('.ma-deformation-text').addClass('text-run')
-		if (scrollTop > 12743) {
+		if (scrollTop > 12743){
+			bianxingvideo.pause()
+			bianxingRun = true
+
+
 			$('.ma-deformation-text').removeClass('text-run')
 			$('.ma-deformation-title').removeClass('title-run')
+		} else {
+			if (bianxingRun == true) {
+				bianxingRun = false
+				bianxingvideo.pause();
+				bianxingvideo.load();
+				bianxingvideo.play()
+
+				$('.ma-deformation-title').addClass('title-run')
+				$('.ma-deformation-text').addClass('text-run')
+			}
 		}
 	} else {
+		bianxingvideo.pause()
+		bianxingRun = true
 		$('.ma-deformation-text').removeClass('text-run')
 		$('.ma-deformation-title').removeClass('title-run')
 	}

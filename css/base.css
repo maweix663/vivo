@@ -453,6 +453,14 @@
 
 #tianqi_video{
 	width: 324px;
+    top: 11px;
+    position: absolute;
+    left: 8px;
+	border-radius: 16px;
+}
+
+#bianxing_video{
+	width: 256px;
     top: 12px;
     position: absolute;
     left: 8px;
@@ -749,7 +757,6 @@
 
 .ma-window-content img {
 	width: 720px;
-    height: 768px;
     bottom: 40px;
     right: 70px;
     margin-right: 20px;
@@ -1001,12 +1008,8 @@
 }
 
 .ma-deformation-view {
-	position: absolute;
-	height: 592px;
-	width: 620px;
-	bottom: 78px;
-	left: 50%;
-	margin-left: -300px;
+	width: 270px;
+    height: 586px;
 }
 
 .ma-deformation-img-left,.ma-deformation-img-right {
@@ -1731,7 +1734,6 @@
 
     .ma-window-content img{
     	width: 303px;
-    	height: 358px;
     }
 
     .ma-window-title p{
@@ -1794,9 +1796,13 @@
     .ma-behavior-phone{
     	width: 190px;
 	    height: 410px;
-	    top: 140px;
+	    top: 290px;
 	    left: 50%;
 	    margin-left: -95px;
+    }
+
+    .ma-jiaohu-view{
+    	top: 140px;
     }
 
     .ma-icon-img-left{
@@ -1869,6 +1875,12 @@
 	    left: 4px;
     }
 
+    #bianxing_video{
+    	top: 4px;
+	    width: 182px;
+	    left: 4px;
+    }
+
     .ma-kabao2,.ma-kabao3{
 		display: none;
 	}
@@ -1927,8 +1939,8 @@
     .ma-deformation-view{
 	    height: 410px;
 	    width: 190px;
-	    bottom: 40px;
 	    left: 56px;
+	    top: 170px;
 	    margin-left: 0;
     }
 
