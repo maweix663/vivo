@@ -17,6 +17,7 @@ var tianqiRun = true
 var bianxingRun = true
 var leidianRun = true
 var tianqi1Run = true
+var zujianRun = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
@@ -33,6 +34,7 @@ var tianqivideo = document.getElementById('tianqi_video');
 var bianxingvideo = document.getElementById('bianxing_video');
 var leidianvideo = document.getElementById('leidian_video');
 var tianqi1video = document.getElementById('tianqi1_video');
+var zujianvideo = document.getElementById('zujian_video');
 
 var video = document.getElementById('example_video');
 var source = document.getElementById('videoMP4');
@@ -203,14 +205,25 @@ function rizebig (scrollTop) {
 	}
 
 	if (scrollTop > 2450) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-template-title').addClass('title-run')
-		$('.ma-template-text').addClass('text-run')
+		if (scrollTop > 3800){
+			zujianvideo.pause()
+			zujianRun = true
 
-		if (scrollTop > 3800) {
 			$('.ma-template-text').removeClass('text-run')
 			$('.ma-template-title').removeClass('title-run')
+		} else {
+			if (zujianRun == true) {
+				zujianRun = false
+				zujianvideo.pause();
+				zujianvideo.load();
+				zujianvideo.play()
+				$('.ma-template-title').addClass('title-run')
+				$('.ma-template-text').addClass('text-run')
+			}
 		}
 	} else {
+		zujianvideo.pause()
+		zujianRun = true
 		$('.ma-template-text').removeClass('text-run')
 		$('.ma-template-title').removeClass('title-run')
 	}
@@ -1060,14 +1073,25 @@ function rizesall (scrollTop) {
 	}
 
 	if (scrollTop > 1301) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-template-title').addClass('title-run')
-		$('.ma-template-text').addClass('text-run')
+		if (scrollTop > 2099){
+			zujianvideo.pause()
+			zujianRun = true
 
-		if (scrollTop > 2099) {
 			$('.ma-template-text').removeClass('text-run')
 			$('.ma-template-title').removeClass('title-run')
+		} else {
+			if (zujianRun == true) {
+				zujianRun = false
+				zujianvideo.pause();
+				zujianvideo.load();
+				zujianvideo.play()
+				$('.ma-template-title').addClass('title-run')
+				$('.ma-template-text').addClass('text-run')
+			}
 		}
 	} else {
+		zujianvideo.pause()
+		zujianRun = true
 		$('.ma-template-text').removeClass('text-run')
 		$('.ma-template-title').removeClass('title-run')
 	}

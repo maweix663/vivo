@@ -273,6 +273,11 @@
     top: 120px;
 }
 
+.ma-zujian-img{
+	height: 590px;
+    top: 120px;
+}
+
 /*鹅卵石交互体系*/
 .ma-box-system {
 	padding-top: 180px;
@@ -968,6 +973,14 @@
     border-radius: 20px;
 }
 
+#zujian_video{
+	position: absolute;
+    width: 258px;
+    top: 10px;
+    left: 6px;
+    border-radius: 20px;
+}
+
 #kongzhi_video{
 	position: absolute;
     width: 100%;
@@ -1448,7 +1461,7 @@
     .ma-new-icon{
     	display: block;
     	position: relative;
-    	height: 770px;
+    	height: 710px;
     	box-sizing: border-box;
     }
 
@@ -1490,6 +1503,10 @@
 		padding: 60px 0 0 0;
 	}
 
+	.ma-new-world{
+		padding-top: 90px;
+	}
+
     .ma-box-system {
     	padding-top: 0;
     	padding-bottom: 0;
@@ -1507,6 +1524,7 @@
     }
 
     .ma-system .ma-system-view{
+    	padding-top: 90px;
     	display: inline-block;
     }
 
@@ -1891,6 +1909,17 @@
     .block{
     	top: 0;
     	left: 0;
+    }
+
+    .ma-zujian-img{
+    	height: 502px;
+	    top: 30px;
+	    width: 232px;
+    }
+
+    #zujian_video{
+    	top: 8px;
+    	width: 220px;
     }
 
     #tianqi1_video{
