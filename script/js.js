@@ -14,6 +14,7 @@ var kabao3Run = true
 var iconRun = true
 var clockRun = true
 var tianqiRun = true
+var bianxingRun = true
 
 // 多个视频处理
 var huarongvideo = document.getElementById('huarong_video');
@@ -27,9 +28,11 @@ var kabao3video = document.getElementById('kabao3_video');
 var iconvideo = document.getElementById('icon_video');
 var clockvideo = document.getElementById('clock_video');
 var tianqivideo = document.getElementById('tianqi_video');
+var bianxingvideo = document.getElementById('bianxing_video');
 
 var video = document.getElementById('example_video');
 var source = document.getElementById('videoMP4');
+
 
 var li = $('.ma-behavior-tags ul li')
 $('.ma-new-world-title').addClass('title-move')
@@ -39,8 +42,25 @@ function restVideo (num) {
 	video.pause()
     video.setAttribute('src','./lib/' + num + '.mp4');
     video.load();
+    video.playbackRate = 4;
     video.play();
 }
+
+new Vue({
+	el: '#app',
+	data: function() {
+		return { 
+			values: 0,
+			step: 50 
+		}
+	},
+	methods: {
+		changeFly (val) {
+			console.log(val)
+			this.values = val
+		}
+	}
+})
 
 $(window).scroll(function () {
 	var scrollTop = $(window).scrollTop()
@@ -604,13 +624,27 @@ function rizebig (scrollTop) {
 	}
 
 	if (scrollTop > 16026) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-deformation-title').addClass('title-run')
-		$('.ma-deformation-text').addClass('text-run')
-		if (scrollTop > 17046) {
+		if (scrollTop > 17046){
+			bianxingvideo.pause()
+			bianxingRun = true
+
+
 			$('.ma-deformation-text').removeClass('text-run')
 			$('.ma-deformation-title').removeClass('title-run')
+		} else {
+			if (bianxingRun == true) {
+				bianxingRun = false
+				bianxingvideo.pause();
+				bianxingvideo.load();
+				bianxingvideo.play()
+
+				$('.ma-deformation-title').addClass('title-run')
+				$('.ma-deformation-text').addClass('text-run')
+			}
 		}
 	} else {
+		bianxingvideo.pause()
+		bianxingRun = true
 		$('.ma-deformation-text').removeClass('text-run')
 		$('.ma-deformation-title').removeClass('title-run')
 	}
@@ -701,17 +735,17 @@ function rizebig (scrollTop) {
 		$('.you-Memory-leftwo-text').removeClass('text-run')
 	}
 
-	if (scrollTop > 20000) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+	if (scrollTop > 17600) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-Memory-leftwo-title-active').addClass('title-run')
-		$('.you-Memory-leftwo-text-active').addClass('text-run')
+		$('.you-Memory-leftwo-title-active').addClass('text-run')
 
-		if (scrollTop > 21200) {
+		if (scrollTop > 18600) {
 			$('.you-Memory-leftwo-title-active').removeClass('title-run')
-			$('.you-Memory-leftwo-text-active').removeClass('text-run')
+			$('.you-Memory-leftwo-title-active').removeClass('text-run')
 		}
 	} else {
 		$('.you-Memory-leftwo-title-active').removeClass('title-run')
-		$('.you-Memory-leftwo-text-active').removeClass('text-run')
+		$('.you-Memory-leftwo-title-active').removeClass('text-run')
 	}
 
 	// if (scrollTop > 21500) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
@@ -739,16 +773,6 @@ function rizebig (scrollTop) {
 		$('.you-album-head-title').removeClass('title-run')
 		$('.you-album-head-text').removeClass('text-run')
 	}
-
-	if(scrollTop > 20980) {
-		optimize()
-		if(scrollTop > 22047) {
-			unoptimize()
-		}
-	} else {
-		unoptimize()
-	}
-
 
 	if (scrollTop > 22200) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-work-head-title').addClass('title-run')
@@ -789,7 +813,6 @@ function rizebig (scrollTop) {
 	if (scrollTop > 23430) {
 		word(4)
 	}
-
 
 	if (scrollTop > 23400) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
 		$('.you-work-leftwo-title').addClass('title-run')
@@ -1431,13 +1454,27 @@ function rizesall (scrollTop) {
 	}
 
 	if (scrollTop > 11854) { //这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
-		$('.ma-deformation-title').addClass('title-run')
-		$('.ma-deformation-text').addClass('text-run')
-		if (scrollTop > 12743) {
+		if (scrollTop > 12743){
+			bianxingvideo.pause()
+			bianxingRun = true
+
+
 			$('.ma-deformation-text').removeClass('text-run')
 			$('.ma-deformation-title').removeClass('title-run')
+		} else {
+			if (bianxingRun == true) {
+				bianxingRun = false
+				bianxingvideo.pause();
+				bianxingvideo.load();
+				bianxingvideo.play()
+
+				$('.ma-deformation-title').addClass('title-run')
+				$('.ma-deformation-text').addClass('text-run')
+			}
 		}
 	} else {
+		bianxingvideo.pause()
+		bianxingRun = true
 		$('.ma-deformation-text').removeClass('text-run')
 		$('.ma-deformation-title').removeClass('title-run')
 	}
@@ -1816,7 +1853,7 @@ function numRun() {
 
     //改变数值
     timers = setInterval(()=>{
-    	num += 267
+    	num += 987
     	odo.update(num)
 
     	if (num >= 8000) {
@@ -1824,7 +1861,7 @@ function numRun() {
     		odo.update(8000)
 	    	clearInterval(timers)
 	    }
-    },1000)
+    },800)
 
     
 }
@@ -1909,21 +1946,4 @@ function word(val) {
 		$('.you-worl-speed').stop()
 		.animate({left:40 * val +'px'})
 	 }, 10);
-}
-
-// 进程优化
-// 
-function optimize() {
-	$('.you-filled-fix').stop()
-	.animate({height:'50px'},'slow')
-	$('.you-water-fix')
-	.stop()
-	.animate({top:'78px'},'slow')
-}
-function unoptimize() {
-	$('.you-filled-fix').stop()
-	.animate({height:'128px'},'slow')
-	$('.you-water-fix')
-	.stop()
-	.animate({top:'0px'},'slow')
 }
